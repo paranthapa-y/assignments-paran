@@ -1,0 +1,2 @@
+var g_data = {"10":{"pr":"/top_module_tb/dut/fsm","fsms":[["state",3,32,[["IDLE",0,3,32,819,"                 0"],["LOAD",0,3,38,424,"                 1"],["SHIFT",0,3,42,1719,"                 2"],["DONE",0,3,64,378,"                 3"],["IDLE -> LOAD",1,3,35,424,0],["LOAD -> SHIFT",1,3,40,322,1],["LOAD -> IDLE",1,3,64,102,2],["SHIFT -> DONE",1,3,45,160,3],["SHIFT -> IDLE",1,3,64,162,4],["DONE -> IDLE",1,3,64,159,5]],100.00,100.00]]}};
+processFsmData(g_data);

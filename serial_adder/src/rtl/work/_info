@@ -1,0 +1,535 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f MIXED_VERSIONS
+R0
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/paranthapa/Documents/Serial_Adder/src/rtl
+T_opt
+!s110 1771482253
+VTVcMA@RPebSb`>VRS4IzF0
+Z2 04 13 4 work top_module_tb fast 0
+=1-000ae431a4f1-6996ac8d-e96a-1d5e
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2_1;73
+R1
+T_opt1
+!s110 1771439006
+VEnU?e;m0XZ2ble>3nf>PO3
+04 10 4 work top_module fast 0
+=1-000ae431a4f1-6996039e-9491e-da1c
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+T_opt2
+!s110 1771484003
+V7f[iVf[RCBlVCi`c0e[i@2
+R2
+=1-000ae431a4f1-6996b362-f0f60-1fe1
+R3
+R4
+R5
+n@_opt2
+R6
+R1
+T_opt3
+!s110 1771496065
+Vh09AQGXZcKBL;V^PB@CmT0
+R2
+=1-000ae431a4f1-6996e281-c5559-c215
+R3
+R4
+R5
+n@_opt3
+R6
+R1
+T_opt4
+!s110 1771501331
+V:^ILdZ^JHzij7zI5MleP^0
+R2
+=1-000ae431a4f1-6996f713-bc141-1cc6
+R3
+R4
+R5
+n@_opt4
+R6
+R1
+T_opt5
+!s110 1771502050
+VJ6Kn04B@fEo[iPajYEaQ82
+R2
+=1-000ae431a4f1-6996f9e2-dd933-1dc5
+R3
+R4
+R5
+n@_opt5
+R6
+R1
+T_opt6
+!s110 1771513522
+VbffC^ag=7DU@_iNC:[N6:2
+R2
+=1-000ae431a4f1-699726b2-3ffb9-345f
+R3
+R4
+R5
+n@_opt6
+R6
+R1
+T_opt7
+!s110 1771516053
+VRLDl>;1S2`1?gV9I[RQBe1
+R2
+=1-000ae431a4f1-69973095-5dbed-3596
+R3
+R4
+R5
+n@_opt7
+R6
+R1
+T_opt8
+!s110 1771578467
+VR3f@ho7JEYREzUeefEP>X3
+R2
+=1-000ae431a4f1-69982463-757be-38f4
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R5
+n@_opt8
+R6
+vd_ff
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1771578466
+!i10b 1
+!s100 fTAk1CIDbefJ1j7S9:U670
+Im6FD1J7WLC;ffTFLeeX6b2
+S1
+R1
+w1771408068
+8dff.sv
+Fdff.sv
+!i122 165
+L0 12 11
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z11 !s108 1771578466.000000
+Z12 !s107 ParlellInSerialOutRegister_RTL.sv|dff.sv|fsm_design.sv|full_adder.sv|SerialInParllelOutRegister_RTL.sv|testbench.sv|top_module.sv|
+Z13 !s90 -reportprogress|300|-sv|+cover=bcestf|top_module.sv|testbench.sv|
+!i113 0
+Z14 !s102 +cover=bcestf
+Z15 o-sv +cover=bcestf -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vFSM
+R7
+R8
+!i10b 1
+!s100 KEBn8VD9b`;@M<cjOZ6692
+I?LYVgUo>41b]7eBhCVHHC3
+S1
+R1
+w1771517416
+8fsm_design.sv
+Ffsm_design.sv
+!i122 165
+L0 15 59
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+n@f@s@m
+vfull_adder
+R7
+R8
+!i10b 1
+!s100 [<WBcedKGEi=ZMeV7?Dz81
+I1oYQc:f4^514Q1;TDTldG1
+S1
+R1
+w1771408006
+8full_adder.sv
+Ffull_adder.sv
+!i122 165
+L0 13 6
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+vPISO
+R7
+R8
+!i10b 1
+!s100 lY:cQ09^J2o_A_Lz<6mVS2
+INzb]V]l0zX4UZ;Emia8:A3
+S1
+R1
+w1771519917
+8ParlellInSerialOutRegister_RTL.sv
+FParlellInSerialOutRegister_RTL.sv
+!i122 165
+L0 20 19
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+n@p@i@s@o
+vPISO_tb
+R7
+!s110 1771567363
+!i10b 1
+!s100 02j0IbF4OaWzEM?HiH7eN1
+Ick=m3U^1n_]E1U<ZzFgTT2
+S1
+R1
+w1771566959
+8PISO_tb.sv
+FPISO_tb.sv
+!i122 132
+L0 1 93
+R9
+R10
+r1
+!s85 0
+31
+!s108 1771567363.000000
+!s107 dff.sv|PISO_tb.sv|PISO.sv|
+!s90 -cover|bcesft|PISO.sv|PISO_tb.sv|
+!i113 0
+Z16 !s102 -cover bcesft
+Z17 o-cover bcesft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@p@i@s@o_tb
+vPISO_testbench
+R7
+!s110 1771521631
+!i10b 1
+!s100 =X`<M01^LoMnBLZfkQ=0S2
+IPhZ>^A8b7H7A[o0;G@c^72
+S1
+R1
+w1771521615
+Z18 8test.sv
+Z19 Ftest.sv
+!i122 106
+L0 24 69
+R9
+R10
+r1
+!s85 0
+31
+!s108 1771521631.000000
+Z20 !s107 test.sv|
+Z21 !s90 -cover|bcesft|test.sv|
+!i113 0
+R16
+R17
+R5
+n@p@i@s@o_testbench
+vSIPO
+R7
+R8
+!i10b 1
+!s100 6?Wm`VL_ml:f7CgSaLz7l0
+IX8;mH1[ae36h_bl1d>CG>0
+S1
+R1
+w1771418016
+8SerialInParllelOutRegister_RTL.sv
+FSerialInParllelOutRegister_RTL.sv
+!i122 165
+L0 18 19
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+n@s@i@p@o
+vtb_serial_adder
+R7
+!s110 1771481117
+!i10b 1
+!s100 j_g@J34JLES2RjT`PTg_E1
+ISDmHANmOQ5n=7L3_b0D0H3
+S1
+R1
+w1771480084
+Z22 8testbench.sv
+Z23 Ftestbench.sv
+!i122 37
+L0 3 131
+R9
+R10
+r1
+!s85 0
+31
+!s108 1771481117.000000
+R12
+!s90 -cover|bcesft|top_module.sv|testbench.sv|
+!i113 0
+R16
+R17
+R5
+vTest_Full_Adder
+R7
+!s110 1771418368
+!i10b 1
+!s100 lTz2:Sf7a:O8Z`@>Y;^Wk1
+IoajzFf5n@2OG<Kl[MQ7g?1
+S1
+R1
+w1771417742
+8/home/paranthapa/Documents/Serial_Adder/src/rtl/testbench.sv
+F/home/paranthapa/Documents/Serial_Adder/src/rtl/testbench.sv
+!i122 12
+L0 5 57
+R9
+R10
+r1
+!s85 0
+31
+!s108 1771418368.000000
+!s107 /home/paranthapa/Documents/Serial_Adder/src/rtl/testbench.sv|
+!s90 -reportprogress|300|-work|work|/home/paranthapa/Documents/Serial_Adder/src/rtl/testbench.sv|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@test_@full_@adder
+vtest_module
+R7
+!s110 1771520359
+!i10b 1
+!s100 aICX8dzhc^9TB6oD835c^3
+I5>6XEW7Hn03ZRS53RNToV1
+S1
+R1
+w1771520357
+R18
+R19
+!i122 98
+L0 1 13
+R9
+R10
+r1
+!s85 0
+31
+!s108 1771520359.000000
+R20
+R21
+!i113 0
+R16
+R17
+R5
+vtop_module
+R7
+R8
+!i10b 1
+!s100 W0^V@KeXPTG?TgmYLoB5P2
+I10zkMe7oXa@^U^T2;UFhR0
+S1
+R1
+w1771578426
+8top_module.sv
+Ftop_module.sv
+!i122 165
+L0 22 34
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+vtop_module_tb
+R7
+R8
+!i10b 1
+!s100 iQ7WXLOC8ljILIfWAWf`e0
+Im;RPac?0<@[>h1C:<8fk[3
+S1
+R1
+w1771578054
+R22
+R23
+!i122 165
+L0 3 254
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5

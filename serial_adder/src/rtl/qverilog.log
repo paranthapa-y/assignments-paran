@@ -1,0 +1,90 @@
+Start time: 23:34:53 on Feb 18,2026
+qverilog top_module.sv testbench.sv 
+-- Compiling module full_adder
+-- Compiling module FSM
+-- Compiling module d_ff
+-- Compiling module SIPO
+-- Compiling module full_adder
+** Warning: ** while parsing file included at top_module.sv(16)
+** while parsing file included at ParlellInSerialOutRegister_RTL.sv(17)
+** at full_adder.sv(13): (qverilog-2275) Existing module 'full_adder' at line 13 will be overwritten.
+-- Compiling module FSM
+** Warning: ** while parsing file included at top_module.sv(16)
+** while parsing file included at ParlellInSerialOutRegister_RTL.sv(18)
+** at fsm_design.sv(15): (qverilog-2275) Existing module 'FSM' at line 15 will be overwritten.
+-- Compiling module d_ff
+** Warning: ** while parsing file included at top_module.sv(16)
+** while parsing file included at ParlellInSerialOutRegister_RTL.sv(19)
+** at dff.sv(12): (qverilog-2275) Existing module 'd_ff' at line 12 will be overwritten.
+-- Compiling module PISO
+-- Compiling module full_adder
+** Warning: ** while parsing file included at top_module.sv(17)
+** at full_adder.sv(13): (qverilog-2275) Existing module 'full_adder' at line 13 will be overwritten.
+-- Compiling module FSM
+** Warning: ** while parsing file included at top_module.sv(18)
+** at fsm_design.sv(15): (qverilog-2275) Existing module 'FSM' at line 15 will be overwritten.
+-- Compiling module d_ff
+** Warning: ** while parsing file included at top_module.sv(19)
+** at dff.sv(12): (qverilog-2275) Existing module 'd_ff' at line 12 will be overwritten.
+-- Compiling module top_module
+-- Compiling module top_module_tb
+
+Top level modules:
+	top_module_tb
+# vsim -lib work work.top_module_tb -c -do "run -all; quit -f" -appendlog -l qverilog.log -vopt 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: top_module.sv(44): (vopt-2241) Connection width does not match width of port 'a'. The port definition is at: full_adder.sv(13).
+# ** Warning: top_module.sv(44): (vopt-2241) Connection width does not match width of port 'b'. The port definition is at: full_adder.sv(13).
+# ** Warning: top_module.sv(41): (vopt-2241) Connection width does not match width of port 'q'. The port definition is at: ParlellInSerialOutRegister_RTL.sv(20).
+# ** Warning: top_module.sv(39): (vopt-2241) Connection width does not match width of port 'q'. The port definition is at: ParlellInSerialOutRegister_RTL.sv(20).
+# ** Warning: top_module.sv(39): (vopt-2685) [TFMPC] - Too few port connections for 'a1'.  Expected 6, found 5.
+# ** Warning: top_module.sv(39): (vopt-2718) [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: top_module.sv(41): (vopt-2685) [TFMPC] - Too few port connections for 'b1'.  Expected 6, found 5.
+# ** Warning: top_module.sv(41): (vopt-2718) [TFMPC] - Missing connection for port 'reset'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=14.
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top_module_tb(fast)
+# run -all
+# PASS: A=9 B=0 SUM=9
+# PASS: A=5 B=10 SUM=15
+# PASS: A=255 B=1 SUM=256
+# PASS: A=100 B=155 SUM=255
+# PASS: A=231 B=124 SUM=355
+# PASS: A=156 B=28 SUM=184
+# PASS: A=232 B=167 SUM=399
+# PASS: A=22 B=196 SUM=218
+# PASS: A=0 B=89 SUM=89
+# PASS: A=248 B=251 SUM=499
+# PASS: A=17 B=162 SUM=179
+# PASS: A=252 B=165 SUM=417
+# PASS: A=222 B=150 SUM=372
+# PASS: A=144 B=23 SUM=167
+# PASS: A=222 B=131 SUM=353
+# PASS: A=134 B=20 SUM=154
+# PASS: A=205 B=92 SUM=297
+# PASS: A=79 B=178 SUM=257
+# PASS: A=151 B=255 SUM=406
+# PASS: A=30 B=172 SUM=202
+# PASS: A=44 B=228 SUM=272
+# PASS: A=158 B=133 SUM=291
+# PASS: A=178 B=155 SUM=333
+# PASS: A=82 B=173 SUM=255
+#  ALL TESTS COMPLETED 
+# ** Note: $finish    : testbench.sv(96)
+#    Time: 3595 ns  Iteration: 1  Instance: /top_module_tb
+# End time: 23:34:58 on Feb 18,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 14
