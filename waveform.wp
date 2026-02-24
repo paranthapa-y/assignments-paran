@@ -1,0 +1,457 @@
+{
+  "sampleCount": 16,
+  "subStepCount": 0,
+  "arrowColor": "#ff0000",
+  "signals": [
+    {
+      "name": "i_clk",
+      "type": "bit",
+      "color": "#000000",
+      "riseTime": 0.2,
+      "fallTime": 0.2,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "waveDromWaveLength": 20
+    },
+    {
+      "name": "i_stream1",
+      "type": "vector",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6,
+        6,
+        7,
+        8,
+        9,
+        9,
+        10,
+        11
+      ],
+      "labels": [
+        "0x9",
+        "A",
+        "c",
+        "0x7",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "0x5",
+        "0x6",
+        "0x3",
+        "0x3",
+        "0x2",
+        "0x6"
+      ],
+      "segmentStyles": [
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        }
+      ],
+      "waveDromColorCodes": [
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        null,
+        null,
+        null,
+        "=",
+        "=",
+        "=",
+        null,
+        "=",
+        "=",
+        null,
+        null,
+        null,
+        null
+      ],
+      "waveDromHadData": true,
+      "waveDromWaveLength": 20
+    },
+    {
+      "name": "i_stream2",
+      "type": "vector",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "labels": [
+        "0x8",
+        "0x9",
+        "F",
+        "A",
+        "A",
+        "B",
+        "0x6",
+        "A",
+        "0x9",
+        "0x4",
+        "0x1",
+        "0x6",
+        "0x5",
+        "0x3",
+        "0x4",
+        "0x6"
+      ],
+      "segmentStyles": [
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        }
+      ],
+      "waveDromColorCodes": [
+        "=",
+        "=",
+        "=",
+        "=",
+        null,
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        null,
+        null,
+        null,
+        null
+      ],
+      "waveDromHadData": true,
+      "waveDromWaveLength": 20
+    },
+    {
+      "name": "o_streamo",
+      "type": "vector",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "labels": [
+        "Z",
+        "Z",
+        "Z",
+        "AA",
+        "AC",
+        "B7",
+        "6A",
+        "AB",
+        "9A",
+        "4A",
+        "1A",
+        "6A",
+        "55",
+        "36",
+        "43",
+        "63"
+      ],
+      "segmentStyles": [
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "hatched": true,
+          "fill": "#ffffff"
+        },
+        {
+          "hatched": true,
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        },
+        {
+          "fill": "#ffffff"
+        }
+      ],
+      "waveDromColorCodes": [
+        "=",
+        null,
+        null,
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "=",
+        "="
+      ],
+      "waveDromHadData": true,
+      "waveDromWaveLength": 20
+    },
+    {
+      "name": "o_aligned",
+      "type": "bit",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "markers": [],
+  "timeJumps": [],
+  "timeSpanMarkers": [],
+  "arrows": [],
+  "textAnnotations": []
+}
