@@ -12,7 +12,7 @@
 // 	i_stream2 : data stream 2
 // outputs:
 // 	o_stream  : output stream [8 - bit]
-// 	o_aligned : single bit signal to represent the data stream alignment.
+// 	o_aligned : single bit signal to represent the data stream alignments.
 //
 module de_skew(input i_clk, reset, [3:0] i_stream1, i_stream2, output [7:0] o_stream, output o_aligned);
 

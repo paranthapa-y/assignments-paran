@@ -19,6 +19,7 @@ class Monitor;
     coverpoint vif.reset {
       bins reset = {0, 1};
     }
+    
     // Cross coverage for interesting combinations
     cross cp1, cp2;
     // cross s1, s2, reset;
