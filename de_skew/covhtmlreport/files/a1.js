@@ -1,0 +1,2 @@
+var g_data = {"6":{"pr":"/tb/vif","ty":1,"asserts":[{"n":["assert__skew_check1"],"h":[8,9,468,17,502,0,2]}],"ad":1},"3":{"pr":"work.des_if","ty":0,"asserts":[{"n":["assert__skew_check1"],"h":[8,9,468,17,502,0,2]}],"ad":1}}
+processAssertionsData(g_data);
