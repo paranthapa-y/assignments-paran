@@ -1,0 +1,2 @@
+var g_data = {"7":{"pr":"/tb/dut","fsms":[["state",9,33,[["IDLE",0,9,33,174,"                 0"],["FIND",0,9,51,150,"                 1"],["ALIGNED",0,9,74,178,"                 2"],["IDLE -> FIND",1,9,46,45,0],["IDLE -> ALIGNED",1,9,35,6,1],["FIND -> ALIGNED",1,9,57,9,2],["FIND -> IDLE",1,9,81,35,3],["ALIGNED -> IDLE",1,9,74,15,4]],100.00,100.00]]}};
+processFsmData(g_data);

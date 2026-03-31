@@ -1,0 +1,2 @@
+var g_data = {"8":{"pr":"/testbench_sv_unit","ty":2,"dui":1,"dun":"work.testbench_sv_unit","cvgs":[{"h":["/testbench_sv_unit/Monitor/cg",1,1,9],"cov":[290,246,96.56],"opts":{"goal":"100","merge_instance":"auto(true)"}}]}};
+processCovergroupsData(g_data);

@@ -1,0 +1,149 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/paranthapa/Documents/de_skew/src
+T_opt
+Z2 !s11d testbench_sv_unit /home/paranthapa/Documents/de_skew/src/work 1 des_if 1 /home/paranthapa/Documents/de_skew/src/work 
+!s110 1774952160
+VD^V68gTDBAc5hBB7ke5PE2
+Z3 04 2 4 work tb fast 0
+=1-000ae431a4f1-69cb9edf-f3b0a-360e
+Z4 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2_1;73
+R1
+T_opt1
+R2
+!s110 1774952178
+V=18P:EBUV4X=o=8>IA3[:0
+R3
+=1-000ae431a4f1-69cb9ef2-b798-363d
+R4
+o-quiet -auto_acc_if_foreign -work work +acc
+R5
+n@_opt1
+R6
+vde_skew
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1774952176
+!i10b 1
+!s100 _[U22m1086>PMKU0nZaeb3
+IDN=ESU<cGAd3l^_OAjF[P1
+S1
+R1
+w1773659254
+8rtl/de_skew.sv
+Frtl/de_skew.sv
+!i122 1
+L0 17 93
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z11 !s108 1774952176.000000
+Z12 !s107 tb/environment.sv|tb/driver.sv|tb/monitor.sv|tb/scoreboard.sv|tb/generator.sv|tb/transaction.sv|tb/interfaces.sv|tb/testbench.sv|rtl/de_skew.sv|
+Z13 !s90 -reportprogress|300|-sv|+cover=bcestf|rtl/de_skew.sv|tb/testbench.sv|
+!i113 0
+Z14 !s102 +cover=bcestf
+Z15 o-sv +cover=bcestf -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+Ydes_if
+Z16 !s105 testbench_sv_unit
+Z17 DXx4 work 17 testbench_sv_unit 0 22 an2n9Hh^:KG8Z`9FGg0F91
+R7
+R8
+!i10b 1
+!s100 `L8CGBoiOn81Ye]:oG@Ia1
+I=lN6M3J6X2lFZPhcoPH::1
+S1
+R1
+w1774950449
+8tb/interfaces.sv
+Z18 Ftb/interfaces.sv
+!i122 1
+L0 7 0
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+vtb
+R7
+R17
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 TWABe0c8@3RlQEF1`k>=]2
+IF<Ke9U<@17T:3EGdjeg8P3
+R16
+S1
+R1
+Z19 w1774950701
+Z20 8tb/testbench.sv
+Z21 Ftb/testbench.sv
+!i122 1
+L0 15 40
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+Xtestbench_sv_unit
+!s115 des_if
+R7
+R8
+Van2n9Hh^:KG8Z`9FGg0F91
+r1
+!s85 0
+!i10b 1
+!s100 eXUk>_dIG4YZzX4LS>7z12
+Ian2n9Hh^:KG8Z`9FGg0F91
+!i103 1
+S1
+R1
+R19
+R20
+R21
+R18
+Ftb/transaction.sv
+Ftb/generator.sv
+Ftb/scoreboard.sv
+Ftb/monitor.sv
+Ftb/driver.sv
+Ftb/environment.sv
+!i122 1
+L0 6 0
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5

@@ -1,5 +1,5 @@
 # Compile RTL + TB with coverage
-vlog -sv +cover=bcestf de_skew.sv testbench.sv
+vlog -sv +cover=bcestf rtl/de_skew.sv tb/testbench.sv
 
 # Start simulation with coverage
 vsim -gui -coverage -assertdebug -voptargs=+acc -onfinish stop work.tb
@@ -11,7 +11,7 @@ vsim -gui -coverage -assertdebug -voptargs=+acc -onfinish stop work.tb
 run -all
 
 # Save coverage database
-coverage save -assert -directive -cvg -codeAll cov.ucdb
+coverage save -assert -directive -cvg -codeAll cov.ucdbde
 
 # Generate HTML coverage report
 vcover report -html -output covhtmlreport \
