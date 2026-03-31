@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: monitor.sv
+// Description: Monitor class for de-skew testbench. Observes DUT outputs and collects coverage.
+// -----------------------------------------------------------------------------
 class Monitor;
   
   mailbox mon2scb;

@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: scoreboard.sv
+// Description: Scoreboard class for de-skew testbench. Compares DUT outputs with expected results.
+// -----------------------------------------------------------------------------
 class Scoreboard;
   
   mailbox mon2scb;

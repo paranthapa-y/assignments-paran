@@ -1,11 +1,16 @@
+// -----------------------------------------------------------------------------
+// File: sv_tb.sv
+// Description: Alternative SystemVerilog testbench for the de-skew module.
+// May be used for additional or legacy test scenarios.
+// -----------------------------------------------------------------------------
 // This is the base transaction object that will be used
 // in the environment to initiate new transactions and 
 // capture transactions at DUT interface
 class reg_item;
-  rand 	bit [7:0] 	addr;
-  rand 	bit [15:0] 	wdata;
-  		bit [15:0] 	rdata;
-  rand 	bit 		wr;
+  rand  bit [7:0]   addr;   // Address
+  rand  bit [15:0]  wdata;  // Write data
+      bit [15:0]  rdata;   // Read data
+  rand  bit     wr;     // Write/read flag
   
   // This function allows us to print contents of the data packet
   // so that it is easier to track in a logfile
@@ -19,10 +24,11 @@ endclass
 // All it does is to get a transaction from the mailbox if it is 
 // available and drive it out into the DUT interface.
 class driver;
-  virtual reg_if vif;
-  event drv_done;
-  mailbox drv_mbx;
+  virtual reg_if vif; // Virtual interface handle
+  event drv_done;     // Event to signal transaction done
+  mailbox drv_mbx;   // Mailbox for transactions
   
+  // Main driver loop
   task run();
     $display ("T=%0t [Driver] starting ...", $time);
     @ (posedge vif.clk);
@@ -58,8 +64,8 @@ endclass
 // captures information into a packet and sends it to the scoreboard
 // using another mailbox.
 class monitor;
-  virtual reg_if vif;
-  mailbox scb_mbx; 		// Mailbox connected to scoreboard
+  virtual reg_if vif;     // Virtual interface handle
+  mailbox scb_mbx;        // Mailbox connected to scoreboard
   
   task run();
     $display ("T=%0t [Monitor] starting ...", $time);
@@ -93,9 +99,8 @@ endclass
 // in time. So the scoreboard has a "memory" element which updates it
 // internally for every write operation.
 class scoreboard;
-  mailbox scb_mbx;
-  
-  reg_item refq[256];
+  mailbox scb_mbx;        // Mailbox from monitor
+  reg_item refq[256];     // Reference queue for checking data
   
   task run();
     forever begin

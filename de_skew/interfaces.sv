@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: interfaces.sv
+// Description: Interface definitions for de-skew testbench. Connects DUT and testbench components.
+// -----------------------------------------------------------------------------
 
 
 interface des_if (input logic clk);

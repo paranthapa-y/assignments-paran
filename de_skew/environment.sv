@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: environment.sv
+// Description: Environment class for de-skew testbench. Instantiates and connects all components.
+// -----------------------------------------------------------------------------
 
 
 class Environment;

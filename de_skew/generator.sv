@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: generator.sv
+// Description: Generator class for de-skew testbench. Generates random or constrained transactions.
+// -----------------------------------------------------------------------------
 
 
 class Generator;

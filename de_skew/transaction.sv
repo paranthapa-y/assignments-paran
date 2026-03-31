@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: transaction.sv
+// Description: Transaction class for de-skew testbench. Defines stimulus and response data structures.
+// -----------------------------------------------------------------------------
 
 class Transaction;
   

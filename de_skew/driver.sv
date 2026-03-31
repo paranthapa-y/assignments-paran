@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// File: driver.sv
+// Description: Driver class for de-skew testbench. Drives stimulus to DUT via interface.
+// -----------------------------------------------------------------------------
 
 
 class Driver;
