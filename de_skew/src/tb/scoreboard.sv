@@ -1,76 +1,148 @@
-// -----------------------------------------------------------------------------
-// File: scoreboard.sv
-// Description: Scoreboard class for de-skew testbench. Compares DUT outputs with expected results.
-// -----------------------------------------------------------------------------
 class Scoreboard;
-  
+
   mailbox mon2scb;
-  
+  Transaction tr;
+
+  // ----------------------------
+  // Reference model signals
+  // ----------------------------
+  logic [2:0] c;
+  logic [2:0][3:0] fifo1, fifo2;
+  logic [7:0] out_stream;
+
+  typedef enum logic [1:0] {
+    IDLE    = 2'b00,
+    FIND    = 2'b01,
+    ALIGNED = 2'b10
+  } state_t;
+
+  state_t state, next_state;
+  logic [1:0] LSB_ind;
+
+  // ----------------------------
   function new(mailbox mon2scb);
-    this.mon2scb =mon2scb;
+    this.mon2scb = mon2scb;
+
+    c = 0;
+    fifo1 = '{default:0};
+    fifo2 = '{default:0};
+    state = IDLE;
+    next_state = IDLE;
+    LSB_ind = 0;
+    out_stream = 0;
   endfunction
-  bit [7:0] e_stream;
-  bit e_aligned;
 
-  bit [3:0] fifo1 [3];
-  bit [3:0] fifo2 [3];
-  
+  // ----------------------------
   task run();
-    Transaction tr;
-    
-    forever begin
-      mon2scb.get(tr);
 
-      fifo1[2] = fifo1[1];
-      fifo1[1] = fifo1[0];
-      fifo1[0] = tr.stream1;
-      
-      fifo2[2] = fifo2[1];
-      fifo2[1] = fifo2[0];
-      fifo2[0] = tr.stream2;
+  // ✅ MOVE DECLARATIONS HERE
+  logic [7:0] expected_stream;
+  logic expected_aligned;
 
-      e_stream = 0;
-      e_aligned = 0;
+  forever begin
+    mon2scb.get(tr);
 
-      for( int i=0; i<3;i++) begin
-	      for( int j = 0; j<3; j++) begin
-		      if ((fifo1[i] == 4'hA) && (fifo2[j] == 4'hA))  begin
-			      int skew=i-j;
+    // ----------------------------
+    // ALWAYS_COMB
+    // ----------------------------
+    next_state = state;
+    out_stream = 0;
 
-			      if (skew<0) skew = -skew;
-			      e_aligned = (skew<=2);
-			      if (skew<=2) begin
-				      if (i<=j)
-					      e_stream = {fifo1[2], fifo2[2-skew]};
-				      else if (j<i)
-					      e_stream = {fifo2[2], fifo1[2-skew]};
-				      else
-					      e_stream = 8'h0;
-			      end
-		      end
-	      end
-      end
+    case(state)
 
-      e_stream = (tr.aligned)? e_stream : 8'h0;
-
-      //tr.display("SCB");
-      if (tr.aligned!= e_aligned) $display ("scoreboard error");
-      if (tr.out_stream !== e_stream) $error("FAIL: s1 - %h, s2 - %h, %h expected, got %h", tr.stream1,tr.stream2,e_stream, tr.out_stream);;
-
-
-      if (e_aligned) begin
-	      if (tr.out_stream !== e_stream) begin
-		      $error("FAIL %h expected, got %h", e_stream, tr.out_stream);
-          
+      IDLE: begin
+        if ((tr.stream1 == 4'hA) && (tr.stream2 == 4'hA)) begin
+          next_state = ALIGNED;
         end
-	      else
-		      tr.display("Passed");
-
-
+        else if (tr.stream1 == 4'hA) begin
+          next_state = FIND;
+        end
+        else if (tr.stream2 == 4'hA) begin
+          next_state = FIND;
+        end
       end
+
+      FIND: begin
+        if ((tr.stream1 == 4'hA) && (c < 2) && LSB_ind == 2'b10)
+          next_state = ALIGNED;
+
+        if ((tr.stream2 == 4'hA) && (c < 2) && LSB_ind == 2'b01)
+          next_state = ALIGNED;
       end
 
-  endtask
+      ALIGNED: begin
+        next_state = state;
+
+        if (LSB_ind == 2'b10)
+          out_stream = {fifo1[2], fifo2[2-c]};
+        else
+          out_stream = {fifo2[2], fifo1[2-c]};
+      end
+
+    endcase
+
+    // ----------------------------
+    // SEQUENTIAL (same as DUT)
+    // ----------------------------
+    if (tr.reset) begin
+      state   = IDLE;
+      c       = 0;
+      LSB_ind = 0;
+      fifo1   = '{default:0};
+      fifo2   = '{default:0};
+    end
+    else if (c > 2 && state == FIND) begin
+      state   = IDLE;
+      c       = 0;
+      LSB_ind = 0;
+      fifo1   = '{default:0};
+      fifo2   = '{default:0};
+    end
+    else begin
+      state = next_state;
+
+      fifo1 = {tr.stream1, fifo1[2:1]};
+      fifo2 = {tr.stream2, fifo2[2:1]};
+    end
+
+    if (state == FIND)
+      c = c + 1;
+
+    if (state == IDLE) begin
+      c = 0;
+
+      if (tr.stream1 == 4'hA && tr.stream2 == 4'hA)
+        LSB_ind = 2'b01;
+      else if (tr.stream2 == 4'hA)
+        LSB_ind = 2'b10;
+      else if (tr.stream1 == 4'hA)
+        LSB_ind = 2'b01;
+    end
+
+    // ----------------------------
+    // EXPECTED
+    // ----------------------------
+    expected_stream  = (state == ALIGNED) ? out_stream : 0;
+    expected_aligned = (state == ALIGNED);
+
+    // ----------------------------
+    // COMPARE
+    // ----------------------------
+    if ((expected_stream !== tr.out_stream) ||
+        (expected_aligned !== tr.aligned)) begin
+
+      $display(" MISMATCH");
+      $display("State=%0d c=%0d LSB=%0b", state, c, LSB_ind);
+      $display("Expected: stream=%0h aligned=%0b",
+                expected_stream, expected_aligned);
+      $display("Got     : stream=%0h aligned=%0b",
+                tr.out_stream, tr.aligned);
+    end
+    else begin
+      $display(" MATCH: %0h", expected_stream);
+    end
+
+  end
+endtask
+
 endclass
-
-      
