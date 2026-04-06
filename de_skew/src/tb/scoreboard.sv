@@ -35,7 +35,7 @@ class Scoreboard;
   // ----------------------------
   task run();
 
-  // ✅ MOVE DECLARATIONS HERE
+  // MOVE DECLARATIONS HERE
   logic [7:0] expected_stream;
   logic expected_aligned;
 
