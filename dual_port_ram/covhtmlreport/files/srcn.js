@@ -1,0 +1,2 @@
+var g_data = ["","src/tb/transaction.sv","src/tb/generator.sv","src/tb/scoreboard.sv","src/tb/monitor.sv","src/tb/driver.sv","src/tb/environment.sv","src/tb/testbench.sv","src/tb/interfaces.sv","src/rtl/design.sv","src/rtl/hamming_encoder.sv","src/rtl/hamming_decoder.sv","src/rtl/m_block.sv"];
+processSrcNamesData(g_data);

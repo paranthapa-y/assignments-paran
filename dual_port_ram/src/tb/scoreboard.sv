@@ -19,11 +19,10 @@ class Scoreboard;
   task run();
 
   // MOVE DECLARATIONS HERE
-  forever begin
-    mon2scb.get(tr);
-    tr.display("SCB");
-    // REFERENCE MODEL LOGIC HERE
-  end
-endtask
-
+  // forever begin
+  //   mon2scb.get(tr);
+  //   tr.display("SCB");
+  //   // REFERENCE MODEL LOGIC HERE
+  // end
+  endtask
 endclass

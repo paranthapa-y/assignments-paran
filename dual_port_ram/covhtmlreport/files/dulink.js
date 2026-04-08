@@ -1,0 +1,2 @@
+var g_data = {"3":["work.des_if",100.00,1],"6":["work.hamming_decoder",42.17,1],"5":["work.hamming_encoder",100.00,1],"7":["work.m_block",76.93,1],"4":["work.ram",100.00,1],"2":["work.tb",100.00,1],"1":["work.testbench_sv_unit",50.00,1]};
+processDuLinks(g_data);

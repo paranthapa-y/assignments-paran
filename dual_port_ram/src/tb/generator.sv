@@ -12,8 +12,25 @@ class Generator;
     this.gen2drv = gen2drv;
   endfunction
 
+  task manual(logic wea = 'x, en = 'x, rst = 'x);
+    Transaction tr = new();
+    tr.randomize();
+    if (wea !== 'x) tr.wea = wea;
+    if (en !== 'x) tr.en = en;
+    if (rst !== 'x) tr.rst = rst;
+    tr.display("GEN");
+    gen2drv.put(tr);
+
+  endtask
+
   task run();
-  repeat (500) begin
+  Transaction tr = new();
+  tr.randomize() with{
+      rst == 1;
+    };
+  tr.display("GEN");
+  gen2drv.put(tr);
+  write_focussed : repeat (500) begin
     Transaction tr = new();
     tr.randomize() with{
       wea dist {0:=10, 1:=99};
@@ -21,11 +38,15 @@ class Generator;
     tr.display("GEN");
     gen2drv.put(tr);
   end
-  repeat (200) begin
-	Transaction tr = new();
-	tr.randomize();
-	tr.display("GEN");
-	gen2drv.put(tr);
+
+  manual(1, 0, 0);
+  manual(1, 0, 0);
+
+  read_foccused : repeat (500) begin
+    Transaction tr = new();
+    tr.randomize();
+    tr.display("GEN");
+    gen2drv.put(tr);
   end
   endtask
       

@@ -25,15 +25,14 @@ class Environment;
     scb = new(mon2scb);
     
   endfunction
-    
-    task run();
-      
-      fork
-        gen.run();
-        drv.run();
-        mon.run();
-        scb.run();
-      join_any
-    endtask
+
+  task run();
+    fork
+      gen.run();
+      drv.run();
+      mon.run();
+      scb.run();
+    join_any
+  endtask
       
 endclass

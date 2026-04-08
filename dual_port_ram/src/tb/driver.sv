@@ -9,7 +9,7 @@ class Driver;
   mailbox gen2drv;
   virtual des_if vif;
   
-  function new( mailbox gen2drv, virtual des_if vif);
+  function new( mailbox gen2drv, virtual des_if  vif);
       this.gen2drv = gen2drv;
       this.vif =vif;
   endfunction

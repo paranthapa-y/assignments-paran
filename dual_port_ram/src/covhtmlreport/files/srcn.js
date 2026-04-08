@@ -1,2 +1,0 @@
-var g_data = ["","tb/transaction.sv","tb/generator.sv","tb/scoreboard.sv","tb/monitor.sv","tb/driver.sv","tb/environment.sv","tb/testbench.sv","tb/interfaces.sv","rtl/design.sv"];
-processSrcNamesData(g_data);

@@ -9,10 +9,10 @@ class Monitor;
   // Functional coverage
   
   
-  function new(mailbox mon2scb, virtual des_if vif);
+  function new(mailbox mon2scb, virtual des_if  vif);
     this.mon2scb =mon2scb;
     this.vif = vif;
-    // cg = new();
+    // cg = new(); function new(virtual des_if #(4,4) vif);
   endfunction
   
   task run();
