@@ -18,7 +18,7 @@ class Generator;
     if (wea !== 'x) tr.wea = wea;
     if (en !== 'x) tr.en = en;
     if (rst !== 'x) tr.rst = rst;
-    tr.display("GEN");
+    //tr.display("GEN");
     gen2drv.put(tr);
 
   endtask
@@ -28,14 +28,14 @@ class Generator;
   tr.randomize() with{
       rst == 1;
     };
-  tr.display("GEN");
+  //tr.display("GEN");
   gen2drv.put(tr);
   write_focussed : repeat (500) begin
     Transaction tr = new();
     tr.randomize() with{
       wea dist {0:=10, 1:=99};
     };
-    tr.display("GEN");
+    //tr.display("GEN");
     gen2drv.put(tr);
   end
 
@@ -45,7 +45,7 @@ class Generator;
   read_foccused : repeat (500) begin
     Transaction tr = new();
     tr.randomize();
-    tr.display("GEN");
+    //tr.display("GEN");
     gen2drv.put(tr);
   end
   endtask

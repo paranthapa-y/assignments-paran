@@ -16,7 +16,7 @@ class Transaction  #(parameter int ADDR_WIDTH = 4, parameter int DATA_WIDTH = 4)
   rand logic       wea;
   rand logic       en;
   rand logic       rst;
-  rand logic [DATA_WIDTH-1:0] dina;
+  randc logic [DATA_WIDTH-1:0] dina;
   logic [DATA_WIDTH-1:0] douta;
   logic [DATA_WIDTH-1:0] doutb;
 

@@ -6,7 +6,6 @@ input logic en,
 output logic [6:0] data_out);
   
   logic [6:0] mem; 
-  logic [6:0] r_mem [0:15];
   logic [6:0] w_data_pipe [0:W_LATENCY-1];
   logic       w_valid_pipe[0:W_LATENCY-1];
   logic [6:0] r_data_pipe [0:R_LATENCY-1];
@@ -18,7 +17,6 @@ always_ff @(posedge clk) begin
   
     if (w_valid_pipe[W_LATENCY-1])
       mem <= w_data_pipe[W_LATENCY-1];
-      //r_mem[]
 
     // shift pipeline
     for (i = W_LATENCY-1; i > 0; i--) begin
@@ -38,10 +36,6 @@ always_ff @(posedge clk) begin
 end
 
 always_ff @(posedge clk) begin
-
-  if (mem === 7'bx) begin
-    mem<= '0;
-  end
   
     if (r_valid_pipe[R_LATENCY-1])
       data_out <= r_data_pipe[R_LATENCY-1];
@@ -54,7 +48,7 @@ always_ff @(posedge clk) begin
 
     // load stage 0
     if (!write_en && en) begin
-      r_data_pipe[0]  <= mem;
+      r_data_pipe[0]  <= data_in;
       r_valid_pipe[0] <= 1'b1;
     end
     else begin

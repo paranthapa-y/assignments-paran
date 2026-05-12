@@ -1,0 +1,725 @@
+<html>
+<head>
+<title>Regression Dashboard</title>
+
+<style>
+body { font-family: Arial; background:#0f172a; color:white; padding:20px; }
+
+.card {
+    display:inline-block;
+    padding:12px 18px;
+    margin:6px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.total{background:#334155;}
+.pass{background:#15803d;}
+.fail{background:#b91c1c;}
+.run{background:#d97706;}
+.pending{background:#475569;}
+.info{background:#2563eb;}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td {
+    border:1px solid #334155;
+    padding:10px;
+    vertical-align:top;
+}
+
+th { background:#1e293b; }
+
+.passText{color:#22c55e;font-weight:bold;}
+.failText{color:#ef4444;font-weight:bold;}
+.runText{color:#f59e0b;font-weight:bold;}
+.pendingText{color:#94a3b8;font-weight:bold;}
+
+details summary {
+    cursor:pointer;
+    color:#60a5fa;
+}
+
+pre {
+    background:#111827;
+    padding:8px;
+    border-radius:6px;
+    white-space:pre-wrap;
+    font-size:12px;
+}
+</style>
+</head>
+<body>
+
+<h1>DATA_ALIGNER Project Parallel Regression Dashboard</h1>
+
+<div class="card total">TOTAL: 39</div>
+<div class="card pass">PASS: 39</div>
+<div class="card fail">FAIL: 0</div>
+<div class="card run">RUNNING: 0</div>
+<div class="card pending">PENDING: 0</div>
+<div class="card info">PASS %: 100.00%</div>
+<div class="card info">TOTAL TIME: -7076s</div>
+
+<table>
+<tr>
+<th>Test</th>
+<th>Status</th>
+<th>Fatal</th>
+<th>Error</th>
+<th>Warn</th>
+<th>Runtime</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>cfs_algn_apb_tests_3_1_1</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>25s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 16805: reporter [RegModel] Individual field access not available for field 'reg_block.CTRL.CLR'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 17085: reporter [RegModel] Individual field access not available for field 'reg_block.CTRL.CLR'. Accessing complete register instead.
+# UVM_WARNING :    2
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_apb_tests_3_1_3</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>19s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 1635: reporter [RegModel] Individual field access not available for field 'reg_block.IRQ.TX_FIFO_FULL'. Accessing complete register instead.
+# UVM_WARNING :    1
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_apb_tests_3_1_4</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 875: reporter [RegModel] Individual field access not available for field 'reg_block.CTRL.SIZE'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 965: reporter [RegModel] Individual field access not available for field 'reg_block.CTRL.OFFSET'. Accessing complete register instead.
+# UVM_WARNING :    2
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_apb_tests_3_1_5</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_apb_tests_mapped_unmapped</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>18s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_clock_reset_during_apb_access</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_clock_reset_tests_3_5_1</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>17s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_clock_reset_tests_3_5_2</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_directed_test_md_size1_offset3</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 990: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 1035: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.TX_LVL'. Accessing complete register instead.
+# UVM_WARNING :    2
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_err_tests_3_4_1</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_err_tests_3_4_2</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_err_tests_3_4_3</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_err_tests_3_4_5</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_1</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_2</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 1535: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 1555: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 1615: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 1635: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING :    5
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_2_1</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 1535: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 1555: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 1615: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 1635: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING :    5
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_3</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_4</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 805: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 805: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1176) @ 825: reporter [RegModel] Trying to predict value of field 'TX_LVL' while register 'reg_block.STATUS' is being accessed
+# UVM_WARNING :    3
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_5</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_6</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_7</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 16025: reporter [RegModel] Individual field access not available for field 'reg_block.CTRL.CLR'. Accessing complete register instead.
+# UVM_WARNING :    1
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_int_tests_3_3_8</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_test_ctrlsize1_rxsize2_offset0</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_test_rx_size0</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_3_2_1</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_3_2_2</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_3_2_3</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_3_2_4</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 2570: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 2665: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.TX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 2810: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 2925: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.TX_LVL'. Accessing complete register instead.
+# UVM_WARNING :   16
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_cnt_drop</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_random_traffic</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_md_tests_target_length</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_num_bytes</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_ctrl4_off0_two_pkts</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_random</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_reg_access</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_size_offset_cross_reset_rand</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>-7183s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_split_cover_directed</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_split_cross_cover_directed</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+<tr>
+<td>cfs_algn_test_split_legal_combinations</td>
+<td class="passText">PASS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>-3593s</td>
+<td><details>
+<summary>View</summary>
+<b>Root Cause:</b> Warnings Present<br><br>
+<pre># UVM_WARNING :    0
+
+# UVM_ERROR :    0
+# UVM_FATAL :    0</pre>
+</details></td>
+</tr>
+</table></body></html>
