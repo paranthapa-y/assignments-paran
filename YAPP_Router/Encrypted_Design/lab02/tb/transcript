@@ -1,0 +1,229 @@
+# vsim -c -voptargs="+acc" -sv_seed 1375464041 top 
+# Start time: 12:14:51 on May 18,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading /home/paranthapa/Downloads/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ...
+# UVM_INFO ../sv/yapp_env.sv(30) @ 0: env [yapp_env] Printing environment...
+# ------------------------------------------------------------
+# Name                     Type                    Size  Value
+# ------------------------------------------------------------
+# env                      yapp_env                -     @466 
+#   agent                  yapp_tx_agent           -     @477 
+#     driver               yapp_tx_driver          -     @492 
+#       rsp_port           uvm_analysis_port       -     @507 
+#       seq_item_port      uvm_seq_item_pull_port  -     @499 
+#     monitor              yapp_tx_monitor         -     @485 
+#     sequencer            yapp_tx_sequencer       -     @515 
+#       rsp_export         uvm_analysis_export     -     @522 
+#       seq_item_export    uvm_seq_item_pull_imp   -     @616 
+#       arbitration_queue  array                   0     -    
+#       lock_queue         array                   0     -    
+#       num_last_reqs      integral                32    'd1  
+#       num_last_rsps      integral                32    'd1  
+# ------------------------------------------------------------
+# UVM_INFO ../sv/yapp_tx_monitor.sv(22) @ 0: env.agent.monitor [yapp_tx_monitor] Inside the YAPP TX Monitor
+# UVM_INFO ../sv/yapp_tx_driver.sv(38) @ 0: env.agent.driver [yapp_tx_driver] Packet is 
+# -------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                             
+# -------------------------------------------------------------------------------------
+# pkt                            yapp_packet   -     @636                              
+#   length                       integral      6     'h1c                              
+#   addr                         integral      2     'h0                               
+#   payload                      da(integral)  28    -                                 
+#     [0]                        integral      8     'h6a                              
+#     [1]                        integral      8     'hff                              
+#     [2]                        integral      8     'h8d                              
+#     [3]                        integral      8     'h75                              
+#     [4]                        integral      8     'h37                              
+#     ...                        ...           ...   ...                               
+#     [23]                       integral      8     'h4                               
+#     [24]                       integral      8     'h42                              
+#     [25]                       integral      8     'h7                               
+#     [26]                       integral      8     'h82                              
+#     [27]                       integral      8     'hcf                              
+#   parity                       integral      8     'h23                              
+#   parity_type                  parity_t      1     BAD_PARITY                        
+#   packet_delay                 integral      32    'h6                               
+#   begin_time                   time          64    0                                 
+#   depth                        int           32    'd2                               
+#   parent sequence (name)       string        14    yapp_5_packets                    
+#   parent sequence (full name)  string        34    env.agent.sequencer.yapp_5_packets
+#   sequencer                    string        19    env.agent.sequencer               
+# -------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_driver.sv(38) @ 0: env.agent.driver [yapp_tx_driver] Packet is 
+# -------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                             
+# -------------------------------------------------------------------------------------
+# pkt                            yapp_packet   -     @643                              
+#   length                       integral      6     'h39                              
+#   addr                         integral      2     'h2                               
+#   payload                      da(integral)  57    -                                 
+#     [0]                        integral      8     'h46                              
+#     [1]                        integral      8     'hcc                              
+#     [2]                        integral      8     'h83                              
+#     [3]                        integral      8     'h4d                              
+#     [4]                        integral      8     'ha4                              
+#     ...                        ...           ...   ...                               
+#     [52]                       integral      8     'h94                              
+#     [53]                       integral      8     'h44                              
+#     [54]                       integral      8     'h4b                              
+#     [55]                       integral      8     'hc0                              
+#     [56]                       integral      8     'hd                               
+#   parity                       integral      8     'hae                              
+#   parity_type                  parity_t      1     GOOD_PARITY                       
+#   packet_delay                 integral      32    'h8                               
+#   begin_time                   time          64    0                                 
+#   depth                        int           32    'd2                               
+#   parent sequence (name)       string        14    yapp_5_packets                    
+#   parent sequence (full name)  string        34    env.agent.sequencer.yapp_5_packets
+#   sequencer                    string        19    env.agent.sequencer               
+# -------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_driver.sv(38) @ 0: env.agent.driver [yapp_tx_driver] Packet is 
+# -------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                             
+# -------------------------------------------------------------------------------------
+# pkt                            yapp_packet   -     @647                              
+#   length                       integral      6     'h36                              
+#   addr                         integral      2     'h0                               
+#   payload                      da(integral)  54    -                                 
+#     [0]                        integral      8     'hd                               
+#     [1]                        integral      8     'hac                              
+#     [2]                        integral      8     'h40                              
+#     [3]                        integral      8     'h3f                              
+#     [4]                        integral      8     'h39                              
+#     ...                        ...           ...   ...                               
+#     [49]                       integral      8     'ha3                              
+#     [50]                       integral      8     'ha5                              
+#     [51]                       integral      8     'hd4                              
+#     [52]                       integral      8     'hce                              
+#     [53]                       integral      8     'he5                              
+#   parity                       integral      8     'h12                              
+#   parity_type                  parity_t      1     BAD_PARITY                        
+#   packet_delay                 integral      32    'h6                               
+#   begin_time                   time          64    0                                 
+#   depth                        int           32    'd2                               
+#   parent sequence (name)       string        14    yapp_5_packets                    
+#   parent sequence (full name)  string        34    env.agent.sequencer.yapp_5_packets
+#   sequencer                    string        19    env.agent.sequencer               
+# -------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_driver.sv(38) @ 0: env.agent.driver [yapp_tx_driver] Packet is 
+# -------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                             
+# -------------------------------------------------------------------------------------
+# pkt                            yapp_packet   -     @651                              
+#   length                       integral      6     'h1a                              
+#   addr                         integral      2     'h1                               
+#   payload                      da(integral)  26    -                                 
+#     [0]                        integral      8     'hf1                              
+#     [1]                        integral      8     'h1f                              
+#     [2]                        integral      8     'hfa                              
+#     [3]                        integral      8     'h6e                              
+#     [4]                        integral      8     'h6f                              
+#     ...                        ...           ...   ...                               
+#     [21]                       integral      8     'h59                              
+#     [22]                       integral      8     'h7c                              
+#     [23]                       integral      8     'h78                              
+#     [24]                       integral      8     'h92                              
+#     [25]                       integral      8     'ha                               
+#   parity                       integral      8     'h48                              
+#   parity_type                  parity_t      1     GOOD_PARITY                       
+#   packet_delay                 integral      32    'h4                               
+#   begin_time                   time          64    0                                 
+#   depth                        int           32    'd2                               
+#   parent sequence (name)       string        14    yapp_5_packets                    
+#   parent sequence (full name)  string        34    env.agent.sequencer.yapp_5_packets
+#   sequencer                    string        19    env.agent.sequencer               
+# -------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_driver.sv(38) @ 0: env.agent.driver [yapp_tx_driver] Packet is 
+# -------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                             
+# -------------------------------------------------------------------------------------
+# pkt                            yapp_packet   -     @657                              
+#   length                       integral      6     'h39                              
+#   addr                         integral      2     'h1                               
+#   payload                      da(integral)  57    -                                 
+#     [0]                        integral      8     'hcd                              
+#     [1]                        integral      8     'h8f                              
+#     [2]                        integral      8     'h21                              
+#     [3]                        integral      8     'hf2                              
+#     [4]                        integral      8     'h94                              
+#     ...                        ...           ...   ...                               
+#     [52]                       integral      8     'h81                              
+#     [53]                       integral      8     'hd2                              
+#     [54]                       integral      8     'hc3                              
+#     [55]                       integral      8     'hc1                              
+#     [56]                       integral      8     'h92                              
+#   parity                       integral      8     'h2f                              
+#   parity_type                  parity_t      1     GOOD_PARITY                       
+#   packet_delay                 integral      32    'h13                              
+#   begin_time                   time          64    0                                 
+#   depth                        int           32    'd2                               
+#   parent sequence (name)       string        14    yapp_5_packets                    
+#   parent sequence (full name)  string        34    env.agent.sequencer.yapp_5_packets
+#   sequencer                    string        19    env.agent.sequencer               
+# -------------------------------------------------------------------------------------
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   10
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [yapp_env]     1
+# [yapp_tx_driver]     5
+# [yapp_tx_monitor]     1
+# ** Note: $finish    : /home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 234  Instance: /top
+# End time: 12:14:54 on May 18,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
