@@ -12,6 +12,7 @@ def run_command(cmd):
         exit(result.returncode)
 
 # Step 1: Compile the top.sv file
+#run_command("vlib work")
 run_command("vlog top.sv")
 
 # Step 2: Generate a random seed (32-bit integer)
@@ -20,11 +21,12 @@ print(f"Using random seed: {seed}")
 
 # Step 3: Start simulation for top module with random seed
 vsim_cmd = (
-    f"vsim -c -voptargs=+acc "
+    f"vsim -c "
+    f"-voptargs=+acc "
     f"-sv_seed {seed} "
-    f"+UVM_TESTNAME=base_test "
-    f"+UVM_VERBOSITY=UVM_MEDIUM "
-    f"top"
+    f"+UVM_TESTNAME=test2 "
+    f"+UVM_VERBOSITY=UVM_HIGH "
+    f"work.top"
 )
 
 vsim_proc = subprocess.Popen(

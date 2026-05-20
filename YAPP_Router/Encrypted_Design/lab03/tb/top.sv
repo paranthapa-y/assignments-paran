@@ -9,20 +9,17 @@ import uvm_pkg::*;
 
 // Include all YAPP UVC components
 `include "../sv/yapp.svh"
+`include "yapp_test_lib.sv"
 
 module top;
 
   // Handle for environment
   yapp_env env;
 
-  // Construct environment
-  initial begin
-    env = yapp_env::type_id::create("env", null);
-  end
-
+ 
   // Run default test
   initial begin
-    uvm_config_wrapper::set(null, "env.agent.sequencer.run_phase", "default_sequence", yapp_5_packets::type_id::get());
+
     run_test();
   end
 endmodule : top

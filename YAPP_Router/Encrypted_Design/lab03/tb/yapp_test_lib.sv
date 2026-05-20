@@ -1,21 +1,31 @@
 class base_test extends uvm_test;
 
 	`uvm_component_utils(base_test)
-
-	function void new( string name = "base_test", uvm_componrnt parent = null);
+    yapp_env env;
+	function new( string name = "base_test", uvm_component parent = null);
 		super.new(name,parent);
-		yapp_env env;
+		
 	endfunction
 
 	function void build_phase(uvm_phase phase);
-                uvm_config_wrapper::set(this, "env.agent.sequencer.run_phase", "default_sequence", yapp_5_packets::type_id::get());
+        uvm_config_wrapper::set(this, "env.agent.sequencer.run_phase", "default_sequence", yapp_5_packets::type_id::get());
 		super.build_phase(phase);
-		env = yapp_env::type_id::create(env,this);
+		env = yapp_env::type_id::create("env",this);
 	endfunction
 
-	function void end_of_elaboration(uvm_phase phase);
+	function void end_of_elaboration_phase(uvm_phase phase);
+        super.end_of_elaboration_phase(phase);
 		uvm_top.print_topology();
 	endfunction
 endclass
 
+class test2 extends base_test;
+
+    `uvm_component_utils(test2)
+
+    function new( string name = "test2", uvm_component parent = null);
+	    super.new(name,parent);
+    endfunction
+
+endclass
 
