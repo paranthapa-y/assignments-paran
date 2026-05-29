@@ -1,0 +1,82 @@
+# vsim -c -voptargs="+acc" -sv_seed 954658106 "+UVM_TESTNAME=set_config_test" "+UVM_VERBOSITY=UVM_HIGH" top 
+# Start time: 17:32:10 on Aug 13,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading /home/pranav/Documents/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test set_config_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# -----------------------------------------------------------
+# Name             Type                     Size  Value      
+# -----------------------------------------------------------
+# uvm_test_top     set_config_test          -     @466       
+#   env            yapp_env                 -     @480       
+#     agent        yapp_tx_agent            -     @487       
+#       monitor    yapp_tx_monitor          -     @498       
+#       is_active  uvm_active_passive_enum  1     UVM_PASSIVE
+# -----------------------------------------------------------
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../sv/yapp_tx_monitor.sv(23) @ 0: uvm_test_top.env.agent.monitor [yapp_tx_monitor] In monitor.........
+# UVM_INFO ../sv/yapp_tx_agent.sv(27) @ 0: uvm_test_top.env.agent [yapp_tx_agent] Inside yapp_tx_agent
+# UVM_INFO ../sv/yapp_env.sv(31) @ 0: uvm_test_top.env [yapp_env] In environment.........
+# UVM_INFO ../sv/yapp_tx_monitor.sv(28) @ 0: uvm_test_top.env.agent.monitor [yapp_tx_monitor] Inside the YAPP TX Monitor
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    9
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     3
+# [RNTST]     1
+# [UVMTOP]     1
+# [yapp_env]     1
+# [yapp_tx_agent]     1
+# [yapp_tx_monitor]     2
+# ** Note: $finish    : /home/pranav/Documents/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# End time: 17:32:12 on Aug 13,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

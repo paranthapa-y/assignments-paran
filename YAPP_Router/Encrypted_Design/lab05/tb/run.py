@@ -24,8 +24,8 @@ vsim_cmd = (
     f"vsim -c "
     f"-voptargs=+acc "
     f"-sv_seed {seed} "
-    f"+UVM_TESTNAME=set_config_test "
-    f"+UVM_VERBOSITY=UVM_HIGH "
+    f"+UVM_TESTNAME=exhaustive_seq_test "
+    f"+UVM_VERBOSITY=UVM_FULL "
     f"work.top"
 )
 

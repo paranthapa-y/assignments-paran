@@ -10,4 +10,5 @@
 `include "yapp_tx_driver.sv"
 `include "yapp_tx_agent.sv"
 `include "yapp_env.sv"
+`include "yapp_seq_lib.sv"
 
