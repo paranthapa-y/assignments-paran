@@ -11,11 +11,13 @@ class router_tb extends uvm_component;
     super.new(name, parent);
     endfunction
 
+    router_simple_vseq vseq;
+    router_virtual_sequencer vseqr;
+
     function void build_phase (uvm_phase phase);
         uvm_config_db#(int)::set( null,"*","recording_detail",1 );
         uvm_config_db#(int)::set( this, "ch1*", "has_tx", 0);
         uvm_config_db#(int)::set( this, "ch2*", "has_tx", 0);
-        uvm_config_db#(int)::set( this, "ch3*", "has_tx", 0);
         uvm_config_db#(int)::set( this, "ch3*", "has_tx", 0);
         set_config_int("hbus", "num_masters", 1);
         set_config_int("hbus", "num_slaves", 0);
@@ -25,5 +27,14 @@ class router_tb extends uvm_component;
         ch2 =channel_env::type_id::create("ch2", this);
         ch3 =channel_env::type_id::create("ch3", this);
         hbus =hbus_env::type_id::create("hbus", this);
+        vseqr = router_virtual_sequencer::type_id::create("vseqr", this);
+    endfunction
+
+    function void connect_phase(uvm_phase phase);
+        super.connect_phase(phase);
+        //vseqr.hbus_slv_seqr = hbus.masters[0].sequencer;
+        vseqr.hbus_mst_seqr = hbus.masters[0].sequencer;
+        vseqr.yapp_tx_seqr = env.agent.sequencer;
+    
     endfunction
 endclass

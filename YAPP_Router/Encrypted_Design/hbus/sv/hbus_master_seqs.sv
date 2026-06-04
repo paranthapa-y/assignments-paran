@@ -28,15 +28,31 @@ class hbus_base_seq extends uvm_sequence #(hbus_transaction);
   endfunction
 
   task pre_body();
-    starting_phase.raise_objection(this, get_type_name());
+
+  if(starting_phase != null)
+  begin
+    starting_phase.raise_objection(this,get_type_name());
     phase_name = starting_phase.get_name();
-    `uvm_info(get_type_name(), {"raise objection in phase", phase_name}, UVM_MEDIUM)
-  endtask : pre_body
+
+    `uvm_info(get_type_name(),
+              {"raise objection in phase ",phase_name},
+              UVM_MEDIUM)
+  end
+
+endtask
 
   task post_body();
-    starting_phase.drop_objection(this, get_type_name());
-    `uvm_info(get_type_name(), "drop objection", UVM_MEDIUM)
-  endtask : post_body
+
+  if(starting_phase != null)
+  begin
+    starting_phase.drop_objection(this,get_type_name());
+
+    `uvm_info(get_type_name(),
+              "drop objection",
+              UVM_MEDIUM)
+  end
+
+endtask
 
 endclass : hbus_base_seq
 

@@ -15,15 +15,19 @@ class yapp_tx_monitor extends uvm_monitor;
   virtual yapp_if vif; 
   int num_pkt_col = 0;
   ;
+  uvm_analysis_port #(yapp_packet) item_collected_port;
+
   // Constructor
   function new(string name = "yapp_tx_monitor", uvm_component parent = null);
     super.new(name, parent);
+
   endfunction
   
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     if (!(uvm_config_db#(virtual yapp_if)::get(this,"","vif",vif)))
       `uvm_fatal("VIFE", "vif not set")
+    item_collected_port = new("item_collected_port", this);
     
   endfunction
 
@@ -72,6 +76,8 @@ class yapp_tx_monitor extends uvm_monitor;
       this.end_tr(packet_collected);
       `uvm_info(get_type_name(), $sformatf("Packet Collected :\n%s", packet_collected.sprint()), UVM_LOW)
       num_pkt_col++;
+      item_collected_port.write(packet_collected);
+
   endtask : collect_packet
 
 endclass : yapp_tx_monitor

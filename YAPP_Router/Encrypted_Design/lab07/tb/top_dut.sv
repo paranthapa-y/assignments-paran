@@ -1,20 +1,11 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
-`include "../../channel/sv/channel_if.sv"
-`include "../../hbus/sv/hbus_if.sv"
-// Your YAPP UVC
+
 `include "../../yapp/sv/yapp_pkg.sv"
-// UVC packages
 `include "../../hbus/sv/hbus_pkg.sv"
-`include "../../channel/sv/channel_pkg.sv"   // if it exists
+`include "../../channel/sv/channel_pkg.sv"
 
-import yapp_pkg::*;
-import hbus_pkg::*;
-import channel_pkg::*;
-
-
-
-// Testbench files
+// TB files
 `include "router_tb.sv"
 `include "router_test_lib.sv"
 
@@ -72,9 +63,7 @@ module top_no_dut;
     uvm_config_db#(virtual channel_if)::set(null, "*", "vif", ch_1);
     uvm_config_db#(virtual channel_if)::set(null, "*", "vif", ch_3);
     uvm_config_db#(virtual channel_if)::set(null, "*", "vif", ch_2);
-
     uvm_config_db#(virtual hbus_if)::set(null, "*", "vif", h_bus);
-
     run_test();
   end
 

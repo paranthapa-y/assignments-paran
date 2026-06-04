@@ -29,7 +29,7 @@ vsim_cmd = (
     f"vsim -c "
     f"-voptargs=+acc "
     f"-sv_seed {seed} "
-    f"+UVM_TESTNAME=simple_test "
+    f"+UVM_TESTNAME=router_vtest "
     f"+UVM_VERBOSITY=UVM_FULL "
     f"work.top_no_dut"
 )
@@ -44,8 +44,8 @@ vsim_proc = subprocess.Popen(
 )
 
 # Step 4: Run simulation (send 'run -all' to vsim interactive session)
-# stdout, stderr = vsim_proc.communicate('run -all\nexit\n')
-stdout, stderr = vsim_proc.communicate('run 1us\nexit\n')
+stdout, stderr = vsim_proc.communicate('run -all\nexit\n')
+# stdout, stderr = vsim_proc.communicate('run `10000us`\nexit\n')
 
 print(stdout)
 if stderr:

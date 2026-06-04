@@ -15,7 +15,7 @@ class base_test extends uvm_test;
 
 	function void end_of_elaboration_phase(uvm_phase phase);
         super.end_of_elaboration_phase(phase);
-		uvm_top.print_topology();
+		// uvm_top.print_topology();
 	endfunction
 
 	task run_phase(uvm_phase phase);
@@ -25,26 +25,31 @@ class base_test extends uvm_test;
    endtask
 endclass
 
-class simple_test extends base_test;
-	`uvm_component_utils(simple_test)
+class router_vtest extends base_test;
+	`uvm_component_utils(router_vtest)
 
 	yapp_seq_lib seq_lib;
 
-	function new(string name = "simple_test" , uvm_component parent = null);
+	function new(string name = "router_vtest" , uvm_component parent = null);
 		super.new(name,parent);
 	endfunction
 
 	function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
+		`uvm_info("DEBUG",
+          "Setting default sequence on virtual sequencer",
+          UVM_NONE)
 		seq_lib = yapp_seq_lib::type_id::create("seq_lib");
 		seq_lib.selection_mode = UVM_SEQ_LIB_RANDC;
 		seq_lib.min_random_count = 5;
       	seq_lib.max_random_count = 5;
-		uvm_config_wrapper::set(this, "r_tb.env.agent.sequencer.run_phase","default_sequence",yapp_012_seq::type_id::get());
+		//uvm_config_wrapper::set(this, "r_tb.env.agent.sequencer.run_phase","default_sequence",yapp_012_seq::type_id::get());
+		uvm_config_wrapper::set(this,"r_tb.vseqr.run_phase","default_sequence",router_simple_vseq::type_id::get());
+
 		uvm_config_wrapper::set(this,"r_tb.ch1.rx_agent.sequencer.run_phase","default_sequence",channel_rx_resp_seq::type_id::get());
 		uvm_config_wrapper::set(this,"r_tb.ch2.rx_agent.sequencer.run_phase","default_sequence",channel_rx_resp_seq::type_id::get());
 		uvm_config_wrapper::set(this,"r_tb.ch3.rx_agent.sequencer.run_phase","default_sequence",channel_rx_resp_seq::type_id::get());
-	  	set_type_override_by_type( yapp_packet::get_type(), short_yapp_packet::get_type());
+	  	// set_type_override_by_type( yapp_packet::get_type(), short_yapp_packet::get_type());
 
 	endfunction
 

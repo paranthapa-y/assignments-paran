@@ -32,7 +32,7 @@ class demo_base_test extends uvm_test;
   endfunction : build_phase
 
   function void end_of_elaboration_phase(uvm_phase phase);
-    uvm_top.print_topology();
+    // uvm_top.print_topology();
   endfunction
 
 endclass : demo_base_test

@@ -148,6 +148,11 @@ task channel_monitor::run_phase(uvm_phase phase);
 
   // Collect yapp_packets
   task channel_monitor::collect_packet();
+
+
+
+
+  
       //Monitor looks at the bus on posedge (Driver uses negedge)
       //@(posedge vif.data_vld);
       @(posedge vif.clock iff (vif.data_vld && !vif.suspend));

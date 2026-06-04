@@ -51,11 +51,16 @@ class yapp_012_seq extends yapp_5_packets;
     `uvm_info(get_type_name(),
               "Executing yapp_012_seq",
               UVM_LOW)
+    `uvm_info("DEBUG","Sending addr0",UVM_NONE)
+    `uvm_do_with(req,{addr==0;})
 
-    `uvm_do_with(req, { addr == 0; })
-    `uvm_do_with(req, { addr == 1; })
-    `uvm_do_with(req, { addr == 2; })
+    `uvm_info("DEBUG","Sending addr1",UVM_NONE)
+    `uvm_do_with(req,{addr==1;})
 
+    `uvm_info("DEBUG","Sending addr2",UVM_NONE)
+    `uvm_do_with(req,{addr==2;})
+
+    `uvm_info("DEBUG","Finished yapp_012_seq",UVM_NONE)
   endtask
 
 endclass

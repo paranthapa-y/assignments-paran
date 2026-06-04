@@ -15,6 +15,9 @@ import channel_pkg::*;
 
 
 // Testbench files
+`include "router_virtual_sequencer.sv"
+`include "router_virtual_seqs.sv"
+
 `include "router_tb.sv"
 `include "router_test_lib.sv"
 
@@ -69,9 +72,26 @@ module top_no_dut;
   initial begin
     // put interface into config_db for driver + monitor
     uvm_config_db#(virtual yapp_if)::set(null, "*", "vif", in0);
-    uvm_config_db#(virtual channel_if)::set(null, "*", "vif", ch_1);
-    uvm_config_db#(virtual channel_if)::set(null, "*", "vif", ch_3);
-    uvm_config_db#(virtual channel_if)::set(null, "*", "vif", ch_2);
+    uvm_config_db#(virtual channel_if)::set(
+    null,
+    "uvm_test_top.r_tb.ch1*",
+    "vif",
+    ch_1
+    );
+
+    uvm_config_db#(virtual channel_if)::set(
+        null,
+        "uvm_test_top.r_tb.ch2*",
+        "vif",
+        ch_2
+    );
+
+    uvm_config_db#(virtual channel_if)::set(
+        null,
+        "uvm_test_top.r_tb.ch3*",
+        "vif",
+        ch_3
+    );
 
     uvm_config_db#(virtual hbus_if)::set(null, "*", "vif", h_bus);
 
