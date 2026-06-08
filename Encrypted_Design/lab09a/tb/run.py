@@ -18,7 +18,7 @@ def run_command(cmd):
 # Usage: python3 run.py [mode] [UVM_TESTNAME] [UVM_VERBOSITY]
 # mode: no_dut (default) or dut
 # -----------------------------
-mode = "no_dut" if len(sys.argv) < 2 else sys.argv[1]
+mode = "dut" if len(sys.argv) < 2 else sys.argv[1]
 uvm_testname = "base_test" if len(sys.argv) < 3 else sys.argv[2]
 uvm_verbosity = "UVM_MEDIUM" if len(sys.argv) < 4 else sys.argv[3]
 

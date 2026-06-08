@@ -8,11 +8,6 @@ import uvm_pkg::*;
 `include "../../hbus/sv/hbus_pkg.sv"
 `include "../../channel/sv/channel_pkg.sv"   // if it exists
 
-import yapp_pkg::*;
-import hbus_pkg::*;
-import channel_pkg::*;
-
-
 
 // Testbench files
 `include "router_virtual_sequencer.sv"

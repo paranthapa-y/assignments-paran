@@ -1,63 +1,47 @@
-//------------------------------------------------------------------------------
-// File name   : yapp_tx_driver.sv
-// Description : Transmit driver for YAPP protocol
-//------------------------------------------------------------------------------
-
-// Import UVM
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 
 class yapp_tx_driver extends uvm_driver #(yapp_packet);
 
-  // Register with factory
-  `uvm_component_utils(yapp_tx_driver)
-  int num_sent = 0;
-
-  // Constructor
-  function new(string name = "yapp_tx_driver", uvm_component parent = null);
+  `uvm_component_param_utils(yapp_tx_driver);
+  yapp_packet pkt;
+  virtual yapp_if vif;
+  int num_pkt_col;
+  int num_sent;
+  function new(string name, uvm_component parent = null);
     super.new(name, parent);
   endfunction
-
-  virtual yapp_if vif;
-  yapp_packet packet;
-
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-    if (!(uvm_config_db#(virtual yapp_if)::get(this,"","vif",vif)))
-      `uvm_fatal("VIFE", "vif not set")
-
-    packet = yapp_packet::type_id::create("packet");
-    
+    if (!yapp_vif_config::get(this, "", "vif", vif))
+      `uvm_fatal("NOVIF", {"vif not set for: ", get_full_name(), ".vif"})
   endfunction
-
-  // UVM run_phase
   task run_phase(uvm_phase phase);
-    yapp_packet pkt;
+    fork
+      get_and_drive();
+      reset_signals();
+    join
+  endtask
 
+
+  // Gets packets from the sequencer and passes them to the driver. 
+  task get_and_drive();
+    @(negedge vif.reset);
+    `uvm_info(get_type_name(), "Reset dropped", UVM_MEDIUM)
     forever begin
-      // Get next item from sequencer
-      seq_item_port.get_next_item(pkt);
-
-      // Send to DUT (currently just prints)
-      send_to_dut(pkt);
-
-      // Indicate transaction is complete
+      seq_item_port.get_next_item(req);
+      send_to_dut(req);
       seq_item_port.item_done();
     end
-  endtask : run_phase
+  endtask : get_and_drive
 
-  
-  function void start_of_simulation_phase(uvm_phase phase);
-    `uvm_info(get_type_name(), $sformatf("Inside start_of_simulation_phase : %s", get_full_name()),UVM_HIGH)
-  endfunction
-
-  // Send packet to DUT (placeholder implementation)
+  // Reset all TX signals
   task reset_signals();
     forever begin
       @(posedge vif.reset);
-       `uvm_info(get_type_name(), "Reset observed", UVM_MEDIUM)
-      vif.in_data           <=  'hz;
-      vif.in_data_vld       <= 1'b0;
+      `uvm_info(get_type_name(), "Reset observed", UVM_MEDIUM)
+      vif.in_data     <= 'hz;
+      vif.in_data_vld <= 1'b0;
       disable send_to_dut;
     end
   endtask : reset_signals
@@ -66,11 +50,10 @@ class yapp_tx_driver extends uvm_driver #(yapp_packet);
   task send_to_dut(yapp_packet packet);
 
     // Wait for packet delay
-    repeat(packet.packet_delay)
-      @(negedge vif.clock);
+    repeat (packet.packet_delay) @(negedge vif.clock);
 
     // Start to send packet if not in_suspend signal
-      @(negedge vif.clock iff (!vif.in_suspend));
+    @(negedge vif.clock iff (!vif.in_suspend));
 
     // Begin Transaction recording
     void'(this.begin_tr(packet, "Input_YAPP_Packet"));
@@ -79,26 +62,29 @@ class yapp_tx_driver extends uvm_driver #(yapp_packet);
     vif.in_data_vld <= 1'b1;
 
     // Drive the Header {Length, Addr}
-    vif.in_data <= { packet.length, packet.addr };
+    vif.in_data <= {packet.length, packet.addr};
 
     // Drive Payload
-    for (int i=0; i<packet.payload.size(); i++) begin
-      @(negedge vif.clock iff (!vif.in_suspend))
-      vif.in_data <= packet.payload[i];
+    for (int i = 0; i < packet.payload.size(); i++) begin
+      @(negedge vif.clock iff (!vif.in_suspend)) vif.in_data <= packet.payload[i];
     end
     // Drive Parity and reset Valid
-    @(negedge vif.clock iff (!vif.in_suspend))
-    vif.in_data_vld <= 1'b0;
-    vif.in_data  <= packet.parity;
+    @(negedge vif.clock iff (!vif.in_suspend)) vif.in_data_vld <= 1'b0;
+    vif.in_data <= packet.parity;
 
-    @(negedge  vif.clock)
-      vif.in_data  <= 8'bz;
+    @(negedge vif.clock) vif.in_data <= 8'bz;
     num_sent++;
+    `uvm_info(get_type_name(), $sformatf("Packet Sent :\n%s", packet.sprint()), UVM_LOW)
+    
 
     // End transaction recording
     this.end_tr(packet);
 
   endtask : send_to_dut
 
-endclass : yapp_tx_driver
-
+  // UVM report_phase() 
+  function void report_phase(uvm_phase phase);
+    `uvm_info(get_type_name(), $sformatf("Report: YAPP TX driver sent %0d packets", num_sent),
+              UVM_LOW)
+  endfunction : report_phase
+endclass

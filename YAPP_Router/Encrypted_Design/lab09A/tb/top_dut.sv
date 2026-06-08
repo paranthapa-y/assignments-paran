@@ -2,13 +2,17 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "../../channel/sv/channel_if.sv"
 `include "../../hbus/sv/hbus_if.sv"
+`include "../../yapp/sv/yapp_if.sv"
 // Your YAPP UVC
 `include "../../yapp/sv/yapp_pkg.sv"
+
 // UVC packages
 `include "../../hbus/sv/hbus_pkg.sv"
 `include "../../channel/sv/channel_pkg.sv"   // if it exists
 
 import yapp_pkg::*;
+`include "../sv/router_scoreboard.sv"
+
 import hbus_pkg::*;
 import channel_pkg::*;
 
@@ -23,7 +27,7 @@ import channel_pkg::*;
 
 // DUT RTL
 `include "../../Encrypted/yapp_router.svh"
-module top_no_dut;
+module top_dut;
 
  // clock, reset are generated here for this DUT
   bit reset;
@@ -114,4 +118,4 @@ module top_no_dut;
   // Generate Clock
   always #10 clock = ~clock;
 
-endmodule : top_no_dut
+endmodule : top_dut

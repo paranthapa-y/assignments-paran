@@ -84,7 +84,7 @@ endclass : yapp_packet
 class short_yapp_packet extends yapp_packet;
   `uvm_object_utils(short_yapp_packet)
   constraint length_c {length <15;}
-  constraint addr_c {addr != 2'b10;}
+  // constraint addr_c {addr != 2'b10;}
 endclass
 
 `endif  // YAPP_PACKET_SV

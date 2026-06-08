@@ -32,7 +32,7 @@ class yapp_tx_monitor extends uvm_monitor;
   endfunction
 
   function void start_of_simulation_phase(uvm_phase phase);
-    `uvm_info(get_type_name(), $sformatf("Inside start_of_simulation_phase : %s", get_full_name()),UVM_HIGH)
+    // `uvm_info(get_type_name(), $sformatf("Inside start_of_simulation_phase : %s", get_full_name()),UVM_HIGH)
   endfunction
 
   // UVM run_phase
@@ -44,7 +44,7 @@ class yapp_tx_monitor extends uvm_monitor;
 
     // Look for packets after reset
     @(negedge vif.reset)
-    `uvm_info(get_type_name(), "Detected Reset Done", UVM_MEDIUM)
+    // `uvm_info(get_type_name(), "Detected Reset Done", UVM_MEDIUM)
     forever 
       collect_packet();
   endtask : run_phase
