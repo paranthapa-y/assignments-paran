@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : router_tb.sv
+Description   : Testbench module coordinating test environment and DUT
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 class router_tb extends uvm_component;
     `uvm_component_utils(router_tb)
     yapp_env env;

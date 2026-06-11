@@ -14,13 +14,33 @@ class yapp_tx_monitor extends uvm_monitor;
   yapp_packet packet_collected;
   virtual yapp_if vif; 
   int num_pkt_col = 0;
-  ;
+  covergroup cg;
+    len_cp : coverpoint packet_collected.length{
+      bins MIN = {1};
+      bins MAX = {63};
+      bins BABY = {[2:10]};
+      bins TEENY = {[11:40]};
+      bins ROWNUP = {[41:62]};
+    }
+    addr_cp : coverpoint packet_collected.addr {
+    bins a0 = {0};
+    bins a1 = {1};
+    bins a2 = {2};
+    illegal_bins illegal = {3};
+    }
+    parity_cp : coverpoint packet_collected.parity_type {
+    bins good = {GOOD_PARITY};
+    bins bad  = {BAD_PARITY};
+    }
+
+    addr_parity_len_cp : cross len_cp, addr_cp, parity_cp;
+  endgroup
   uvm_analysis_port #(yapp_packet) item_collected_port;
 
   // Constructor
   function new(string name = "yapp_tx_monitor", uvm_component parent = null);
     super.new(name, parent);
-
+    cg = new();
   endfunction
   
   function void build_phase(uvm_phase phase);
@@ -49,6 +69,8 @@ class yapp_tx_monitor extends uvm_monitor;
       collect_packet();
   endtask : run_phase
 
+  
+
   task collect_packet();
       //Monitor looks at the bus on posedge (Driver uses negedge)
       @(posedge vif.in_data_vld);
@@ -76,6 +98,7 @@ class yapp_tx_monitor extends uvm_monitor;
       this.end_tr(packet_collected);
       `uvm_info(get_type_name(), $sformatf("Packet Collected :\n%s", packet_collected.sprint()), UVM_LOW)
       num_pkt_col++;
+      cg.sample();
       item_collected_port.write(packet_collected);
 
   endtask : collect_packet

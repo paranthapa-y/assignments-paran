@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : router_module_env.sv
+Description   : UVM environment router_module_env composing agents, scoreboards, and reference model
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 class router_module_env extends uvm_env;
     `uvm_component_utils(router_module_env)
     router_reference refer;

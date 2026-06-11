@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------
 File name     : yapp_packet.sv
-Description   : YAPP packet class used by both TX and RX.
+Description   : UVM sequence yapp_packet generating test stimulus scenarios
 -------------------------------------------------------------------
 -----------------------------------------------------------------*/
 

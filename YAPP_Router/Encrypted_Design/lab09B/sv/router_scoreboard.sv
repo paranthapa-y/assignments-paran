@@ -1,7 +1,15 @@
+/*-----------------------------------------------------------------
+File name     : router_scoreboard.sv
+Description   : Scoreboard for checking DUT output correctness against expected results
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 `uvm_analysis_imp_decl(_yapp)
 `uvm_analysis_imp_decl(_channel0)
 `uvm_analysis_imp_decl(_channel1)
 `uvm_analysis_imp_decl(_channel2)
+// Scoreboard for checking DUT output correctness against expected results
 class router_scoreboard extends uvm_scoreboard;
     `uvm_component_utils(router_scoreboard)
 

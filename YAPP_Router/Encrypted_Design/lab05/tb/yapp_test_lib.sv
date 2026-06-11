@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : yapp_test_lib.sv
+Description   : Test sequence library defining stimulus and scenarios
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 class base_test extends uvm_test;
 
 	

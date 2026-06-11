@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : yapp_tx_seqs.sv
+Description   : UVM sequence yapp_5_packets generating test stimulus scenarios
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 class yapp_5_packets extends uvm_sequence #(yapp_packet);
 
   `uvm_object_utils(yapp_5_packets)

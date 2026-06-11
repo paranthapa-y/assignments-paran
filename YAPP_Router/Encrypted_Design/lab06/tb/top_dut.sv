@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : top_dut.sv
+Description   : Top-level testbench module instantiating DUT and connecting all interfaces
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "../sv/yapp.svh"
@@ -6,6 +13,7 @@ import uvm_pkg::*;
 `include "router_tb.sv"
 `include "router_test_lib.sv"
 `include "../../Encrypted/yapp_router.svh"
+// Top-level testbench module instantiating DUT and connecting all interfaces
 module top_no_dut;
 
  // clock, reset are generated here for this DUT

@@ -65,6 +65,55 @@ class yapp_012_seq extends yapp_5_packets;
 
 endclass
 
+class yapp_bad_parity_seq extends yapp_5_packets;
+
+  `uvm_object_utils(yapp_bad_parity_seq)
+
+  function new(string name = "yapp_bad_parity_seq");
+    super.new(name);
+  endfunction
+
+  task body();
+
+    `uvm_info(get_type_name(),
+              "Executing yapp_bad_parity_seq",
+              UVM_LOW)
+    // `uvm_info("DEBUG","Sending addr0",UVM_NONE)
+    `uvm_do_with(req,{parity_type == BAD_PARITY;})
+
+    
+
+    `uvm_info("DEBUG","Finished yapp_bad_parity_seq",UVM_NONE)
+  endtask
+
+endclass
+
+class yapp_bad_size_seq extends yapp_5_packets;
+
+  `uvm_object_utils(yapp_bad_size_seq)
+
+  function new(string name = "yapp_bad_size_seq");
+    super.new(name);
+  endfunction
+
+  int max_pkt_size;
+
+  task body();
+
+    `uvm_info(get_type_name(),
+              "Executing yapp_bad_size_seq",
+              UVM_LOW)
+    // `uvm_info("DEBUG","Sending addr0",UVM_NONE)
+    `uvm_do_with(req,{length > max_pkt_size;})
+
+    
+
+    `uvm_info("DEBUG","Finished yapp_bad_size_seq",UVM_NONE)
+  endtask
+
+endclass
+
+
 
 //------------------------------------------------------------------------------
 // Sequence : Single packet to address 1

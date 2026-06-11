@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : router_reference.sv
+Description   : Reference model implementing golden behavior for DUT functionality
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 `uvm_analysis_imp_decl(_yappr)
 `uvm_analysis_imp_decl(_hbusr)
 

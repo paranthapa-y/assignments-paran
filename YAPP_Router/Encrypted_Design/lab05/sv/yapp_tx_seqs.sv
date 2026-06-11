@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------
 File name     : yapp_tx_seqs.sv
-Description   : YAPP Sequences
+Description   : UVM sequence yapp_5_packets generating test stimulus scenarios
 -----------------------------------------------------------------*/
 
 `ifndef YAPP_TX_SEQS_SV

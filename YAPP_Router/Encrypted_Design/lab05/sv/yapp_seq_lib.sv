@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : yapp_seq_lib.sv
+Description   : UVM sequence yapp_seq_lib generating test stimulus scenarios
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 class yapp_seq_lib extends uvm_sequence_library #(yapp_packet);
     `uvm_object_utils(yapp_seq_lib)
 

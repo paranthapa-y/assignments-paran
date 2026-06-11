@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : yapp_pkg.sv
+Description   : Package containing type definitions and macros for verification environment
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 package yapp_pkg;
 
   // import the UVM library

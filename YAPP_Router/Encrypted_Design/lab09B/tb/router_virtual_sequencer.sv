@@ -1,3 +1,10 @@
+/*-----------------------------------------------------------------
+File name     : router_virtual_sequencer.sv
+Description   : Virtual sequencer for coordinating stimulus across multiple agents
+Notes         :
+-------------------------------------------------------------------
+-----------------------------------------------------------------*/
+
 class router_virtual_sequencer extends uvm_sequencer #(uvm_sequence_item);;
     `uvm_component_utils(router_virtual_sequencer)
 
