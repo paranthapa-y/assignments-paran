@@ -13,8 +13,8 @@ module tb;
 
   des_if vif(clk);
   ram #(
-    .W_LATENCY (0),
-    .R_LATENCY (0),
+    .W_LATENCY (3),
+    .R_LATENCY (2),
     .ADDR_WIDTH (4),
     .DATA_WIDTH (4)
   ) dut (
@@ -40,6 +40,6 @@ module tb;
   
   end
   initial
-    #10000 $finish;
+    #2000 $finish;
 
 endmodule

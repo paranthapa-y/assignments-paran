@@ -1,0 +1,2 @@
+var g_data = {"12":[11,"in0",1],"13":[11,"hbus_if0",1],"14":[11,"channel_if0",1],"15":[11,"channel_if1",1],"16":[11,"channel_if2",1],"17":[11,"dut",1],"11":[-1,"top_dut",1],"19":[-1,"yapp_pkg",1],"24":[-1,"channel_pkg",1],"45":[-1,"hbus_pkg",1]};
+processInstLinks(g_data);

@@ -1,0 +1,336 @@
+
+Creating a Scoreboard Using TLM  Lab 9A 
+36  SystemVerilog Advanced Verification Using UVM  5/22/11 
+ 
+ 
+Lab 9A  Creating a Scoreboard Using TLM 
+ 
+Objective:  To build a scoreboard using TLM.  
+ 
+For this lab, you will build and connect a scoreboard for the router, and create TLM analysis port 
+connections to hook up the scoreboard to the UVCs. 
+ 
+The router Module UVC is a complex design, so this lab has been deliberately broken down into 
+separate steps to build the UVC progressively. 
+ 
+First step is to implement the scoreboard component itself and connect it up to the YAPP and 
+Channel UVCs. For this part of the lab we assume all packets are sent to legal addresses with legal 
+payload length, i.e. the router does not drop any packets.  
+ 
+ 
+port 
+imp 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.  We will be working with the testbench, testclass and top files from lab08. Copy these 
+files from lab08/tb into lab09a/tb. Work in the lab09a/tb directory. 
+  2.  A TLM analysis port has already been implemented in the Channel UVC monitors. 
+Check this to make sure you understand how it is written. 
+Note that the Channel UVC has a common monitor, channel_monitor.sv, for both 
+the TX and RX agents. The Channel monitor analysis port for collected YAPP packets is 
+named item_collected_port. 
+  3.  Modify yapp/sv/yapp_tx_monitor.sv to create an analysis port instance. 
+a.  Declare an analysis port object, parameterized to the correct type. 
+b.  Construct the analysis port in the monitor constructor. 
+ 
+c.  Call the port write() at the appropriate point. 
+testbench 
+Channel0 
+UVC 
+Chan0 
+YAPP 
+UVC  Chan1 
+ Chan2  (also for 
+other 
+channels) 
+Mon 
+ 
+Scoreboard  Mon 
+Lab 9A  Creating a Scoreboard Using TLM 
+5/22/2011  SystemVerilog Advanced Verification Using UVM  37 
+ 
+ 
+4.  In the lab9a/sv directory, create the scoreboard, router_scoreboard.sv. 
+a.  Define four analysis imp objects (for the YAPP and three Channels) using 
+`uvm_analysis_imp_decl macros and uvm_analysis_imp_* objects. 
+b.  Add a constructor, and create analysis imp instances in the constructor. 
+c.  Use the YAPP write()implementation to clone the packet and then push the 
+packet to a queue. Hint: Use a queue for each address. 
+ 
+d.  Use Channel write()implementations to pop packets from the appropriate queue 
+and compare them to the channel packets. 
+ 
+e.  Add counters for the number of packets received, wrong packets (compare failed) and 
+matched packets (compare passed). 
+ 
+f.  Add a report_phase() method to print the number of packets received, wrong 
+packets, matched packets and number of packets left in the queues at the end of 
+simulation. 
+  5.  In the lab09a/tb directory, modify the router_tb.sv as follows: 
+a.  Declare and build the scoreboard. 
+ 
+b.  Add the TLM connections between YAPP, Channel, and scoreboard. 
+ 
+c.  Use the same multichannel sequences as in lab08 to test your scoreboard 
+implementation, i.e. short packets with legal addresses, so that no packets are dropped 
+by the router. 
+ 
+d.  Check that the simulation results are correct.  
+Router Module UVC (Optional)  Lab 9B 
+38  SystemVerilog Advanced Verification Using UVM  5/22/11 
+ 
+ 
+Lab 9B  Router Module UVC (Optional) 
+ 
+Objective:  To create a module UVC for the router using the scoreboard  
+ 
+In reality, the scoreboard will only be one part of a larger router module UVC. For example the 
+router UVC may also contain reference models and coverage. All these components will be enclosed 
+in an env class. 
+In our example, we need to know the MAXPKTSIZE and ENABLE router settings so we know which 
+packets are dropped. We can implement this in a separate router reference model component. 
+ 
+The router reference connects to the YAPP and HBUS UVC analysis ports and selectively passes on 
+YAPP input packets to the scoreboard depending on the HBUS settings. An env wrapper will 
+instantiate both reference and scoreboard into a single router module UVC, as shown.  
+router module UVC 
+ 
+port 
+imp 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.  We will be working with the files from lab09a. Copy these files from lab09a into 
+lab09b. Work in the lab09b directory 
+  2.  A TLM analysis port has already been implemented in the HBUS UVC monitor. 
+Note that the HBUS UVC has a common monitor, hbus_monitor.sv, for both the 
+master and slave agents. The HBUS monitor analysis port for collected 
+hbus_transaction's is named item_collected_port. 
+Check this to make sure you understand how it is written. 
+  3.  Create the router reference, router_reference.sv, in the lab09b/sv directory. 
+a.  Extend from uvm_component. 
+b.  Define two analysis imp objects for the YAPP and HBUS monitor analysis ports, 
+using `uvm_analysis_imp_decl macros and uvm_analysis_imp_* 
+objects. (Copy declarations from your scoreboard.) These are for input data to the 
+reference. 
+Chan0 
+YAPP  YAPP 
+Chan1 
+HBUS 
+Chan2 
+Reference 
+ 
+Scoreboard 
+Lab 9B  Router Module UVC (Optional) 
+5/22/2011  SystemVerilog Advanced Verification Using UVM  39 
+ 
+ 
+c.  Define one analysis port object for the valid YAPP packets. This is for output data to 
+the scoreboard. 
+ 
+d.  Define variables to mirror the MAXPKTSIZE and ENABLE registers of the router and 
+update these in the HBUS write() implementation. 
+e.  In your YAPP write() implementation, forward the YAPP packets onto the 
+scoreboard only if the packet is valid (router enabled; MAXPKTSIZE not exceeded; 
+address valid). Keep a separate count of invalid packets dropped due to size, enable 
+and address violations. 
+Note in a real-world example, we would have to explore race conditions when the 
+HBUS changes packet size during the processing of a packet. However there is a 
+REGMEM UVM feature specifically for handling and verifying registers in a design. 
+REGMEM is covered in the advanced UVM training. 
+  4.  Create the router module environment, router_module_env.sv, in the 
+lab09b/sv directory. 
+a.  Declare and build the scoreboard and router reference components. 
+ 
+b.  Connect the “valid YAPP” analysis port of the reference model to the YAPP analysis 
+imp of the scoreboard model. 
+  5.  In the tb directory, modify the router_tb.sv. 
+a.  Replace the scoreboard declaration and build with the router module. 
+ 
+b.  Modify the TLM connections for the YAPP and Channel analysis ports to allow for 
+the router_env layer. 
+c.  Add a connection for the HBUS analysis port. 
+  6.  Create a router.svh file containing includes for all the router module UVC files, and 
+reference this in your top module. 
+ 
+a.  Use the same multichannel sequences to test your scoreboard and system monitor 
+implementation. 
+ 
+b.  Check the simulation results are correct and the scoreboard and monitor report the 
+right number of packets. 
+  7.  The router module can now be used as a standalone UVC. Copy your router module UVC 
+files to the router directory. 
+ 
+Further Work with TLM Connections (Optional)  Lab 9C 
+40  SystemVerilog Advanced Verification Using UVM  5/22/11 
+ 
+ 
+Lab 9C  Further Work with TLM Connections (Optional) 
+ 
+Objective:  To use export TLM connections with the router module UVC  
+ 
+You must complete labs 9A and 9B before starting this lab. 
+ 
+A module UVC does not have such a clearly defined architecture as an interface UVC. With an 
+interface UVC, TLM analysis port objects are always defined in the monitor components. We 
+know where to look in order to find these. With a module UVC, it can be more difficult to find 
+declarations for the TLM analysis imp objects. 
+One technique is to extract all the TLM objects used in the module UVC to the top level 
+environment. These top-level objects are then connected internally to the correct sub-component. 
+ 
+router module UVC  port 
+    imp 
+export 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+1.  Modify your router module UVC to present the external TLM connections as top-level 
+objects of the router module env. Note the following: 
+  You will need to declare export objects in the Router Module environment for the 
+imp objects of the monitor and scoreboard. 
+  You must connect all the export objects to imp objects in the Router Module 
+connect method. 
+  The internal YAPP valid connection between monitor and scoreboard does not need 
+to be routed to the Router Module environment. 
+  The testbench connections to the Router Module UVC will need to be modified. 
+  2.  Test your changes in simulation.  
+Chan0 
+YAPP  YAPP 
+Chan1 
+HBUS 
+Chan2 
+Reference 
+ 
+Scoreboard 
+Lab 10  Writing Tests 
+5/22/2011  SystemVerilog Advanced Verification Using UVM  41 
+ 
+ 
+Lab 10  Writing Tests 
+ 
+Objective:  To explore structuring tests and create a generation scheme with an 
+UVM SystemVerilog verification environment.  
+ 
+To achieve this objective, use the yapp environment to create directed random tests. 
+ 
+Creating Virtual Sequences 
+  1.  Create a set of sequences that configures the device once, and sends packets with good 
+and bad parity and bad size. 
+Bad size is related to max_packet_size. 
+  2.  Change the max_packet_size on the fly and have the bad size sequence adjust 
+dynamically. 
+ 
+Making a Virtual Sequences and Scoreboard 
+  3.  Send 20-30 packets to the device and disable the DUT by writing to the enable register. 
+  4.  Wait for a few cycles and enable the device. 
+  5.  Verify using the waveform viewer that the device is operating properly. 
+ 
+Writing a Test 
+  6.  Write a test in which the distribution of packet size is as follows: 
+20: < (max_packet_size - 2) 
+30: (max_packet_size -1) 
+30: max_packet_size 
+20: >max_packet_size 
+  7.  Generate packets of this distribution with all generated sequences. 
+Writing Tests  Lab 10  
+ 
+Writing a Test (Another Method) 
+  8.  Write an API for writing simple tests, directed or random. 
+For example, create a write and a read task for the host interface 
+write_hif(addr, data) 
+read_hif(addr, output data) 
+Tip: Make this task invoke `uvm_do_with(...) inside a sequence. 
+  9.  From the run_phase() method of a test, call a series of write_hif and read_hif 
+to test this simplified interface. 
+Would this mechanism work for engineers who want to do directed testing or for 
+designers that want a simple test writer interface?  
+Lab B  Creating a Simple Functional Coverage Model  
+43  
+Lab B  Creating a Simple Functional Coverage Model 
+ 
+Objective:  To understand where to implement cover groups in UVM architecture.  
+ 
+To achieve this objective, you need to create a coverage model for the input packet traffic to collect 
+the following info: 
+ 
+  REQ1: Ensure all lengths of packets are sent into dut. Create buckets to detect MIN, 
+MAX, BABY, TEENY, GROWNUP packets. 
+ 
+  REQ2: Ensure all addresses received a packet, including illegal address. 
+  REQ3: Ensure all size packets were sent to all addresses with parity errors, except for 
+addr3. 
+  REQ4 (optional): Ensure that packets of different lengths are transmitted to all addresses 
+with zero delay between transmissions. 
+  1.  Create a covergroup in the yapp_tx_monitor.sv. 
+ 
+Remember the syntax for a covergroup instantiated inside a class is different than one 
+instantiated in a module. In a class, a covergroup instance is created by calling new() on 
+the covergroup name. A separate covergroup variable is not required: 
+function new (...); 
+super.new(...); 
+covergroup_name = new(); 
+endfunction: new; 
+  2.  Decide how to sample coverage for packets sent to the DUT. 
+  3.  Create a coverpoint for REQ1 to sample the length field and create bins to reflect the 
+following ranges: 
+MIN = 1 
+MAX = 63 
+BABY in [2..10] 
+TEENY in [11..40] 
+GROWNUP in [41..62] 
+  4.  Run a simulation. 
+You’ll have to modify your irun file to enable functional coverage collection inside the 
+simulator. Use the coverage options as described in the appendix and online tool 
+documents. 
+Creating a Simple Functional Coverage Model  Lab B  
+ 
+5.  Analyze coverage results in ICCR. 
+By default, Incisive® Unified Simulator puts the coverage file  icc.fcov in the 
+directory cov_work/design/test. 
+a.  You can load this file in iccr by launching iccr -gui and loading the functional 
+coverage file from the file menu. 
+ 
+b.  Select the Functional tab and see the distribution of packets observed. 
+  6.  Create a coverpoint for REQ2 and REQ3. Create a coverpoint inside the covergroup 
+created in step 1 for sampling address for REQ2 as follows: 
+ 
+a.  Create a legal address bin to verify that all addresses were sampled. 
+If address 2 wasn’t generated, then it needs to be reflected in this coverpoint. 
+ 
+b.  Create an illegal address bin that reflects how many packets were sent to address 3. 
+  7.  Create a cross inside the covergroup created in step 1 for coding REQ3 by creating a 
+cross with the appropriate fields. 
+How can you work around the limitation that we cannot have ignores in the cross? 
+  8.  Run a simulation and analyze coverage results in ICCR. 
+  9.  Optional: Create a coverpoint for REQ4. 
+ 
+a.  Use a cross to model a transition, because the simulator currently doesn’t support 
+transitions on coverpoint. 
+Tip: You will have to keep track of the previous packet. 
+ 
+b.  To implement back-to-back tracking you’ll have to make sure that the delay is 
+captured in the monitor. 
+Tip: You can use guard expression to control sampling of a cross. 
+  10. Run multiple simulations with random svseed and analyze coverage results in ICCR.

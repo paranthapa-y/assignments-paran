@@ -1,0 +1,143 @@
+# vsim -c -voptargs="+acc" -sv_seed 164406799 "+UVM_TESTNAME=exhaustive_seq_test" "+UVM_VERBOSITY=UVM_FULL" work.top_no_dut 
+# Start time: 10:38:00 on May 26,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_dut_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_no_dut(fast)
+# Loading work.yapp_if(fast__2)
+# Loading work.yapp_router(fast)
+# Loading work.host_ctl(fast)
+# Loading work.port_fsm(fast)
+# Loading work.fifo(fast)
+# Loading work.yapp_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'in_data'. The port definition is at: ../../Encrypted/yapp_router.svh(308).
+#    Time: 0 ps  Iteration: 0  Instance: /top_no_dut/yapp File: top_dut.sv Line: 21
+# Loading /home/paranthapa/Downloads/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run 1us
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test exhaustive_seq_test...
+# UVM_INFO @ 0 ns: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 exhaustive_seq_test     -     @473 
+#   r_tb                       router_tb               -     @480 
+#     env                      yapp_env                -     @516 
+#       agent                  yapp_tx_agent           -     @523 
+#         driver               yapp_tx_driver          -     @538 
+#           rsp_port           uvm_analysis_port       -     @553 
+#           seq_item_port      uvm_seq_item_pull_port  -     @545 
+#         monitor              yapp_tx_monitor         -     @531 
+#         sequencer            yapp_tx_sequencer       -     @561 
+#           rsp_export         uvm_analysis_export     -     @568 
+#           seq_item_export    uvm_seq_item_pull_imp   -     @662 
+#           arbitration_queue  array                   0     -    
+#           lock_queue         array                   0     -    
+#           num_last_reqs      integral                32    'd1  
+#           num_last_rsps      integral                32    'd1  
+# ----------------------------------------------------------------
+# 
+# UVM_INFO @ 0 ns: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 exhaustive_seq_test     -     @473 
+#   r_tb                       router_tb               -     @480 
+#     env                      yapp_env                -     @516 
+#       agent                  yapp_tx_agent           -     @523 
+#         driver               yapp_tx_driver          -     @538 
+#           rsp_port           uvm_analysis_port       -     @553 
+#           seq_item_port      uvm_seq_item_pull_port  -     @545 
+#         monitor              yapp_tx_monitor         -     @531 
+#         sequencer            yapp_tx_sequencer       -     @561 
+#           rsp_export         uvm_analysis_export     -     @568 
+#           seq_item_export    uvm_seq_item_pull_imp   -     @662 
+#           arbitration_queue  array                   0     -    
+#           lock_queue         array                   0     -    
+#           num_last_reqs      integral                32    'd1  
+#           num_last_rsps      integral                32    'd1  
+# ----------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0 ns: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../sv/yapp_tx_driver.sv(51) @ 0 ns: uvm_test_top.r_tb.env.agent.driver [yapp_tx_driver] Inside start_of_simulation_phase : uvm_test_top.r_tb.env.agent.driver
+# UVM_INFO ../sv/yapp_tx_monitor.sv(31) @ 0 ns: uvm_test_top.r_tb.env.agent.monitor [yapp_tx_monitor] Inside start_of_simulation_phase : uvm_test_top.r_tb.env.agent.monitor
+# UVM_INFO ../sv/yapp_tx_sequencer.sv(17) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [yapp_tx_sequencer] Inside start_of_simulation_phase : uvm_test_top.r_tb.env.agent.sequencer
+# UVM_INFO ../sv/yapp_tx_agent.sv(51) @ 0 ns: uvm_test_top.r_tb.env.agent [yapp_tx_agent] Inside start_of_simulation_phase : uvm_test_top.r_tb.env.agent
+# UVM_INFO ../sv/yapp_env.sv(30) @ 0 ns: uvm_test_top.r_tb.env [yapp_env] Inside start_of_simulation_phase : uvm_test_top.r_tb.env
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1390) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] Starting default sequence 'yapp_seq_lib' for phase 'run'
+# UVM_INFO ../sv/yapp_tx_monitor.sv(36) @ 0 ns: uvm_test_top.r_tb.env.agent.monitor [yapp_tx_monitor] Inside the run_phase
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequence_library.svh(660) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer@@seq_lib [SEQLIB/START] Starting sequence library yapp_seq_lib in run phase: 5 iterations in mode UVM_SEQ_LIB_RANDC
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequence_library.svh(666) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer@@seq_lib [SEQLIB/SPRINT] 
+# ------------------------------------------------------------------------
+# Name                  Type                   Size  Value                
+# ------------------------------------------------------------------------
+# seq_lib               yapp_seq_lib           -     @487                 
+#   min_random_count    int unsigned           32    'd5                  
+#   max_random_count    int unsigned           32    'd5                  
+#   selection_mode      uvm_sequence_lib_mode  32    UVM_SEQ_LIB_RANDC    
+#   sequence_count      int unsigned           32    'd5                  
+#   typewide_sequences  queue_object_types     0     -                    
+#   sequences           queue_object_types     5     -                    
+#     [0]               uvm_object_wrapper     45    yapp_012_seq         
+#     [1]               uvm_object_wrapper     45    yapp_1_seq           
+#     [2]               uvm_object_wrapper     45    yapp_111_seq         
+#     [3]               uvm_object_wrapper     45    yapp_repeat_addr_seq 
+#     [4]               uvm_object_wrapper     45    yapp_incr_payload_seq
+#   seqs_distrib        as_int_string          0     -                    
+# ------------------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequence_library.svh(777) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer@@seq_lib [SEQLIB/EXEC] Executing sequence yapp_repeat_addr_seq:1 (yapp_repeat_addr_seq)
+# UVM_INFO ../sv/yapp_tx_seqs.sv(134) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer@@seq_lib.yapp_repeat_addr_seq:1 [yapp_repeat_addr_seq] Executing yapp_repeat_addr_seq
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_reset'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'reset'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_reset'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_configure'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'configure'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_configure'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_main'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'main'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_main'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_shutdown'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'shutdown'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.r_tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_shutdown'
+# UVM_INFO ../sv/yapp_tx_monitor.sv(43) @ 70 ns: uvm_test_top.r_tb.env.agent.monitor [yapp_tx_monitor] Detected Reset Done
+exit
+# End time: 10:38:02 on May 26,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

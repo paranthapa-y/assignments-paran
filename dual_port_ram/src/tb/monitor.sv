@@ -22,8 +22,6 @@ class Monitor;
     forever begin 
       tr = new();
       @(posedge vif.clk);
-      // Sample coverage
-      // cg.sample();
       tr.addra = vif.addra;
       tr.addrb = vif.addrb;
       tr.wea = vif.wea;
@@ -32,7 +30,7 @@ class Monitor;
       tr.dina = vif.dina;
       tr.douta = vif.douta;
       tr.doutb = vif.doutb;
-      tr.display("MON");
+      //tr.display("MON");
       mon2scb.put(tr);
     end
   endtask

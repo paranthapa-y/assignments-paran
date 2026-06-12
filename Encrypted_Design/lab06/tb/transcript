@@ -1,0 +1,182 @@
+# vsim -c -voptargs="+acc" -sv_seed 98207142 "+UVM_TESTNAME=short_incr_payload" "+UVM_VERBOSITY=UVM_FULL" top_dut 
+# Start time: 15:11:42 on Aug 22,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_dut(fast)
+# Loading work.yapp_if(fast__2)
+# Loading work.channel_if(fast__1)
+# Loading work.channel_if(fast__2)
+# Loading work.channel_if(fast__3)
+# Loading work.hbus_if(fast__1)
+# Loading work.yapp_wrapper(fast)
+# Loading work.yapp_router(fast)
+# Loading work.host_ctl(fast)
+# Loading work.port_fsm(fast)
+# Loading work.fifo(fast)
+# Loading work.yapp_if(fast)
+# Loading /home/pranav/Documents/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test short_incr_payload...
+# UVM_INFO router_test_lib.sv(30) @ 0 ns: uvm_test_top [short_incr_payload] end of elabaration phase
+# UVM_INFO @ 0 ns: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 short_incr_payload      -     @474 
+#   tb                         router_tb               -     @481 
+#     env                      uvm_env                 -     @494 
+#       agent                  uvm_agent               -     @501 
+#         driver               uvm_driver #(REQ,RSP)   -     @516 
+#           rsp_port           uvm_analysis_port       -     @531 
+#           seq_item_port      uvm_seq_item_pull_port  -     @523 
+#         monitor              yapp_tx_monitor         -     @509 
+#         sequencer            yapp_tx_sequencer       -     @539 
+#           rsp_export         uvm_analysis_export     -     @546 
+#           seq_item_export    uvm_seq_item_pull_imp   -     @640 
+#           arbitration_queue  array                   0     -    
+#           lock_queue         array                   0     -    
+#           num_last_reqs      integral                32    'd1  
+#           num_last_rsps      integral                32    'd1  
+# ----------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0 ns: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../sv/yapp_tx_monitor.sv(19) @ 0 ns: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Start of simulation phase
+# UVM_INFO ../sv/yapp_tx_sequencer.sv(11) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [yapp_tx_sequencer] Start of simulation phase
+# UVM_INFO ../sv/yapp_tx_agent.sv(25) @ 0 ns: uvm_test_top.tb.env.agent [uvm_agent] Start of simulation phase
+# UVM_INFO ../sv/yapp_env.sv(19) @ 0 ns: uvm_test_top.tb.env [uvm_env] Start of simulation phase
+# UVM_INFO ../sv/yapp_env.sv(22) @ 0 ns: uvm_test_top.tb.env [uvm_env] its now in environment  
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1390) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] Starting default sequence 'yapp_incr_payload_seq' for phase 'run'
+# UVM_INFO ../sv/yapp_tx_seqs.sv(11) @ 0 ns: uvm_test_top.tb.env.agent.sequencer@@yapp_incr_payload_seq [yapp_incr_payload_seq] raise objection
+# UVM_INFO ../sv/yapp_tx_seqs.sv(131) @ 0 ns: uvm_test_top.tb.env.agent.sequencer@@yapp_incr_payload_seq [yapp_incr_payload_seq] Executing sequence...
+# UVM_INFO ../sv/yapp_tx_seqs.sv(137) @ 0 ns: uvm_test_top.tb.env.agent.sequencer@@yapp_incr_payload_seq [yapp_incr_payload_seq] Overwriting payload for length 8
+# UVM_INFO ../sv/yapp_tx_seqs.sv(146) @ 0 ns: uvm_test_top.tb.env.agent.sequencer@@yapp_incr_payload_seq [yapp_incr_payload_seq] Sending packet with incrementing payload:
+# -----------------------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                                    
+# -----------------------------------------------------------------------------------------------------------------
+# req                            short_yapp_packet  -     @666                                                     
+#   length                       integral           6     'h8                                                      
+#   addr                         integral           2     'h1                                                      
+#   payload                      da(integral)       8     -                                                        
+#     [0]                        integral           8     'h0                                                      
+#     [1]                        integral           8     'h1                                                      
+#     [2]                        integral           8     'h2                                                      
+#     [3]                        integral           8     'h3                                                      
+#     [4]                        integral           8     'h4                                                      
+#     [5]                        integral           8     'h5                                                      
+#     [6]                        integral           8     'h6                                                      
+#     [7]                        integral           8     'h7                                                      
+#   parity                       integral           8     'h21                                                     
+#   packet_delay                 integral           32    'ha                                                      
+#   depth                        int                32    'd2                                                      
+#   parent sequence (name)       string             21    yapp_incr_payload_seq                                    
+#   parent sequence (full name)  string             57    uvm_test_top.tb.env.agent.sequencer.yapp_incr_payload_seq
+#   sequencer                    string             35    uvm_test_top.tb.env.agent.sequencer                      
+# -----------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_reset'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'reset'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_reset'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_configure'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'configure'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_configure'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_main'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'main'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_main'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_shutdown'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'shutdown'
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0 ns: uvm_test_top.tb.env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_shutdown'
+# UVM_INFO ../sv/yapp_tx_driver.sv(42) @ 30 ns: uvm_test_top.tb.env.agent.driver [uvm_driver #(REQ,RSP)] Reset observed
+# UVM_INFO ../sv/yapp_tx_driver.sv(30) @ 70 ns: uvm_test_top.tb.env.agent.driver [uvm_driver #(REQ,RSP)] Reset dropped
+# UVM_INFO ../sv/yapp_tx_monitor.sv(24) @ 70 ns: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Detected Reset Done
+# UVM_INFO ../sv/yapp_tx_monitor.sv(46) @ 300 ns: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../sv/yapp_tx_monitor.sv(60) @ 480 ns: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# -------------------------------------------------
+# Name              Type               Size  Value 
+# -------------------------------------------------
+# packet_collected  short_yapp_packet  -     @662  
+#   length          integral           6     'h8   
+#   addr            integral           2     'h1   
+#   payload         da(integral)       8     -     
+#     [0]           integral           8     'h0   
+#     [1]           integral           8     'h1   
+#     [2]           integral           8     'h2   
+#     [3]           integral           8     'h3   
+#     [4]           integral           8     'h4   
+#     [5]           integral           8     'h5   
+#     [6]           integral           8     'h6   
+#     [7]           integral           8     'h7   
+#   parity          integral           8     'h21  
+#   packet_delay    integral           32    'h0   
+#   begin_time      time               64    300 ns
+#   end_time        time               64    480 ns
+# -------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_seqs.sv(149) @ 490 ns: uvm_test_top.tb.env.agent.sequencer@@yapp_incr_payload_seq [yapp_incr_payload_seq] Sequence finished.
+# UVM_INFO ../sv/yapp_tx_seqs.sv(16) @ 490 ns: uvm_test_top.tb.env.agent.sequencer@@yapp_incr_payload_seq [yapp_incr_payload_seq] drop objection
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1243) @ 490 ns: reporter [TEST_DONE] All end-of-test objections have been dropped. Calling stop tasks
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 490 ns: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../sv/yapp_tx_driver.sv(85) @ 490 ns: uvm_test_top.tb.env.agent.driver [uvm_driver #(REQ,RSP)] Report: YAPP TX driver sent 1 packets
+# UVM_INFO ../sv/yapp_tx_monitor.sv(69) @ 490 ns: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Report: YAPP Monitor Collected 1 Packets
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [PHASESEQ]    13
+# [Questa UVM]     3
+# [RNTST]     1
+# [TEST_DONE]     2
+# [UVMTOP]     1
+# [short_incr_payload]     1
+# [uvm_agent]     1
+# [uvm_driver #(REQ,RSP)]     3
+# [uvm_env]     2
+# [yapp_incr_payload_seq]     6
+# [yapp_tx_monitor]     5
+# [yapp_tx_sequencer]     1
+# ** Note: $finish    : /home/pranav/Documents/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 490200 ps  Iteration: 53  Instance: /top_dut
+# End time: 15:11:46 on Aug 22,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

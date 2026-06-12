@@ -22,7 +22,7 @@ class Environment;
     gen = new(gen2drv );
     drv = new(gen2drv , vif);
     mon = new(mon2scb, vif);
-    scb = new(mon2scb);
+    scb = new(mon2scb, vif);
     
   endfunction
 

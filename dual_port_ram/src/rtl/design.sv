@@ -14,21 +14,15 @@ module ram #(parameter int unsigned W_LATENCY = 3, R_LATENCY = 2, ADDR_WIDTH = 4
   output logic unsigned [DATA_WIDTH-1:0] douta,
   output logic unsigned [DATA_WIDTH-1:0] doutb
 );
-  //logic addra,addrb,wea,en, clk,dina;
-  //wire douta,doutb,rst;
+
   localparam int LENGTH = 1 << ADDR_WIDTH;
   logic [6:0] en_dina, en_douta, en_doutb;
   logic [6:0] block_out [0: LENGTH-1];
-  // localparam int W_LATENCY = 3;
-  // localparam int R_LATENCY = 2;
-
-
 
   hamming_encoder encoder(.data_in(dina[3:0]), .e_code(en_dina[6:0]));
   hamming_decoder decoder_a(.e_code(en_douta[6:0]), .data_out(douta[3:0]), .error());
   hamming_decoder decoder_b(.e_code(en_doutb[6:0]), .data_out(doutb[3:0]), .error());
 
-  
   genvar i;
   generate
     for (i = 0; i < LENGTH; i++) begin : mem_gen
@@ -45,6 +39,7 @@ module ram #(parameter int unsigned W_LATENCY = 3, R_LATENCY = 2, ADDR_WIDTH = 4
       );
     end
   endgenerate
+  
   assign en_douta = block_out[addra];
   assign en_doutb = block_out[addrb];
 

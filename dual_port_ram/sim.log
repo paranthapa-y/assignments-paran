@@ -1,0 +1,2791 @@
+# 
+# vlog -sv +cover=bcestf src/rtl/design.sv src/tb/testbench.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:14:37 on Apr 09,2026
+# vlog -reportprogress 300 -sv "+cover=bcestf" src/rtl/design.sv src/tb/testbench.sv 
+# -- Compiling module hamming_encoder
+# -- Compiling module hamming_decoder
+# -- Compiling module m_block
+# -- Compiling module ram
+# -- Compiling interface des_if
+# -- Compiling package testbench_sv_unit
+# ** Warning: src/tb/generator.sv(28): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: src/tb/generator.sv(35): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:14:37 on Apr 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# 
+# Start simulation with coverage
+# vsim -gui -coverage -assertdebug -voptargs="+acc" -onfinish stop work.tb
+# End time: 11:14:44 on Apr 09,2026, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 0
+# vsim -gui -coverage -assertdebug -voptargs=""+acc"" -onfinish stop work.tb 
+# Start time: 11:14:44 on Apr 09,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.des_if(fast__2)
+# Loading work.ram(fast)
+# Loading work.hamming_encoder(fast)
+# Loading work.hamming_decoder(fast)
+# Loading work.m_block(fast)
+# Loading work.des_if(fast)
+# 
+# Load waveform script
+#do Serial_adder_wave.do
+# log -r sim:/tb/dut/*
+# add wave -position insertpoint sim:/tb/dut/*
+# Run simulation
+# run -all
+# new SCB
+# inside SCB
+#  x
+# time 25: PORT A expected data: 0000, actual data: xxxx
+# time 25: PORT B expected data: xxxx, actual data: xxxx
+# inside SCB
+#  x
+# time 35: PORT A expected data: 0000, actual data: xxxx
+# time 35: PORT B expected data: xxxx, actual data: xxxx
+# inside SCB
+#  x
+# time 45: PORT A expected data: 0000, actual data: xxxx
+# time 45: PORT B expected data: xxxx, actual data: xxxx
+# inside SCB
+#  x
+# time 55: PORT A expected data: 0000, actual data: xxxx
+# time 55: PORT B expected data: 0000, actual data: xxxx
+# inside SCB
+#  0
+# time 65: PORT A expected data: 0000, actual data: 0000
+# time 65: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 75: PORT A expected data: 0000, actual data: 0000
+# time 75: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 85: PORT A expected data: 0000, actual data: 0000
+# time 85: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 95: PORT A expected data: 0000, actual data: 0000
+# time 95: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 105: PORT A expected data: 0000, actual data: 0000
+# time 105: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 115: PORT A expected data: 0000, actual data: 0000
+# time 115: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 125: PORT A expected data: 0000, actual data: 0000
+# time 125: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  5
+# time 135: PORT A expected data: 0000, actual data: 0101
+# time 135: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 145: PORT A expected data: 0000, actual data: 0000
+# time 145: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 155: PORT A expected data: 0000, actual data: 0000
+# time 155: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 165: PORT A expected data: 0000, actual data: 0000
+# time 165: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 175: PORT A expected data: 0000, actual data: 0000
+# time 175: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  6
+# time 185: PORT A expected data: 0000, actual data: 0110
+# time 185: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 195: PORT A expected data: 0000, actual data: 0000
+# time 195: PORT B expected data: 0000, actual data: 0010
+# inside SCB
+#  0
+# time 205: PORT A expected data: 0000, actual data: 0000
+# time 205: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  3
+# time 215: PORT A expected data: 0000, actual data: 0011
+# time 215: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 225: PORT A expected data: 0000, actual data: 0000
+# time 225: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 235: PORT A expected data: 0000, actual data: 0000
+# time 235: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 245: PORT A expected data: 0000, actual data: 0000
+# time 245: PORT B expected data: 0000, actual data: 1110
+# inside SCB
+#  3
+# time 255: PORT A expected data: 0000, actual data: 0011
+# time 255: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 265: PORT A expected data: 0000, actual data: 0000
+# time 265: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  7
+# time 275: PORT A expected data: 0000, actual data: 0111
+# time 275: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 285: PORT A expected data: 1000, actual data: 1110
+# time 285: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 295: PORT A expected data: 0000, actual data: 1110
+# time 295: PORT B expected data: 0111, actual data: 0010
+# inside SCB
+#  0
+# time 305: PORT A expected data: 0000, actual data: 0000
+# time 305: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  2
+# time 315: PORT A expected data: 0000, actual data: 0010
+# time 315: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 325: PORT A expected data: 0000, actual data: 0000
+# time 325: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  8
+# time 335: PORT A expected data: 0000, actual data: 1000
+# time 335: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 345: PORT A expected data: 0000, actual data: 0000
+# time 345: PORT B expected data: 1010, actual data: 0000
+# inside SCB
+#  2
+# time 355: PORT A expected data: 1010, actual data: 0010
+# time 355: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  0
+# time 365: PORT A expected data: 0110, actual data: 0000
+# time 365: PORT B expected data: 0011, actual data: 0110
+# inside SCB
+#  0
+# time 375: PORT A expected data: 0000, actual data: 0000
+# time 375: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+#  2
+# time 385: PORT A expected data: 0000, actual data: 0010
+# time 385: PORT B expected data: 0111, actual data: 1000
+# inside SCB
+#  0
+# time 395: PORT A expected data: 0000, actual data: 0000
+# time 395: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+# 12
+# time 405: PORT A expected data: 0000, actual data: 1100
+# time 405: PORT B expected data: 1010, actual data: 0000
+# inside SCB
+#  2
+# time 415: PORT A expected data: 1100, actual data: 0010
+# time 415: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  7
+# time 425: PORT A expected data: 1101, actual data: 0111
+# time 425: PORT B expected data: 1100, actual data: 1100
+# inside SCB
+#  7
+# time 435: PORT A expected data: 1101, actual data: 0111
+# time 435: PORT B expected data: 1100, actual data: 0000
+# inside SCB
+#  0
+# time 445: PORT A expected data: 1101, actual data: 0000
+# time 445: PORT B expected data: 1100, actual data: 1101
+# inside SCB
+#  0
+# time 455: PORT A expected data: 0000, actual data: 0000
+# time 455: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  0
+# time 465: PORT A expected data: 0000, actual data: 0000
+# time 465: PORT B expected data: 1000, actual data: 0000
+# inside SCB
+#  0
+# time 475: PORT A expected data: 0000, actual data: 0000
+# time 475: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  0
+# time 485: PORT A expected data: 0000, actual data: 0000
+# time 485: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 495: PORT A expected data: 0000, actual data: 0000
+# time 495: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  9
+# time 505: PORT A expected data: 0000, actual data: 1001
+# time 505: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  0
+# time 515: PORT A expected data: 0000, actual data: 0000
+# time 515: PORT B expected data: 0000, actual data: 1001
+# inside SCB
+#  0
+# time 525: PORT A expected data: 0000, actual data: 0000
+# time 525: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  0
+# time 535: PORT A expected data: 0111, actual data: 0000
+# time 535: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 545: PORT A expected data: 0100, actual data: 0000
+# time 545: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 555: PORT A expected data: 0110, actual data: 0000
+# time 555: PORT B expected data: 1100, actual data: 0000
+# inside SCB
+#  0
+# time 565: PORT A expected data: 0110, actual data: 0000
+# time 565: PORT B expected data: 1100, actual data: 0000
+# inside SCB
+#  0
+# time 575: PORT A expected data: 1001, actual data: 0000
+# time 575: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  0
+# time 585: PORT A expected data: 1001, actual data: 0000
+# time 585: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+#  0
+# time 595: PORT A expected data: 1100, actual data: 0000
+# time 595: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 605: PORT A expected data: 1100, actual data: 0000
+# time 605: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 615: PORT A expected data: 0110, actual data: 0000
+# time 615: PORT B expected data: 0000, actual data: 0010
+# inside SCB
+#  3
+# time 625: PORT A expected data: 0110, actual data: 0011
+# time 625: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  8
+# time 635: PORT A expected data: 0110, actual data: 1000
+# time 635: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 645: PORT A expected data: 0110, actual data: 0000
+# time 645: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  8
+# time 655: PORT A expected data: 0110, actual data: 1000
+# time 655: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 665: PORT A expected data: 0110, actual data: 0000
+# time 665: PORT B expected data: 0000, actual data: 0100
+# inside SCB
+# 13
+# time 675: PORT A expected data: 0110, actual data: 1101
+# time 675: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  3
+# time 685: PORT A expected data: 0110, actual data: 0011
+# time 685: PORT B expected data: 0000, actual data: 0101
+# inside SCB
+#  4
+# time 695: PORT A expected data: 0110, actual data: 0100
+# time 695: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  4
+# time 705: PORT A expected data: 0110, actual data: 0100
+# time 705: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+# 14
+# time 715: PORT A expected data: 0110, actual data: 1110
+# time 715: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  0
+# time 725: PORT A expected data: 0110, actual data: 0000
+# time 725: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  0
+# time 735: PORT A expected data: 0000, actual data: 0000
+# time 735: PORT B expected data: 1100, actual data: 1101
+# inside SCB
+# 15
+# time 745: PORT A expected data: 0000, actual data: 1111
+# time 745: PORT B expected data: 1100, actual data: 1110
+# inside SCB
+# 15
+# time 755: PORT A expected data: 0000, actual data: 1111
+# time 755: PORT B expected data: 1111, actual data: 1110
+# inside SCB
+# 13
+# time 765: PORT A expected data: 0000, actual data: 1101
+# time 765: PORT B expected data: 1111, actual data: 1111
+# inside SCB
+#  4
+# time 775: PORT A expected data: 1000, actual data: 0100
+# time 775: PORT B expected data: 0100, actual data: 0101
+# inside SCB
+# 12
+# time 785: PORT A expected data: 1000, actual data: 1100
+# time 785: PORT B expected data: 0100, actual data: 1111
+# inside SCB
+# 15
+# time 795: PORT A expected data: 1111, actual data: 1111
+# time 795: PORT B expected data: 0011, actual data: 1111
+# inside SCB
+#  5
+# time 805: PORT A expected data: 1111, actual data: 0101
+# time 805: PORT B expected data: 0011, actual data: 1111
+# inside SCB
+# 15
+# time 815: PORT A expected data: 1111, actual data: 1111
+# time 815: PORT B expected data: 0011, actual data: 1000
+# inside SCB
+# 14
+# time 825: PORT A expected data: 1111, actual data: 1110
+# time 825: PORT B expected data: 0011, actual data: 1110
+# inside SCB
+# 15
+# time 835: PORT A expected data: 1111, actual data: 1111
+# time 835: PORT B expected data: 0011, actual data: 1110
+# inside SCB
+#  4
+# time 845: PORT A expected data: 0100, actual data: 0100
+# time 845: PORT B expected data: 0100, actual data: 0010
+# inside SCB
+# 13
+# time 855: PORT A expected data: 0100, actual data: 1101
+# time 855: PORT B expected data: 0100, actual data: 1100
+# inside SCB
+#  8
+# time 865: PORT A expected data: 0100, actual data: 1000
+# time 865: PORT B expected data: 0100, actual data: 1111
+# inside SCB
+# 15
+# time 875: PORT A expected data: 1111, actual data: 1111
+# time 875: PORT B expected data: 1101, actual data: 1110
+# inside SCB
+# 12
+# time 885: PORT A expected data: 0000, actual data: 1100
+# time 885: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  6
+# time 895: PORT A expected data: 1110, actual data: 0110
+# time 895: PORT B expected data: 1111, actual data: 1000
+# inside SCB
+#  2
+# time 905: PORT A expected data: 1000, actual data: 0010
+# time 905: PORT B expected data: 0111, actual data: 0110
+# inside SCB
+#  8
+# time 915: PORT A expected data: 0000, actual data: 1000
+# time 915: PORT B expected data: 0111, actual data: 0010
+# inside SCB
+# 15
+# time 925: PORT A expected data: 0000, actual data: 1111
+# time 925: PORT B expected data: 0111, actual data: 1100
+# inside SCB
+#  8
+# time 935: PORT A expected data: 0111, actual data: 1000
+# time 935: PORT B expected data: 0000, actual data: 1111
+# inside SCB
+# 12
+# time 945: PORT A expected data: 0111, actual data: 1100
+# time 945: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  6
+# time 955: PORT A expected data: 0111, actual data: 0110
+# time 955: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+# 13
+# time 965: PORT A expected data: 1101, actual data: 1101
+# time 965: PORT B expected data: 1000, actual data: 1101
+# inside SCB
+#  7
+# time 975: PORT A expected data: 1101, actual data: 0111
+# time 975: PORT B expected data: 1000, actual data: 1110
+# inside SCB
+#  6
+# time 985: PORT A expected data: 1101, actual data: 0110
+# time 985: PORT B expected data: 1000, actual data: 1111
+# inside SCB
+#  1
+# time 995: PORT A expected data: 1101, actual data: 0001
+# time 995: PORT B expected data: 1000, actual data: 1101
+# inside SCB
+#  6
+# time 1005: PORT A expected data: 0000, actual data: 0110
+# time 1005: PORT B expected data: 0011, actual data: 1000
+# inside SCB
+#  7
+# time 1015: PORT A expected data: 0000, actual data: 0111
+# time 1015: PORT B expected data: 0011, actual data: 1101
+# inside SCB
+# 15
+# time 1025: PORT A expected data: 0110, actual data: 1111
+# time 1025: PORT B expected data: 1100, actual data: 1100
+# inside SCB
+# 13
+# time 1035: PORT A expected data: 0110, actual data: 1101
+# time 1035: PORT B expected data: 1100, actual data: 1111
+# inside SCB
+# 15
+# time 1045: PORT A expected data: 0010, actual data: 1111
+# time 1045: PORT B expected data: 1111, actual data: 1001
+# inside SCB
+#  0
+# time 1055: PORT A expected data: 0001, actual data: 0000
+# time 1055: PORT B expected data: 0010, actual data: 1111
+# inside SCB
+#  8
+# time 1065: PORT A expected data: 0001, actual data: 1000
+# time 1065: PORT B expected data: 0010, actual data: 1111
+# inside SCB
+# 12
+# time 1075: PORT A expected data: 1001, actual data: 1100
+# time 1075: PORT B expected data: 0011, actual data: 0001
+# inside SCB
+# 12
+# time 1085: PORT A expected data: 1001, actual data: 1100
+# time 1085: PORT B expected data: 0011, actual data: 1101
+# inside SCB
+#  1
+# time 1095: PORT A expected data: 1101, actual data: 0001
+# time 1095: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  6
+# time 1105: PORT A expected data: 1111, actual data: 0110
+# time 1105: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  9
+# time 1115: PORT A expected data: 1111, actual data: 1001
+# time 1115: PORT B expected data: 0010, actual data: 1100
+# inside SCB
+#  1
+# time 1125: PORT A expected data: 1111, actual data: 0001
+# time 1125: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  2
+# time 1135: PORT A expected data: 1111, actual data: 0010
+# time 1135: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  1
+# time 1145: PORT A expected data: 1111, actual data: 0001
+# time 1145: PORT B expected data: 0010, actual data: 0011
+# inside SCB
+# 13
+# time 1155: PORT A expected data: 1111, actual data: 1101
+# time 1155: PORT B expected data: 0010, actual data: 0110
+# inside SCB
+#  3
+# time 1165: PORT A expected data: 1111, actual data: 0011
+# time 1165: PORT B expected data: 0010, actual data: 0010
+# inside SCB
+# 14
+# time 1175: PORT A expected data: 1000, actual data: 1110
+# time 1175: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+# 12
+# time 1185: PORT A expected data: 0000, actual data: 1100
+# time 1185: PORT B expected data: 1010, actual data: 1111
+# inside SCB
+#  8
+# time 1195: PORT A expected data: 1100, actual data: 1000
+# time 1195: PORT B expected data: 0000, actual data: 0010
+# inside SCB
+# 13
+# time 1205: PORT A expected data: 1100, actual data: 1101
+# time 1205: PORT B expected data: 0000, actual data: 1100
+# inside SCB
+# 14
+# time 1215: PORT A expected data: 1100, actual data: 1110
+# time 1215: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  0
+# time 1225: PORT A expected data: 1110, actual data: 0000
+# time 1225: PORT B expected data: 1101, actual data: 1110
+# inside SCB
+# 14
+# time 1235: PORT A expected data: 1110, actual data: 1110
+# time 1235: PORT B expected data: 1101, actual data: 1010
+# inside SCB
+# 12
+# time 1245: PORT A expected data: 1010, actual data: 1100
+# time 1245: PORT B expected data: 1111, actual data: 0110
+# inside SCB
+# 13
+# time 1255: PORT A expected data: 1111, actual data: 1101
+# time 1255: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 1265: PORT A expected data: 1111, actual data: 1110
+# time 1265: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+# 12
+# time 1275: PORT A expected data: 1111, actual data: 1100
+# time 1275: PORT B expected data: 0000, actual data: 1100
+# inside SCB
+# 12
+# time 1285: PORT A expected data: 1111, actual data: 1100
+# time 1285: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 1295: PORT A expected data: 1101, actual data: 1110
+# time 1295: PORT B expected data: 1101, actual data: 1000
+# inside SCB
+#  3
+# time 1305: PORT A expected data: 1000, actual data: 0011
+# time 1305: PORT B expected data: 1101, actual data: 1111
+# inside SCB
+# 13
+# time 1315: PORT A expected data: 0101, actual data: 1101
+# time 1315: PORT B expected data: 0011, actual data: 1111
+# inside SCB
+# 12
+# time 1325: PORT A expected data: 0000, actual data: 1100
+# time 1325: PORT B expected data: 0010, actual data: 1010
+# inside SCB
+# 12
+# time 1335: PORT A expected data: 0000, actual data: 1100
+# time 1335: PORT B expected data: 0010, actual data: 1010
+# inside SCB
+# 15
+# time 1345: PORT A expected data: 0000, actual data: 1111
+# time 1345: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  0
+# time 1355: PORT A expected data: 1101, actual data: 0000
+# time 1355: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+# 13
+# time 1365: PORT A expected data: 1101, actual data: 1101
+# time 1365: PORT B expected data: 0000, actual data: 1110
+# inside SCB
+# 13
+# time 1375: PORT A expected data: 1010, actual data: 1101
+# time 1375: PORT B expected data: 0000, actual data: 0111
+# inside SCB
+#  7
+# time 1385: PORT A expected data: 0010, actual data: 0111
+# time 1385: PORT B expected data: 1000, actual data: 1100
+# inside SCB
+#  6
+# time 1395: PORT A expected data: 0010, actual data: 0110
+# time 1395: PORT B expected data: 1000, actual data: 0010
+# inside SCB
+#  3
+# time 1405: PORT A expected data: 0010, actual data: 0011
+# time 1405: PORT B expected data: 1000, actual data: 1111
+# inside SCB
+# 13
+# time 1415: PORT A expected data: 0010, actual data: 1101
+# time 1415: PORT B expected data: 1000, actual data: 1110
+# inside SCB
+#  3
+# time 1425: PORT A expected data: 0000, actual data: 0011
+# time 1425: PORT B expected data: 1100, actual data: 0110
+# inside SCB
+# 14
+# time 1435: PORT A expected data: 0000, actual data: 1110
+# time 1435: PORT B expected data: 1000, actual data: 0011
+# inside SCB
+# 14
+# time 1445: PORT A expected data: 0000, actual data: 1110
+# time 1445: PORT B expected data: 1000, actual data: 1010
+# inside SCB
+#  8
+# time 1455: PORT A expected data: 1000, actual data: 1000
+# time 1455: PORT B expected data: 0111, actual data: 1100
+# inside SCB
+# 14
+# time 1465: PORT A expected data: 1000, actual data: 1110
+# time 1465: PORT B expected data: 0111, actual data: 0011
+# inside SCB
+# 10
+# time 1475: PORT A expected data: 1000, actual data: 1010
+# time 1475: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  2
+# time 1485: PORT A expected data: 1000, actual data: 0010
+# time 1485: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+#  5
+# time 1495: PORT A expected data: 1000, actual data: 0101
+# time 1495: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+#  8
+# time 1505: PORT A expected data: 1110, actual data: 1000
+# time 1505: PORT B expected data: 1100, actual data: 1111
+# inside SCB
+# 12
+# time 1515: PORT A expected data: 1110, actual data: 1100
+# time 1515: PORT B expected data: 1100, actual data: 1111
+# inside SCB
+#  6
+# time 1525: PORT A expected data: 0011, actual data: 0110
+# time 1525: PORT B expected data: 0101, actual data: 1001
+# inside SCB
+# 13
+# time 1535: PORT A expected data: 0011, actual data: 1101
+# time 1535: PORT B expected data: 0101, actual data: 1100
+# inside SCB
+#  9
+# time 1545: PORT A expected data: 1100, actual data: 1001
+# time 1545: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  6
+# time 1555: PORT A expected data: 1100, actual data: 0110
+# time 1555: PORT B expected data: 0111, actual data: 1101
+# inside SCB
+# 14
+# time 1565: PORT A expected data: 0111, actual data: 1110
+# time 1565: PORT B expected data: 1101, actual data: 1100
+# inside SCB
+# 12
+# time 1575: PORT A expected data: 0111, actual data: 1100
+# time 1575: PORT B expected data: 1101, actual data: 0010
+# inside SCB
+#  8
+# time 1585: PORT A expected data: 0111, actual data: 1000
+# time 1585: PORT B expected data: 1101, actual data: 1000
+# inside SCB
+#  0
+# time 1595: PORT A expected data: 0111, actual data: 0000
+# time 1595: PORT B expected data: 1101, actual data: 1100
+# inside SCB
+# 13
+# time 1605: PORT A expected data: 0010, actual data: 1101
+# time 1605: PORT B expected data: 0010, actual data: 0000
+# inside SCB
+# 12
+# time 1615: PORT A expected data: 0010, actual data: 1100
+# time 1615: PORT B expected data: 0010, actual data: 1110
+# inside SCB
+#  0
+# time 1625: PORT A expected data: 0000, actual data: 0000
+# time 1625: PORT B expected data: 1101, actual data: 1010
+# inside SCB
+# 15
+# time 1635: PORT A expected data: 1111, actual data: 1111
+# time 1635: PORT B expected data: 0110, actual data: 1110
+# inside SCB
+#  3
+# time 1645: PORT A expected data: 1111, actual data: 0011
+# time 1645: PORT B expected data: 0110, actual data: 1111
+# inside SCB
+# 14
+# time 1655: PORT A expected data: 1111, actual data: 1110
+# time 1655: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  2
+# time 1665: PORT A expected data: 1101, actual data: 0010
+# time 1665: PORT B expected data: 0101, actual data: 1110
+# inside SCB
+# 13
+# time 1675: PORT A expected data: 1101, actual data: 1101
+# time 1675: PORT B expected data: 0101, actual data: 1111
+# inside SCB
+#  2
+# time 1685: PORT A expected data: 1101, actual data: 0010
+# time 1685: PORT B expected data: 0101, actual data: 1000
+# inside SCB
+# 15
+# time 1695: PORT A expected data: 1101, actual data: 1111
+# time 1695: PORT B expected data: 0101, actual data: 1110
+# inside SCB
+#  4
+# time 1705: PORT A expected data: 1110, actual data: 0100
+# time 1705: PORT B expected data: 0010, actual data: 0111
+# inside SCB
+# 13
+# time 1715: PORT A expected data: 1010, actual data: 1101
+# time 1715: PORT B expected data: 0110, actual data: 1100
+# inside SCB
+#  8
+# time 1725: PORT A expected data: 1010, actual data: 1000
+# time 1725: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  0
+# time 1735: PORT A expected data: 1000, actual data: 0000
+# time 1735: PORT B expected data: 1001, actual data: 1000
+# inside SCB
+#  0
+# time 1745: PORT A expected data: 1000, actual data: 0000
+# time 1745: PORT B expected data: 1001, actual data: 0011
+# inside SCB
+#  5
+# time 1755: PORT A expected data: 1000, actual data: 0101
+# time 1755: PORT B expected data: 1001, actual data: 0100
+# inside SCB
+# 14
+# time 1765: PORT A expected data: 1000, actual data: 1110
+# time 1765: PORT B expected data: 1001, actual data: 1000
+# inside SCB
+# 14
+# time 1775: PORT A expected data: 1000, actual data: 1110
+# time 1775: PORT B expected data: 1001, actual data: 0011
+# inside SCB
+#  1
+# time 1785: PORT A expected data: 0110, actual data: 0001
+# time 1785: PORT B expected data: 1010, actual data: 1000
+# inside SCB
+# 15
+# time 1795: PORT A expected data: 0110, actual data: 1111
+# time 1795: PORT B expected data: 1010, actual data: 1110
+# inside SCB
+# 14
+# time 1805: PORT A expected data: 0110, actual data: 1110
+# time 1805: PORT B expected data: 1010, actual data: 1001
+# inside SCB
+# 15
+# time 1815: PORT A expected data: 0110, actual data: 1111
+# time 1815: PORT B expected data: 1010, actual data: 1000
+# inside SCB
+#  1
+# time 1825: PORT A expected data: 1010, actual data: 0001
+# time 1825: PORT B expected data: 0111, actual data: 1101
+# inside SCB
+#  7
+# time 1835: PORT A expected data: 1010, actual data: 0111
+# time 1835: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+# 14
+# time 1845: PORT A expected data: 1010, actual data: 1110
+# time 1845: PORT B expected data: 0111, actual data: 1010
+# inside SCB
+# 12
+# time 1855: PORT A expected data: 1010, actual data: 1100
+# time 1855: PORT B expected data: 0111, actual data: 1010
+# inside SCB
+#  8
+# time 1865: PORT A expected data: 1010, actual data: 1000
+# time 1865: PORT B expected data: 0111, actual data: 1000
+# inside SCB
+# 13
+# time 1875: PORT A expected data: 1001, actual data: 1101
+# time 1875: PORT B expected data: 0001, actual data: 0001
+# inside SCB
+#  3
+# time 1885: PORT A expected data: 1001, actual data: 0011
+# time 1885: PORT B expected data: 0001, actual data: 1101
+# inside SCB
+# 13
+# time 1895: PORT A expected data: 1001, actual data: 1101
+# time 1895: PORT B expected data: 0001, actual data: 1010
+# inside SCB
+# 10
+# time 1905: PORT A expected data: 0100, actual data: 1010
+# time 1905: PORT B expected data: 0000, actual data: 0001
+# inside SCB
+# 15
+# time 1915: PORT A expected data: 0100, actual data: 1111
+# time 1915: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+# 10
+# time 1925: PORT A expected data: 0011, actual data: 1010
+# time 1925: PORT B expected data: 0110, actual data: 1001
+# inside SCB
+#  9
+# time 1935: PORT A expected data: 0011, actual data: 1001
+# time 1935: PORT B expected data: 0110, actual data: 1111
+# inside SCB
+# 14
+# time 1945: PORT A expected data: 0011, actual data: 1110
+# time 1945: PORT B expected data: 0110, actual data: 0011
+# inside SCB
+#  4
+# time 1955: PORT A expected data: 0011, actual data: 0100
+# time 1955: PORT B expected data: 0110, actual data: 0011
+# inside SCB
+# 15
+# time 1965: PORT A expected data: 0011, actual data: 1111
+# time 1965: PORT B expected data: 0110, actual data: 0011
+# inside SCB
+#  3
+# time 1975: PORT A expected data: 1010, actual data: 0011
+# time 1975: PORT B expected data: 1011, actual data: 0100
+# inside SCB
+#  4
+# time 1985: PORT A expected data: 1010, actual data: 0100
+# time 1985: PORT B expected data: 1011, actual data: 1010
+# inside SCB
+# 10
+# time 1995: PORT A expected data: 1011, actual data: 1010
+# time 1995: PORT B expected data: 0111, actual data: 0001
+# inside SCB
+# 11
+# ** Note: $finish    : src/tb/testbench.sv(43)
+#    Time: 2 us  Iteration: 0  Instance: /tb
+# Break in Module tb at src/tb/testbench.sv line 43
+# 
+# Save coverage database
+# coverage save -assert -directive -cvg -codeAll cov.ucdb
+# 
+# Generate HTML coverage report
+# vcover report -html -output covhtmlreport \
+#     -details -assert -directive -cvg \
+#     -code bcestf -threshL 50 -threshH 90 cov.ucdb
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 11:14:54 on Apr 09,2026
+# vcover report -html -output covhtmlreport -details -assert -directive -cvg -code bcestf -threshL 50 -threshH 90 cov.ucdb 
+# End time: 11:14:58 on Apr 09,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# 
+# quit
+# 
+# Optional: open report in browser
+# exec firefox covhtmlreport/index.html &
+# 134454
+# 
+do run_cov.tcl
+# 
+# vlog -sv +cover=bcestf src/rtl/design.sv src/tb/testbench.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:17:16 on Apr 09,2026
+# vlog -reportprogress 300 -sv "+cover=bcestf" src/rtl/design.sv src/tb/testbench.sv 
+# -- Compiling module hamming_encoder
+# -- Compiling module hamming_decoder
+# -- Compiling module m_block
+# -- Compiling module ram
+# -- Compiling interface des_if
+# -- Compiling package testbench_sv_unit
+# ** Warning: src/tb/generator.sv(28): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: src/tb/generator.sv(35): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:17:17 on Apr 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# 
+# Start simulation with coverage
+# vsim -gui -coverage -assertdebug -voptargs="+acc" -onfinish stop work.tb
+# End time: 11:17:23 on Apr 09,2026, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 0
+# vsim -gui -coverage -assertdebug -voptargs=""+acc"" -onfinish stop work.tb 
+# Start time: 11:17:23 on Apr 09,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/tb/generator.sv(28): (vopt-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: src/tb/generator.sv(35): (vopt-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.des_if(fast__2)
+# Loading work.ram(fast)
+# Loading work.hamming_encoder(fast)
+# Loading work.hamming_decoder(fast)
+# Loading work.m_block(fast)
+# Loading work.des_if(fast)
+# 
+# Load waveform script
+#do Serial_adder_wave.do
+# log -r sim:/tb/dut/*
+# add wave -position insertpoint sim:/tb/dut/*
+# Run simulation
+# run -all
+# new SCB
+# inside SCB
+#  x
+# time 25: PORT A expected data: 0000, actual data: xxxx
+# time 25: PORT B expected data: xxxx, actual data: xxxx
+# inside SCB
+#  x
+# time 35: PORT A expected data: 0000, actual data: xxxx
+# time 35: PORT B expected data: xxxx, actual data: xxxx
+# inside SCB
+#  x
+# time 45: PORT A expected data: 0000, actual data: xxxx
+# time 45: PORT B expected data: xxxx, actual data: xxxx
+# inside SCB
+#  x
+# time 55: PORT A expected data: 0000, actual data: xxxx
+# time 55: PORT B expected data: 0000, actual data: xxxx
+# inside SCB
+#  0
+# time 65: PORT A expected data: 0000, actual data: 0000
+# time 65: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 75: PORT A expected data: 0000, actual data: 0000
+# time 75: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 85: PORT A expected data: 0000, actual data: 0000
+# time 85: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 95: PORT A expected data: 0000, actual data: 0000
+# time 95: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 105: PORT A expected data: 0000, actual data: 0000
+# time 105: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 115: PORT A expected data: 0000, actual data: 0000
+# time 115: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 125: PORT A expected data: 0000, actual data: 0000
+# time 125: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  5
+# time 135: PORT A expected data: 0000, actual data: 0101
+# time 135: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 145: PORT A expected data: 0000, actual data: 0000
+# time 145: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 155: PORT A expected data: 0000, actual data: 0000
+# time 155: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 165: PORT A expected data: 0000, actual data: 0000
+# time 165: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 175: PORT A expected data: 0000, actual data: 0000
+# time 175: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  6
+# time 185: PORT A expected data: 0000, actual data: 0110
+# time 185: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 195: PORT A expected data: 0000, actual data: 0000
+# time 195: PORT B expected data: 0000, actual data: 0010
+# inside SCB
+#  0
+# time 205: PORT A expected data: 0000, actual data: 0000
+# time 205: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  3
+# time 215: PORT A expected data: 0000, actual data: 0011
+# time 215: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 225: PORT A expected data: 0000, actual data: 0000
+# time 225: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 235: PORT A expected data: 0000, actual data: 0000
+# time 235: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 245: PORT A expected data: 0000, actual data: 0000
+# time 245: PORT B expected data: 0000, actual data: 1110
+# inside SCB
+#  3
+# time 255: PORT A expected data: 0000, actual data: 0011
+# time 255: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 265: PORT A expected data: 0000, actual data: 0000
+# time 265: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  7
+# time 275: PORT A expected data: 0000, actual data: 0111
+# time 275: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 285: PORT A expected data: 1000, actual data: 1110
+# time 285: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 295: PORT A expected data: 0000, actual data: 1110
+# time 295: PORT B expected data: 0111, actual data: 0010
+# inside SCB
+#  0
+# time 305: PORT A expected data: 0000, actual data: 0000
+# time 305: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  2
+# time 315: PORT A expected data: 0000, actual data: 0010
+# time 315: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 325: PORT A expected data: 0000, actual data: 0000
+# time 325: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  8
+# time 335: PORT A expected data: 0000, actual data: 1000
+# time 335: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 345: PORT A expected data: 0000, actual data: 0000
+# time 345: PORT B expected data: 1010, actual data: 0000
+# inside SCB
+#  2
+# time 355: PORT A expected data: 1010, actual data: 0010
+# time 355: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  0
+# time 365: PORT A expected data: 0110, actual data: 0000
+# time 365: PORT B expected data: 0011, actual data: 0110
+# inside SCB
+#  0
+# time 375: PORT A expected data: 0000, actual data: 0000
+# time 375: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+#  2
+# time 385: PORT A expected data: 0000, actual data: 0010
+# time 385: PORT B expected data: 0111, actual data: 1000
+# inside SCB
+#  0
+# time 395: PORT A expected data: 0000, actual data: 0000
+# time 395: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+# 12
+# time 405: PORT A expected data: 0000, actual data: 1100
+# time 405: PORT B expected data: 1010, actual data: 0000
+# inside SCB
+#  2
+# time 415: PORT A expected data: 1100, actual data: 0010
+# time 415: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  7
+# time 425: PORT A expected data: 1101, actual data: 0111
+# time 425: PORT B expected data: 1100, actual data: 1100
+# inside SCB
+#  7
+# time 435: PORT A expected data: 1101, actual data: 0111
+# time 435: PORT B expected data: 1100, actual data: 0000
+# inside SCB
+#  0
+# time 445: PORT A expected data: 1101, actual data: 0000
+# time 445: PORT B expected data: 1100, actual data: 1101
+# inside SCB
+#  0
+# time 455: PORT A expected data: 0000, actual data: 0000
+# time 455: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  0
+# time 465: PORT A expected data: 0000, actual data: 0000
+# time 465: PORT B expected data: 1000, actual data: 0000
+# inside SCB
+#  0
+# time 475: PORT A expected data: 0000, actual data: 0000
+# time 475: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  0
+# time 485: PORT A expected data: 0000, actual data: 0000
+# time 485: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 495: PORT A expected data: 0000, actual data: 0000
+# time 495: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  9
+# time 505: PORT A expected data: 0000, actual data: 1001
+# time 505: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  0
+# time 515: PORT A expected data: 0000, actual data: 0000
+# time 515: PORT B expected data: 0000, actual data: 1001
+# inside SCB
+#  0
+# time 525: PORT A expected data: 0000, actual data: 0000
+# time 525: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  0
+# time 535: PORT A expected data: 0111, actual data: 0000
+# time 535: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 545: PORT A expected data: 0100, actual data: 0000
+# time 545: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 555: PORT A expected data: 0110, actual data: 0000
+# time 555: PORT B expected data: 1100, actual data: 0000
+# inside SCB
+#  0
+# time 565: PORT A expected data: 0110, actual data: 0000
+# time 565: PORT B expected data: 1100, actual data: 0000
+# inside SCB
+#  0
+# time 575: PORT A expected data: 1001, actual data: 0000
+# time 575: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  0
+# time 585: PORT A expected data: 1001, actual data: 0000
+# time 585: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+#  0
+# time 595: PORT A expected data: 1100, actual data: 0000
+# time 595: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 605: PORT A expected data: 1100, actual data: 0000
+# time 605: PORT B expected data: 0011, actual data: 0000
+# inside SCB
+#  0
+# time 615: PORT A expected data: 0110, actual data: 0000
+# time 615: PORT B expected data: 0000, actual data: 0010
+# inside SCB
+#  3
+# time 625: PORT A expected data: 0110, actual data: 0011
+# time 625: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  8
+# time 635: PORT A expected data: 0110, actual data: 1000
+# time 635: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 645: PORT A expected data: 0110, actual data: 0000
+# time 645: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  8
+# time 655: PORT A expected data: 0110, actual data: 1000
+# time 655: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+#  0
+# time 665: PORT A expected data: 0110, actual data: 0000
+# time 665: PORT B expected data: 0000, actual data: 0100
+# inside SCB
+# 13
+# time 675: PORT A expected data: 0110, actual data: 1101
+# time 675: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  3
+# time 685: PORT A expected data: 0110, actual data: 0011
+# time 685: PORT B expected data: 0000, actual data: 0101
+# inside SCB
+#  4
+# time 695: PORT A expected data: 0110, actual data: 0100
+# time 695: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  4
+# time 705: PORT A expected data: 0110, actual data: 0100
+# time 705: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+# 14
+# time 715: PORT A expected data: 0110, actual data: 1110
+# time 715: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  0
+# time 725: PORT A expected data: 0110, actual data: 0000
+# time 725: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  0
+# time 735: PORT A expected data: 0000, actual data: 0000
+# time 735: PORT B expected data: 1100, actual data: 1101
+# inside SCB
+# 15
+# time 745: PORT A expected data: 0000, actual data: 1111
+# time 745: PORT B expected data: 1100, actual data: 1110
+# inside SCB
+# 15
+# time 755: PORT A expected data: 0000, actual data: 1111
+# time 755: PORT B expected data: 1111, actual data: 1110
+# inside SCB
+# 13
+# time 765: PORT A expected data: 0000, actual data: 1101
+# time 765: PORT B expected data: 1111, actual data: 1111
+# inside SCB
+#  4
+# time 775: PORT A expected data: 1000, actual data: 0100
+# time 775: PORT B expected data: 0100, actual data: 0101
+# inside SCB
+# 12
+# time 785: PORT A expected data: 1000, actual data: 1100
+# time 785: PORT B expected data: 0100, actual data: 1111
+# inside SCB
+# 15
+# time 795: PORT A expected data: 1111, actual data: 1111
+# time 795: PORT B expected data: 0011, actual data: 1111
+# inside SCB
+#  5
+# time 805: PORT A expected data: 1111, actual data: 0101
+# time 805: PORT B expected data: 0011, actual data: 1111
+# inside SCB
+# 15
+# time 815: PORT A expected data: 1111, actual data: 1111
+# time 815: PORT B expected data: 0011, actual data: 1000
+# inside SCB
+# 14
+# time 825: PORT A expected data: 1111, actual data: 1110
+# time 825: PORT B expected data: 0011, actual data: 1110
+# inside SCB
+# 15
+# time 835: PORT A expected data: 1111, actual data: 1111
+# time 835: PORT B expected data: 0011, actual data: 1110
+# inside SCB
+#  4
+# time 845: PORT A expected data: 0100, actual data: 0100
+# time 845: PORT B expected data: 0100, actual data: 0010
+# inside SCB
+# 13
+# time 855: PORT A expected data: 0100, actual data: 1101
+# time 855: PORT B expected data: 0100, actual data: 1100
+# inside SCB
+#  8
+# time 865: PORT A expected data: 0100, actual data: 1000
+# time 865: PORT B expected data: 0100, actual data: 1111
+# inside SCB
+# 15
+# time 875: PORT A expected data: 1111, actual data: 1111
+# time 875: PORT B expected data: 1101, actual data: 1110
+# inside SCB
+# 12
+# time 885: PORT A expected data: 0000, actual data: 1100
+# time 885: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  6
+# time 895: PORT A expected data: 1110, actual data: 0110
+# time 895: PORT B expected data: 1111, actual data: 1000
+# inside SCB
+#  2
+# time 905: PORT A expected data: 1000, actual data: 0010
+# time 905: PORT B expected data: 0111, actual data: 0110
+# inside SCB
+#  8
+# time 915: PORT A expected data: 0000, actual data: 1000
+# time 915: PORT B expected data: 0111, actual data: 0010
+# inside SCB
+# 15
+# time 925: PORT A expected data: 0000, actual data: 1111
+# time 925: PORT B expected data: 0111, actual data: 1100
+# inside SCB
+#  8
+# time 935: PORT A expected data: 0111, actual data: 1000
+# time 935: PORT B expected data: 0000, actual data: 1111
+# inside SCB
+# 12
+# time 945: PORT A expected data: 0111, actual data: 1100
+# time 945: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+#  6
+# time 955: PORT A expected data: 0111, actual data: 0110
+# time 955: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+# 13
+# time 965: PORT A expected data: 1101, actual data: 1101
+# time 965: PORT B expected data: 1000, actual data: 1101
+# inside SCB
+#  7
+# time 975: PORT A expected data: 1101, actual data: 0111
+# time 975: PORT B expected data: 1000, actual data: 1110
+# inside SCB
+#  6
+# time 985: PORT A expected data: 1101, actual data: 0110
+# time 985: PORT B expected data: 1000, actual data: 1111
+# inside SCB
+#  1
+# time 995: PORT A expected data: 1101, actual data: 0001
+# time 995: PORT B expected data: 1000, actual data: 1101
+# inside SCB
+#  6
+# time 1005: PORT A expected data: 0000, actual data: 0110
+# time 1005: PORT B expected data: 0011, actual data: 1000
+# inside SCB
+#  7
+# time 1015: PORT A expected data: 0000, actual data: 0111
+# time 1015: PORT B expected data: 0011, actual data: 1101
+# inside SCB
+# 15
+# time 1025: PORT A expected data: 0110, actual data: 1111
+# time 1025: PORT B expected data: 1100, actual data: 1100
+# inside SCB
+# 13
+# time 1035: PORT A expected data: 0110, actual data: 1101
+# time 1035: PORT B expected data: 1100, actual data: 1111
+# inside SCB
+# 15
+# time 1045: PORT A expected data: 0010, actual data: 1111
+# time 1045: PORT B expected data: 1111, actual data: 1001
+# inside SCB
+#  0
+# time 1055: PORT A expected data: 0001, actual data: 0000
+# time 1055: PORT B expected data: 0010, actual data: 1111
+# inside SCB
+#  8
+# time 1065: PORT A expected data: 0001, actual data: 1000
+# time 1065: PORT B expected data: 0010, actual data: 1111
+# inside SCB
+# 12
+# time 1075: PORT A expected data: 1001, actual data: 1100
+# time 1075: PORT B expected data: 0011, actual data: 0001
+# inside SCB
+# 12
+# time 1085: PORT A expected data: 1001, actual data: 1100
+# time 1085: PORT B expected data: 0011, actual data: 1101
+# inside SCB
+#  1
+# time 1095: PORT A expected data: 1101, actual data: 0001
+# time 1095: PORT B expected data: 0000, actual data: 0110
+# inside SCB
+#  6
+# time 1105: PORT A expected data: 1111, actual data: 0110
+# time 1105: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  9
+# time 1115: PORT A expected data: 1111, actual data: 1001
+# time 1115: PORT B expected data: 0010, actual data: 1100
+# inside SCB
+#  1
+# time 1125: PORT A expected data: 1111, actual data: 0001
+# time 1125: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  2
+# time 1135: PORT A expected data: 1111, actual data: 0010
+# time 1135: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  1
+# time 1145: PORT A expected data: 1111, actual data: 0001
+# time 1145: PORT B expected data: 0010, actual data: 0011
+# inside SCB
+# 13
+# time 1155: PORT A expected data: 1111, actual data: 1101
+# time 1155: PORT B expected data: 0010, actual data: 0110
+# inside SCB
+#  3
+# time 1165: PORT A expected data: 1111, actual data: 0011
+# time 1165: PORT B expected data: 0010, actual data: 0010
+# inside SCB
+# 14
+# time 1175: PORT A expected data: 1000, actual data: 1110
+# time 1175: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+# 12
+# time 1185: PORT A expected data: 0000, actual data: 1100
+# time 1185: PORT B expected data: 1010, actual data: 1111
+# inside SCB
+#  8
+# time 1195: PORT A expected data: 1100, actual data: 1000
+# time 1195: PORT B expected data: 0000, actual data: 0010
+# inside SCB
+# 13
+# time 1205: PORT A expected data: 1100, actual data: 1101
+# time 1205: PORT B expected data: 0000, actual data: 1100
+# inside SCB
+# 14
+# time 1215: PORT A expected data: 1100, actual data: 1110
+# time 1215: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+#  0
+# time 1225: PORT A expected data: 1110, actual data: 0000
+# time 1225: PORT B expected data: 1101, actual data: 1110
+# inside SCB
+# 14
+# time 1235: PORT A expected data: 1110, actual data: 1110
+# time 1235: PORT B expected data: 1101, actual data: 1010
+# inside SCB
+# 12
+# time 1245: PORT A expected data: 1010, actual data: 1100
+# time 1245: PORT B expected data: 1111, actual data: 0110
+# inside SCB
+# 13
+# time 1255: PORT A expected data: 1111, actual data: 1101
+# time 1255: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 1265: PORT A expected data: 1111, actual data: 1110
+# time 1265: PORT B expected data: 0000, actual data: 0011
+# inside SCB
+# 12
+# time 1275: PORT A expected data: 1111, actual data: 1100
+# time 1275: PORT B expected data: 0000, actual data: 1100
+# inside SCB
+# 12
+# time 1285: PORT A expected data: 1111, actual data: 1100
+# time 1285: PORT B expected data: 0000, actual data: 0000
+# inside SCB
+# 14
+# time 1295: PORT A expected data: 1101, actual data: 1110
+# time 1295: PORT B expected data: 1101, actual data: 1000
+# inside SCB
+#  3
+# time 1305: PORT A expected data: 1000, actual data: 0011
+# time 1305: PORT B expected data: 1101, actual data: 1111
+# inside SCB
+# 13
+# time 1315: PORT A expected data: 0101, actual data: 1101
+# time 1315: PORT B expected data: 0011, actual data: 1111
+# inside SCB
+# 12
+# time 1325: PORT A expected data: 0000, actual data: 1100
+# time 1325: PORT B expected data: 0010, actual data: 1010
+# inside SCB
+# 12
+# time 1335: PORT A expected data: 0000, actual data: 1100
+# time 1335: PORT B expected data: 0010, actual data: 1010
+# inside SCB
+# 15
+# time 1345: PORT A expected data: 0000, actual data: 1111
+# time 1345: PORT B expected data: 0010, actual data: 1101
+# inside SCB
+#  0
+# time 1355: PORT A expected data: 1101, actual data: 0000
+# time 1355: PORT B expected data: 0000, actual data: 1101
+# inside SCB
+# 13
+# time 1365: PORT A expected data: 1101, actual data: 1101
+# time 1365: PORT B expected data: 0000, actual data: 1110
+# inside SCB
+# 13
+# time 1375: PORT A expected data: 1010, actual data: 1101
+# time 1375: PORT B expected data: 0000, actual data: 0111
+# inside SCB
+#  7
+# time 1385: PORT A expected data: 0010, actual data: 0111
+# time 1385: PORT B expected data: 1000, actual data: 1100
+# inside SCB
+#  6
+# time 1395: PORT A expected data: 0010, actual data: 0110
+# time 1395: PORT B expected data: 1000, actual data: 0010
+# inside SCB
+#  3
+# time 1405: PORT A expected data: 0010, actual data: 0011
+# time 1405: PORT B expected data: 1000, actual data: 1111
+# inside SCB
+# 13
+# time 1415: PORT A expected data: 0010, actual data: 1101
+# time 1415: PORT B expected data: 1000, actual data: 1110
+# inside SCB
+#  3
+# time 1425: PORT A expected data: 0000, actual data: 0011
+# time 1425: PORT B expected data: 1100, actual data: 0110
+# inside SCB
+# 14
+# time 1435: PORT A expected data: 0000, actual data: 1110
+# time 1435: PORT B expected data: 1000, actual data: 0011
+# inside SCB
+# 14
+# time 1445: PORT A expected data: 0000, actual data: 1110
+# time 1445: PORT B expected data: 1000, actual data: 1010
+# inside SCB
+#  8
+# time 1455: PORT A expected data: 1000, actual data: 1000
+# time 1455: PORT B expected data: 0111, actual data: 1100
+# inside SCB
+# 14
+# time 1465: PORT A expected data: 1000, actual data: 1110
+# time 1465: PORT B expected data: 0111, actual data: 0011
+# inside SCB
+# 10
+# time 1475: PORT A expected data: 1000, actual data: 1010
+# time 1475: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  2
+# time 1485: PORT A expected data: 1000, actual data: 0010
+# time 1485: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+#  5
+# time 1495: PORT A expected data: 1000, actual data: 0101
+# time 1495: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+#  8
+# time 1505: PORT A expected data: 1110, actual data: 1000
+# time 1505: PORT B expected data: 1100, actual data: 1111
+# inside SCB
+# 12
+# time 1515: PORT A expected data: 1110, actual data: 1100
+# time 1515: PORT B expected data: 1100, actual data: 1111
+# inside SCB
+#  6
+# time 1525: PORT A expected data: 0011, actual data: 0110
+# time 1525: PORT B expected data: 0101, actual data: 1001
+# inside SCB
+# 13
+# time 1535: PORT A expected data: 0011, actual data: 1101
+# time 1535: PORT B expected data: 0101, actual data: 1100
+# inside SCB
+#  9
+# time 1545: PORT A expected data: 1100, actual data: 1001
+# time 1545: PORT B expected data: 0111, actual data: 0000
+# inside SCB
+#  6
+# time 1555: PORT A expected data: 1100, actual data: 0110
+# time 1555: PORT B expected data: 0111, actual data: 1101
+# inside SCB
+# 14
+# time 1565: PORT A expected data: 0111, actual data: 1110
+# time 1565: PORT B expected data: 1101, actual data: 1100
+# inside SCB
+# 12
+# time 1575: PORT A expected data: 0111, actual data: 1100
+# time 1575: PORT B expected data: 1101, actual data: 0010
+# inside SCB
+#  8
+# time 1585: PORT A expected data: 0111, actual data: 1000
+# time 1585: PORT B expected data: 1101, actual data: 1000
+# inside SCB
+#  0
+# time 1595: PORT A expected data: 0111, actual data: 0000
+# time 1595: PORT B expected data: 1101, actual data: 1100
+# inside SCB
+# 13
+# time 1605: PORT A expected data: 0010, actual data: 1101
+# time 1605: PORT B expected data: 0010, actual data: 0000
+# inside SCB
+# 12
+# time 1615: PORT A expected data: 0010, actual data: 1100
+# time 1615: PORT B expected data: 0010, actual data: 1110
+# inside SCB
+#  0
+# time 1625: PORT A expected data: 0000, actual data: 0000
+# time 1625: PORT B expected data: 1101, actual data: 1010
+# inside SCB
+# 15
+# time 1635: PORT A expected data: 1111, actual data: 1111
+# time 1635: PORT B expected data: 0110, actual data: 1110
+# inside SCB
+#  3
+# time 1645: PORT A expected data: 1111, actual data: 0011
+# time 1645: PORT B expected data: 0110, actual data: 1111
+# inside SCB
+# 14
+# time 1655: PORT A expected data: 1111, actual data: 1110
+# time 1655: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  2
+# time 1665: PORT A expected data: 1101, actual data: 0010
+# time 1665: PORT B expected data: 0101, actual data: 1110
+# inside SCB
+# 13
+# time 1675: PORT A expected data: 1101, actual data: 1101
+# time 1675: PORT B expected data: 0101, actual data: 1111
+# inside SCB
+#  2
+# time 1685: PORT A expected data: 1101, actual data: 0010
+# time 1685: PORT B expected data: 0101, actual data: 1000
+# inside SCB
+# 15
+# time 1695: PORT A expected data: 1101, actual data: 1111
+# time 1695: PORT B expected data: 0101, actual data: 1110
+# inside SCB
+#  4
+# time 1705: PORT A expected data: 1110, actual data: 0100
+# time 1705: PORT B expected data: 0010, actual data: 0111
+# inside SCB
+# 13
+# time 1715: PORT A expected data: 1010, actual data: 1101
+# time 1715: PORT B expected data: 0110, actual data: 1100
+# inside SCB
+#  8
+# time 1725: PORT A expected data: 1010, actual data: 1000
+# time 1725: PORT B expected data: 0110, actual data: 0000
+# inside SCB
+#  0
+# time 1735: PORT A expected data: 1000, actual data: 0000
+# time 1735: PORT B expected data: 1001, actual data: 1000
+# inside SCB
+#  0
+# time 1745: PORT A expected data: 1000, actual data: 0000
+# time 1745: PORT B expected data: 1001, actual data: 0011
+# inside SCB
+#  5
+# time 1755: PORT A expected data: 1000, actual data: 0101
+# time 1755: PORT B expected data: 1001, actual data: 0100
+# inside SCB
+# 14
+# time 1765: PORT A expected data: 1000, actual data: 1110
+# time 1765: PORT B expected data: 1001, actual data: 1000
+# inside SCB
+# 14
+# time 1775: PORT A expected data: 1000, actual data: 1110
+# time 1775: PORT B expected data: 1001, actual data: 0011
+# inside SCB
+#  1
+# time 1785: PORT A expected data: 0110, actual data: 0001
+# time 1785: PORT B expected data: 1010, actual data: 1000
+# inside SCB
+# 15
+# time 1795: PORT A expected data: 0110, actual data: 1111
+# time 1795: PORT B expected data: 1010, actual data: 1110
+# inside SCB
+# 14
+# time 1805: PORT A expected data: 0110, actual data: 1110
+# time 1805: PORT B expected data: 1010, actual data: 1001
+# inside SCB
+# 15
+# time 1815: PORT A expected data: 0110, actual data: 1111
+# time 1815: PORT B expected data: 1010, actual data: 1000
+# inside SCB
+#  1
+# time 1825: PORT A expected data: 1010, actual data: 0001
+# time 1825: PORT B expected data: 0111, actual data: 1101
+# inside SCB
+#  7
+# time 1835: PORT A expected data: 1010, actual data: 0111
+# time 1835: PORT B expected data: 0111, actual data: 1110
+# inside SCB
+# 14
+# time 1845: PORT A expected data: 1010, actual data: 1110
+# time 1845: PORT B expected data: 0111, actual data: 1010
+# inside SCB
+# 12
+# time 1855: PORT A expected data: 1010, actual data: 1100
+# time 1855: PORT B expected data: 0111, actual data: 1010
+# inside SCB
+#  8
+# time 1865: PORT A expected data: 1010, actual data: 1000
+# time 1865: PORT B expected data: 0111, actual data: 1000
+# inside SCB
+# 13
+# time 1875: PORT A expected data: 1001, actual data: 1101
+# time 1875: PORT B expected data: 0001, actual data: 0001
+# inside SCB
+#  3
+# time 1885: PORT A expected data: 1001, actual data: 0011
+# time 1885: PORT B expected data: 0001, actual data: 1101
+# inside SCB
+# 13
+# time 1895: PORT A expected data: 1001, actual data: 1101
+# time 1895: PORT B expected data: 0001, actual data: 1010
+# inside SCB
+# 10
+# time 1905: PORT A expected data: 0100, actual data: 1010
+# time 1905: PORT B expected data: 0000, actual data: 0001
+# inside SCB
+# 15
+# time 1915: PORT A expected data: 0100, actual data: 1111
+# time 1915: PORT B expected data: 0000, actual data: 1000
+# inside SCB
+# 10
+# time 1925: PORT A expected data: 0011, actual data: 1010
+# time 1925: PORT B expected data: 0110, actual data: 1001
+# inside SCB
+#  9
+# time 1935: PORT A expected data: 0011, actual data: 1001
+# time 1935: PORT B expected data: 0110, actual data: 1111
+# inside SCB
+# 14
+# time 1945: PORT A expected data: 0011, actual data: 1110
+# time 1945: PORT B expected data: 0110, actual data: 0011
+# inside SCB
+#  4
+# time 1955: PORT A expected data: 0011, actual data: 0100
+# time 1955: PORT B expected data: 0110, actual data: 0011
+# inside SCB
+# 15
+# time 1965: PORT A expected data: 0011, actual data: 1111
+# time 1965: PORT B expected data: 0110, actual data: 0011
+# inside SCB
+#  3
+# time 1975: PORT A expected data: 1010, actual data: 0011
+# time 1975: PORT B expected data: 1011, actual data: 0100
+# inside SCB
+#  4
+# time 1985: PORT A expected data: 1010, actual data: 0100
+# time 1985: PORT B expected data: 1011, actual data: 1010
+# inside SCB
+# 10
+# time 1995: PORT A expected data: 1011, actual data: 1010
+# time 1995: PORT B expected data: 0111, actual data: 0001
+# inside SCB
+# 11
+# ** Note: $finish    : src/tb/testbench.sv(43)
+#    Time: 2 us  Iteration: 0  Instance: /tb
+# Break in Module tb at src/tb/testbench.sv line 43
+# 
+# Save coverage database
+# coverage save -assert -directive -cvg -codeAll cov.ucdb
+# 
+# Generate HTML coverage report
+# vcover report -html -output covhtmlreport \
+#     -details -assert -directive -cvg \
+#     -code bcestf -threshL 50 -threshH 90 cov.ucdb
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 11:17:34 on Apr 09,2026
+# vcover report -html -output covhtmlreport -details -assert -directive -cvg -code bcestf -threshL 50 -threshH 90 cov.ucdb 
+# End time: 11:17:38 on Apr 09,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# 
+# quit
+# 
+# Optional: open report in browser
+# exec firefox covhtmlreport/index.html &
+# 134755
+# 
+do run_cov.tcl
+# 
+# vlog -sv +cover=bcestf src/rtl/design.sv src/tb/testbench.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:19:43 on Apr 09,2026
+# vlog -reportprogress 300 -sv "+cover=bcestf" src/rtl/design.sv src/tb/testbench.sv 
+# -- Compiling module hamming_encoder
+# -- Compiling module hamming_decoder
+# -- Compiling module m_block
+# -- Compiling module ram
+# -- Compiling interface des_if
+# -- Compiling package testbench_sv_unit
+# ** Warning: src/tb/generator.sv(28): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: src/tb/generator.sv(35): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:19:43 on Apr 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# 
+# Start simulation with coverage
+# vsim -gui -coverage -assertdebug -voptargs="+acc" -onfinish stop work.tb
+# End time: 11:19:49 on Apr 09,2026, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 2
+# vsim -gui -coverage -assertdebug -voptargs=""+acc"" -onfinish stop work.tb 
+# Start time: 11:19:49 on Apr 09,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/tb/generator.sv(28): (vopt-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: src/tb/generator.sv(35): (vopt-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.des_if(fast__2)
+# Loading work.ram(fast)
+# Loading work.hamming_encoder(fast)
+# Loading work.hamming_decoder(fast)
+# Loading work.m_block(fast)
+# Loading work.des_if(fast)
+# 
+# Load waveform script
+#do Serial_adder_wave.do
+# log -r sim:/tb/dut/*
+# add wave -position insertpoint sim:/tb/dut/*
+# Run simulation
+# run -all
+# new SCB
+# inside SCB
+#  x
+# time 25: PORT A expected data: 0000, actual data: xxxx
+# time 25: PORT B expected data: xxxx, actual data: xxxx
+# time 25: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# inside SCB
+#  x
+# time 35: PORT A expected data: 0000, actual data: xxxx
+# time 35: PORT B expected data: xxxx, actual data: xxxx
+# time 35: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# inside SCB
+#  x
+# time 45: PORT A expected data: 0000, actual data: xxxx
+# time 45: PORT B expected data: xxxx, actual data: xxxx
+# time 45: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# inside SCB
+#  x
+# time 55: PORT A expected data: 0000, actual data: xxxx
+# time 55: PORT B expected data: 0000, actual data: xxxx
+# time 55: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# inside SCB
+#  0
+# time 65: PORT A expected data: 0000, actual data: 0000
+# time 65: PORT B expected data: 0000, actual data: 0000
+# time 65: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# inside SCB
+#  0
+# time 75: PORT A expected data: 0000, actual data: 0000
+# time 75: PORT B expected data: 0000, actual data: 0000
+# time 75: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# inside SCB
+#  0
+# time 85: PORT A expected data: 0000, actual data: 0000
+# time 85: PORT B expected data: 0000, actual data: 0000
+# time 85: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5}
+# inside SCB
+#  0
+# time 95: PORT A expected data: 0000, actual data: 0000
+# time 95: PORT B expected data: 0000, actual data: 0000
+# time 95: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5}
+# inside SCB
+#  0
+# time 105: PORT A expected data: 0000, actual data: 0000
+# time 105: PORT B expected data: 0000, actual data: 0000
+# time 105: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  0
+# time 115: PORT A expected data: 0000, actual data: 0000
+# time 115: PORT B expected data: 0000, actual data: 0000
+# time 115: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  0
+# time 125: PORT A expected data: 0000, actual data: 0000
+# time 125: PORT B expected data: 0000, actual data: 0000
+# time 125: ref mem: '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  5
+# time 135: PORT A expected data: 0000, actual data: 0101
+# time 135: PORT B expected data: 0000, actual data: 0000
+# time 135: ref mem: '{2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  0
+# time 145: PORT A expected data: 0000, actual data: 0000
+# time 145: PORT B expected data: 0000, actual data: 0000
+# time 145: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  0
+# time 155: PORT A expected data: 0000, actual data: 0000
+# time 155: PORT B expected data: 0000, actual data: 0000
+# time 155: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  0
+# time 165: PORT A expected data: 0000, actual data: 0000
+# time 165: PORT B expected data: 0000, actual data: 0000
+# time 165: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  0
+# time 175: PORT A expected data: 0000, actual data: 0000
+# time 175: PORT B expected data: 0000, actual data: 0000
+# time 175: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 5}
+# inside SCB
+#  6
+# time 185: PORT A expected data: 0000, actual data: 0110
+# time 185: PORT B expected data: 0000, actual data: 0000
+# time 185: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 195: PORT A expected data: 0000, actual data: 0000
+# time 195: PORT B expected data: 0000, actual data: 0010
+# time 195: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 3, 14, 0, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 205: PORT A expected data: 0000, actual data: 0000
+# time 205: PORT B expected data: 0000, actual data: 0000
+# time 205: ref mem: '{2, 7, 0, 0, 0, 0, 0, 0, 0, 3, 14, 0, 6, 0, 0, 3}
+# inside SCB
+#  3
+# time 215: PORT A expected data: 0000, actual data: 0011
+# time 215: PORT B expected data: 0000, actual data: 0000
+# time 215: ref mem: '{10, 7, 0, 0, 0, 0, 0, 0, 0, 3, 14, 0, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 225: PORT A expected data: 0000, actual data: 0000
+# time 225: PORT B expected data: 0000, actual data: 0000
+# time 225: ref mem: '{10, 7, 0, 0, 0, 0, 0, 0, 0, 3, 14, 0, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 235: PORT A expected data: 0000, actual data: 0000
+# time 235: PORT B expected data: 0000, actual data: 0000
+# time 235: ref mem: '{10, 7, 0, 0, 0, 0, 0, 0, 0, 3, 8, 0, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 245: PORT A expected data: 0000, actual data: 0000
+# time 245: PORT B expected data: 0000, actual data: 1110
+# time 245: ref mem: '{10, 7, 0, 0, 0, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  3
+# time 255: PORT A expected data: 0000, actual data: 0011
+# time 255: PORT B expected data: 0000, actual data: 0000
+# time 255: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 265: PORT A expected data: 0000, actual data: 0000
+# time 265: PORT B expected data: 0000, actual data: 0000
+# time 265: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  7
+# time 275: PORT A expected data: 0000, actual data: 0111
+# time 275: PORT B expected data: 0000, actual data: 0000
+# time 275: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+# 14
+# time 285: PORT A expected data: 1000, actual data: 1110
+# time 285: PORT B expected data: 0000, actual data: 0000
+# time 285: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+# 14
+# time 295: PORT A expected data: 0000, actual data: 1110
+# time 295: PORT B expected data: 0111, actual data: 0010
+# time 295: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 305: PORT A expected data: 0000, actual data: 0000
+# time 305: PORT B expected data: 0111, actual data: 0000
+# time 305: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  2
+# time 315: PORT A expected data: 0000, actual data: 0010
+# time 315: PORT B expected data: 0000, actual data: 0000
+# time 315: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 325: PORT A expected data: 0000, actual data: 0000
+# time 325: PORT B expected data: 0000, actual data: 1000
+# time 325: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  8
+# time 335: PORT A expected data: 0000, actual data: 1000
+# time 335: PORT B expected data: 0000, actual data: 0000
+# time 335: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 345: PORT A expected data: 0000, actual data: 0000
+# time 345: PORT B expected data: 1010, actual data: 0000
+# time 345: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  2
+# time 355: PORT A expected data: 1010, actual data: 0010
+# time 355: PORT B expected data: 0111, actual data: 0000
+# time 355: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 365: PORT A expected data: 0110, actual data: 0000
+# time 365: PORT B expected data: 0011, actual data: 0110
+# time 365: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 375: PORT A expected data: 0000, actual data: 0000
+# time 375: PORT B expected data: 0111, actual data: 1110
+# time 375: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  2
+# time 385: PORT A expected data: 0000, actual data: 0010
+# time 385: PORT B expected data: 0111, actual data: 1000
+# time 385: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 395: PORT A expected data: 0000, actual data: 0000
+# time 395: PORT B expected data: 0111, actual data: 0000
+# time 395: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+# 12
+# time 405: PORT A expected data: 0000, actual data: 1100
+# time 405: PORT B expected data: 1010, actual data: 0000
+# time 405: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  2
+# time 415: PORT A expected data: 1100, actual data: 0010
+# time 415: PORT B expected data: 0110, actual data: 0000
+# time 415: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  7
+# time 425: PORT A expected data: 1101, actual data: 0111
+# time 425: PORT B expected data: 1100, actual data: 1100
+# time 425: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  7
+# time 435: PORT A expected data: 1101, actual data: 0111
+# time 435: PORT B expected data: 1100, actual data: 0000
+# time 435: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 0, 0, 3}
+# inside SCB
+#  0
+# time 445: PORT A expected data: 1101, actual data: 0000
+# time 445: PORT B expected data: 1100, actual data: 1101
+# time 445: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 455: PORT A expected data: 0000, actual data: 0000
+# time 455: PORT B expected data: 0110, actual data: 0000
+# time 455: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 465: PORT A expected data: 0000, actual data: 0000
+# time 465: PORT B expected data: 1000, actual data: 0000
+# time 465: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 475: PORT A expected data: 0000, actual data: 0000
+# time 475: PORT B expected data: 0111, actual data: 0000
+# time 475: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 485: PORT A expected data: 0000, actual data: 0000
+# time 485: PORT B expected data: 0000, actual data: 0000
+# time 485: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 0, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 495: PORT A expected data: 0000, actual data: 0000
+# time 495: PORT B expected data: 0000, actual data: 1000
+# time 495: ref mem: '{10, 7, 0, 0, 13, 0, 0, 0, 4, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  9
+# time 505: PORT A expected data: 0000, actual data: 1001
+# time 505: PORT B expected data: 0000, actual data: 1101
+# time 505: ref mem: '{10, 7, 0, 0, 13, 3, 0, 0, 4, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 515: PORT A expected data: 0000, actual data: 0000
+# time 515: PORT B expected data: 0000, actual data: 1001
+# time 515: ref mem: '{10, 3, 0, 0, 13, 3, 0, 0, 4, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 525: PORT A expected data: 0000, actual data: 0000
+# time 525: PORT B expected data: 0000, actual data: 0110
+# time 525: ref mem: '{10, 3, 0, 0, 13, 3, 0, 0, 12, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 535: PORT A expected data: 0111, actual data: 0000
+# time 535: PORT B expected data: 0011, actual data: 0000
+# time 535: ref mem: '{10, 3, 0, 0, 13, 3, 0, 0, 12, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 545: PORT A expected data: 0100, actual data: 0000
+# time 545: PORT B expected data: 0011, actual data: 0000
+# time 545: ref mem: '{10, 3, 0, 0, 13, 3, 0, 0, 12, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 555: PORT A expected data: 0110, actual data: 0000
+# time 555: PORT B expected data: 1100, actual data: 0000
+# time 555: ref mem: '{10, 3, 0, 0, 13, 3, 0, 0, 12, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 565: PORT A expected data: 0110, actual data: 0000
+# time 565: PORT B expected data: 1100, actual data: 0000
+# time 565: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 575: PORT A expected data: 1001, actual data: 0000
+# time 575: PORT B expected data: 0000, actual data: 0110
+# time 575: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 12, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 585: PORT A expected data: 1001, actual data: 0000
+# time 585: PORT B expected data: 0000, actual data: 0011
+# time 585: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 595: PORT A expected data: 1100, actual data: 0000
+# time 595: PORT B expected data: 0011, actual data: 0000
+# time 595: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 6, 9, 0, 3}
+# inside SCB
+#  0
+# time 605: PORT A expected data: 1100, actual data: 0000
+# time 605: PORT B expected data: 0011, actual data: 0000
+# time 605: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 6, 13, 0, 3}
+# inside SCB
+#  0
+# time 615: PORT A expected data: 0110, actual data: 0000
+# time 615: PORT B expected data: 0000, actual data: 0010
+# time 615: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 6, 13, 0, 3}
+# inside SCB
+#  3
+# time 625: PORT A expected data: 0110, actual data: 0011
+# time 625: PORT B expected data: 0000, actual data: 0000
+# time 625: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 6, 13, 0, 3}
+# inside SCB
+#  8
+# time 635: PORT A expected data: 0110, actual data: 1000
+# time 635: PORT B expected data: 0000, actual data: 0000
+# time 635: ref mem: '{5, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 6, 13, 0, 3}
+# inside SCB
+#  0
+# time 645: PORT A expected data: 0110, actual data: 0000
+# time 645: PORT B expected data: 0000, actual data: 1101
+# time 645: ref mem: '{5, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 8, 13, 0, 3}
+# inside SCB
+#  8
+# time 655: PORT A expected data: 0110, actual data: 1000
+# time 655: PORT B expected data: 0000, actual data: 0000
+# time 655: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 8, 13, 0, 3}
+# inside SCB
+#  0
+# time 665: PORT A expected data: 0110, actual data: 0000
+# time 665: PORT B expected data: 0000, actual data: 0100
+# time 665: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 4, 8, 13, 0, 3}
+# inside SCB
+# 13
+# time 675: PORT A expected data: 0110, actual data: 1101
+# time 675: PORT B expected data: 0000, actual data: 1000
+# time 675: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  3
+# time 685: PORT A expected data: 0110, actual data: 0011
+# time 685: PORT B expected data: 0000, actual data: 0101
+# time 685: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  4
+# time 695: PORT A expected data: 0110, actual data: 0100
+# time 695: PORT B expected data: 0000, actual data: 1101
+# time 695: ref mem: '{10, 6, 0, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  4
+# time 705: PORT A expected data: 0110, actual data: 0100
+# time 705: PORT B expected data: 0000, actual data: 0011
+# time 705: ref mem: '{10, 15, 0, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 14
+# time 715: PORT A expected data: 0110, actual data: 1110
+# time 715: PORT B expected data: 0000, actual data: 1000
+# time 715: ref mem: '{10, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  0
+# time 725: PORT A expected data: 0110, actual data: 0000
+# time 725: PORT B expected data: 0000, actual data: 0110
+# time 725: ref mem: '{10, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  0
+# time 735: PORT A expected data: 0000, actual data: 0000
+# time 735: PORT B expected data: 1100, actual data: 1101
+# time 735: ref mem: '{10, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 15
+# time 745: PORT A expected data: 0000, actual data: 1111
+# time 745: PORT B expected data: 1100, actual data: 1110
+# time 745: ref mem: '{8, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 15
+# time 755: PORT A expected data: 0000, actual data: 1111
+# time 755: PORT B expected data: 1111, actual data: 1110
+# time 755: ref mem: '{8, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 13
+# time 765: PORT A expected data: 0000, actual data: 1101
+# time 765: PORT B expected data: 1111, actual data: 1111
+# time 765: ref mem: '{8, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  4
+# time 775: PORT A expected data: 1000, actual data: 0100
+# time 775: PORT B expected data: 0100, actual data: 0101
+# time 775: ref mem: '{8, 15, 4, 0, 13, 3, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 12
+# time 785: PORT A expected data: 1000, actual data: 1100
+# time 785: PORT B expected data: 0100, actual data: 1111
+# time 785: ref mem: '{8, 15, 4, 0, 13, 12, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 15
+# time 795: PORT A expected data: 1111, actual data: 1111
+# time 795: PORT B expected data: 0011, actual data: 1111
+# time 795: ref mem: '{8, 15, 4, 0, 13, 12, 0, 0, 12, 3, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  5
+# time 805: PORT A expected data: 1111, actual data: 0101
+# time 805: PORT B expected data: 0011, actual data: 1111
+# time 805: ref mem: '{8, 15, 4, 0, 13, 12, 0, 0, 12, 14, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 15
+# time 815: PORT A expected data: 1111, actual data: 1111
+# time 815: PORT B expected data: 0011, actual data: 1000
+# time 815: ref mem: '{2, 15, 4, 0, 13, 12, 0, 0, 12, 14, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 14
+# time 825: PORT A expected data: 1111, actual data: 1110
+# time 825: PORT B expected data: 0011, actual data: 1110
+# time 825: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 15
+# time 835: PORT A expected data: 1111, actual data: 1111
+# time 835: PORT B expected data: 0011, actual data: 1110
+# time 835: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 15, 8, 13, 0, 3}
+# inside SCB
+#  4
+# time 845: PORT A expected data: 0100, actual data: 0100
+# time 845: PORT B expected data: 0100, actual data: 0010
+# time 845: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 15, 8, 13, 0, 3}
+# inside SCB
+# 13
+# time 855: PORT A expected data: 0100, actual data: 1101
+# time 855: PORT B expected data: 0100, actual data: 1100
+# time 855: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 0, 3}
+# inside SCB
+#  8
+# time 865: PORT A expected data: 0100, actual data: 1000
+# time 865: PORT B expected data: 0100, actual data: 1111
+# time 865: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 7, 3}
+# inside SCB
+# 15
+# time 875: PORT A expected data: 1111, actual data: 1111
+# time 875: PORT B expected data: 1101, actual data: 1110
+# time 875: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 7, 3}
+# inside SCB
+# 12
+# time 885: PORT A expected data: 0000, actual data: 1100
+# time 885: PORT B expected data: 0000, actual data: 1000
+# time 885: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 7, 3}
+# inside SCB
+#  6
+# time 895: PORT A expected data: 1110, actual data: 0110
+# time 895: PORT B expected data: 1111, actual data: 1000
+# time 895: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 7, 3}
+# inside SCB
+#  2
+# time 905: PORT A expected data: 1000, actual data: 0010
+# time 905: PORT B expected data: 0111, actual data: 0110
+# time 905: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 7, 3}
+# inside SCB
+#  8
+# time 915: PORT A expected data: 0000, actual data: 1000
+# time 915: PORT B expected data: 0111, actual data: 0010
+# time 915: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 14, 8, 1, 8, 13, 7, 3}
+# inside SCB
+# 15
+# time 925: PORT A expected data: 0000, actual data: 1111
+# time 925: PORT B expected data: 0111, actual data: 1100
+# time 925: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 13, 7, 3}
+# inside SCB
+#  8
+# time 935: PORT A expected data: 0111, actual data: 1000
+# time 935: PORT B expected data: 0000, actual data: 1111
+# time 935: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 13, 7, 3}
+# inside SCB
+# 12
+# time 945: PORT A expected data: 0111, actual data: 1100
+# time 945: PORT B expected data: 0000, actual data: 1101
+# time 945: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 3}
+# inside SCB
+#  6
+# time 955: PORT A expected data: 0111, actual data: 0110
+# time 955: PORT B expected data: 0000, actual data: 0110
+# time 955: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+# 13
+# time 965: PORT A expected data: 1101, actual data: 1101
+# time 965: PORT B expected data: 1000, actual data: 1101
+# time 965: ref mem: '{2, 15, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+#  7
+# time 975: PORT A expected data: 1101, actual data: 0111
+# time 975: PORT B expected data: 1000, actual data: 1110
+# time 975: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+#  6
+# time 985: PORT A expected data: 1101, actual data: 0110
+# time 985: PORT B expected data: 1000, actual data: 1111
+# time 985: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+#  1
+# time 995: PORT A expected data: 1101, actual data: 0001
+# time 995: PORT B expected data: 1000, actual data: 1101
+# time 995: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+#  6
+# time 1005: PORT A expected data: 0000, actual data: 0110
+# time 1005: PORT B expected data: 0011, actual data: 1000
+# time 1005: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+#  7
+# time 1015: PORT A expected data: 0000, actual data: 0111
+# time 1015: PORT B expected data: 0011, actual data: 1101
+# time 1015: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+# 15
+# time 1025: PORT A expected data: 0110, actual data: 1111
+# time 1025: PORT B expected data: 1100, actual data: 1100
+# time 1025: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 1, 8, 15, 7, 6}
+# inside SCB
+# 13
+# time 1035: PORT A expected data: 0110, actual data: 1101
+# time 1035: PORT B expected data: 1100, actual data: 1111
+# time 1035: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 2, 8, 15, 7, 6}
+# inside SCB
+# 15
+# time 1045: PORT A expected data: 0010, actual data: 1111
+# time 1045: PORT B expected data: 1111, actual data: 1001
+# time 1045: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 2, 8, 15, 7, 6}
+# inside SCB
+#  0
+# time 1055: PORT A expected data: 0001, actual data: 0000
+# time 1055: PORT B expected data: 0010, actual data: 1111
+# time 1055: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 12, 3, 8, 2, 8, 15, 7, 6}
+# inside SCB
+#  8
+# time 1065: PORT A expected data: 0001, actual data: 1000
+# time 1065: PORT B expected data: 0010, actual data: 1111
+# time 1065: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 8, 3, 8, 2, 8, 15, 7, 6}
+# inside SCB
+# 12
+# time 1075: PORT A expected data: 1001, actual data: 1100
+# time 1075: PORT B expected data: 0011, actual data: 0001
+# time 1075: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 8, 3, 8, 2, 8, 15, 7, 6}
+# inside SCB
+# 12
+# time 1085: PORT A expected data: 1001, actual data: 1100
+# time 1085: PORT B expected data: 0011, actual data: 1101
+# time 1085: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 8, 3, 8, 2, 8, 13, 7, 6}
+# inside SCB
+#  1
+# time 1095: PORT A expected data: 1101, actual data: 0001
+# time 1095: PORT B expected data: 0000, actual data: 0110
+# time 1095: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 8, 3, 8, 2, 8, 13, 7, 6}
+# inside SCB
+#  6
+# time 1105: PORT A expected data: 1111, actual data: 0110
+# time 1105: PORT B expected data: 0010, actual data: 1101
+# time 1105: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 8, 3, 8, 2, 8, 13, 7, 6}
+# inside SCB
+#  9
+# time 1115: PORT A expected data: 1111, actual data: 1001
+# time 1115: PORT B expected data: 0010, actual data: 1100
+# time 1115: ref mem: '{2, 9, 15, 0, 13, 12, 0, 0, 8, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+#  1
+# time 1125: PORT A expected data: 1111, actual data: 0001
+# time 1125: PORT B expected data: 0010, actual data: 1101
+# time 1125: ref mem: '{2, 9, 15, 0, 13, 12, 10, 0, 8, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+#  2
+# time 1135: PORT A expected data: 1111, actual data: 0010
+# time 1135: PORT B expected data: 0010, actual data: 1101
+# time 1135: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 8, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+#  1
+# time 1145: PORT A expected data: 1111, actual data: 0001
+# time 1145: PORT B expected data: 0010, actual data: 0011
+# time 1145: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 8, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 13
+# time 1155: PORT A expected data: 1111, actual data: 1101
+# time 1155: PORT B expected data: 0010, actual data: 0110
+# time 1155: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 14, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+#  3
+# time 1165: PORT A expected data: 1111, actual data: 0011
+# time 1165: PORT B expected data: 0010, actual data: 0010
+# time 1165: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 14, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 14
+# time 1175: PORT A expected data: 1000, actual data: 1110
+# time 1175: PORT B expected data: 0000, actual data: 0011
+# time 1175: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 14, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 12
+# time 1185: PORT A expected data: 0000, actual data: 1100
+# time 1185: PORT B expected data: 1010, actual data: 1111
+# time 1185: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 14, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+#  8
+# time 1195: PORT A expected data: 1100, actual data: 1000
+# time 1195: PORT B expected data: 0000, actual data: 0010
+# time 1195: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 14, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 13
+# time 1205: PORT A expected data: 1100, actual data: 1101
+# time 1205: PORT B expected data: 0000, actual data: 1100
+# time 1205: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 14
+# time 1215: PORT A expected data: 1100, actual data: 1110
+# time 1215: PORT B expected data: 0000, actual data: 1000
+# time 1215: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+#  0
+# time 1225: PORT A expected data: 1110, actual data: 0000
+# time 1225: PORT B expected data: 1101, actual data: 1110
+# time 1225: ref mem: '{2, 8, 15, 0, 13, 12, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 14
+# time 1235: PORT A expected data: 1110, actual data: 1110
+# time 1235: PORT B expected data: 1101, actual data: 1010
+# time 1235: ref mem: '{2, 8, 5, 0, 13, 12, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 12
+# time 1245: PORT A expected data: 1010, actual data: 1100
+# time 1245: PORT B expected data: 1111, actual data: 0110
+# time 1245: ref mem: '{2, 8, 5, 0, 13, 12, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 13
+# time 1255: PORT A expected data: 1111, actual data: 1101
+# time 1255: PORT B expected data: 0000, actual data: 0000
+# time 1255: ref mem: '{2, 8, 5, 0, 13, 12, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 14
+# time 1265: PORT A expected data: 1111, actual data: 1110
+# time 1265: PORT B expected data: 0000, actual data: 0011
+# time 1265: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 12
+# time 1275: PORT A expected data: 1111, actual data: 1100
+# time 1275: PORT B expected data: 0000, actual data: 1100
+# time 1275: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 8, 13, 7, 2}
+# inside SCB
+# 12
+# time 1285: PORT A expected data: 1111, actual data: 1100
+# time 1285: PORT B expected data: 0000, actual data: 0000
+# time 1285: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+# 14
+# time 1295: PORT A expected data: 1101, actual data: 1110
+# time 1295: PORT B expected data: 1101, actual data: 1000
+# time 1295: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+#  3
+# time 1305: PORT A expected data: 1000, actual data: 0011
+# time 1305: PORT B expected data: 1101, actual data: 1111
+# time 1305: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+# 13
+# time 1315: PORT A expected data: 0101, actual data: 1101
+# time 1315: PORT B expected data: 0011, actual data: 1111
+# time 1315: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+# 12
+# time 1325: PORT A expected data: 0000, actual data: 1100
+# time 1325: PORT B expected data: 0010, actual data: 1010
+# time 1325: ref mem: '{2, 8, 5, 0, 13, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+# 12
+# time 1335: PORT A expected data: 0000, actual data: 1100
+# time 1335: PORT B expected data: 0010, actual data: 1010
+# time 1335: ref mem: '{2, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+# 15
+# time 1345: PORT A expected data: 0000, actual data: 1111
+# time 1345: PORT B expected data: 0010, actual data: 1101
+# time 1345: ref mem: '{12, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+#  0
+# time 1355: PORT A expected data: 1101, actual data: 0000
+# time 1355: PORT B expected data: 0000, actual data: 1101
+# time 1355: ref mem: '{12, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 2, 9, 13, 7, 2}
+# inside SCB
+# 13
+# time 1365: PORT A expected data: 1101, actual data: 1101
+# time 1365: PORT B expected data: 0000, actual data: 1110
+# time 1365: ref mem: '{12, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 14, 9, 13, 7, 2}
+# inside SCB
+# 13
+# time 1375: PORT A expected data: 1010, actual data: 1101
+# time 1375: PORT B expected data: 0000, actual data: 0111
+# time 1375: ref mem: '{12, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 14, 9, 13, 7, 2}
+# inside SCB
+#  7
+# time 1385: PORT A expected data: 0010, actual data: 0111
+# time 1385: PORT B expected data: 1000, actual data: 1100
+# time 1385: ref mem: '{12, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 14, 9, 13, 7, 2}
+# inside SCB
+#  6
+# time 1395: PORT A expected data: 0010, actual data: 0110
+# time 1395: PORT B expected data: 1000, actual data: 0010
+# time 1395: ref mem: '{12, 8, 5, 0, 2, 7, 10, 0, 0, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+#  3
+# time 1405: PORT A expected data: 0010, actual data: 0011
+# time 1405: PORT B expected data: 1000, actual data: 1111
+# time 1405: ref mem: '{12, 8, 5, 7, 2, 7, 10, 0, 0, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+# 13
+# time 1415: PORT A expected data: 0010, actual data: 1101
+# time 1415: PORT B expected data: 1000, actual data: 1110
+# time 1415: ref mem: '{12, 8, 5, 7, 2, 7, 10, 0, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+#  3
+# time 1425: PORT A expected data: 0000, actual data: 0011
+# time 1425: PORT B expected data: 1100, actual data: 0110
+# time 1425: ref mem: '{12, 8, 5, 7, 2, 7, 10, 0, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+# 14
+# time 1435: PORT A expected data: 0000, actual data: 1110
+# time 1435: PORT B expected data: 1000, actual data: 0011
+# time 1435: ref mem: '{12, 8, 5, 7, 2, 7, 10, 0, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+# 14
+# time 1445: PORT A expected data: 0000, actual data: 1110
+# time 1445: PORT B expected data: 1000, actual data: 1010
+# time 1445: ref mem: '{12, 8, 12, 7, 2, 7, 10, 0, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+#  8
+# time 1455: PORT A expected data: 1000, actual data: 1000
+# time 1455: PORT B expected data: 0111, actual data: 1100
+# time 1455: ref mem: '{12, 8, 12, 7, 2, 7, 10, 0, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+# 14
+# time 1465: PORT A expected data: 1000, actual data: 1110
+# time 1465: PORT B expected data: 0111, actual data: 0011
+# time 1465: ref mem: '{12, 6, 12, 7, 2, 7, 10, 0, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+# 10
+# time 1475: PORT A expected data: 1000, actual data: 1010
+# time 1475: PORT B expected data: 0111, actual data: 0000
+# time 1475: ref mem: '{12, 6, 12, 7, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+#  2
+# time 1485: PORT A expected data: 1000, actual data: 0010
+# time 1485: PORT B expected data: 0111, actual data: 1110
+# time 1485: ref mem: '{12, 6, 12, 7, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 15, 2}
+# inside SCB
+#  5
+# time 1495: PORT A expected data: 1000, actual data: 0101
+# time 1495: PORT B expected data: 0111, actual data: 1110
+# time 1495: ref mem: '{12, 6, 12, 7, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  8
+# time 1505: PORT A expected data: 1110, actual data: 1000
+# time 1505: PORT B expected data: 1100, actual data: 1111
+# time 1505: ref mem: '{12, 6, 12, 7, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 12
+# time 1515: PORT A expected data: 1110, actual data: 1100
+# time 1515: PORT B expected data: 1100, actual data: 1111
+# time 1515: ref mem: '{12, 6, 12, 13, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  6
+# time 1525: PORT A expected data: 0011, actual data: 0110
+# time 1525: PORT B expected data: 0101, actual data: 1001
+# time 1525: ref mem: '{12, 6, 12, 13, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 13
+# time 1535: PORT A expected data: 0011, actual data: 1101
+# time 1535: PORT B expected data: 0101, actual data: 1100
+# time 1535: ref mem: '{12, 6, 12, 13, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  9
+# time 1545: PORT A expected data: 1100, actual data: 1001
+# time 1545: PORT B expected data: 0111, actual data: 0000
+# time 1545: ref mem: '{12, 6, 12, 13, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  6
+# time 1555: PORT A expected data: 1100, actual data: 0110
+# time 1555: PORT B expected data: 0111, actual data: 1101
+# time 1555: ref mem: '{12, 6, 10, 13, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 14
+# time 1565: PORT A expected data: 0111, actual data: 1110
+# time 1565: PORT B expected data: 1101, actual data: 1100
+# time 1565: ref mem: '{12, 6, 10, 13, 2, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 12
+# time 1575: PORT A expected data: 0111, actual data: 1100
+# time 1575: PORT B expected data: 1101, actual data: 0010
+# time 1575: ref mem: '{12, 6, 10, 13, 15, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  8
+# time 1585: PORT A expected data: 0111, actual data: 1000
+# time 1585: PORT B expected data: 1101, actual data: 1000
+# time 1585: ref mem: '{12, 6, 10, 13, 15, 7, 10, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  0
+# time 1595: PORT A expected data: 0111, actual data: 0000
+# time 1595: PORT B expected data: 1101, actual data: 1100
+# time 1595: ref mem: '{12, 6, 10, 13, 15, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 13
+# time 1605: PORT A expected data: 0010, actual data: 1101
+# time 1605: PORT B expected data: 0010, actual data: 0000
+# time 1605: ref mem: '{12, 6, 10, 13, 15, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 12
+# time 1615: PORT A expected data: 0010, actual data: 1100
+# time 1615: PORT B expected data: 0010, actual data: 1110
+# time 1615: ref mem: '{12, 6, 10, 13, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  0
+# time 1625: PORT A expected data: 0000, actual data: 0000
+# time 1625: PORT B expected data: 1101, actual data: 1010
+# time 1625: ref mem: '{12, 6, 10, 13, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 15
+# time 1635: PORT A expected data: 1111, actual data: 1111
+# time 1635: PORT B expected data: 0110, actual data: 1110
+# time 1635: ref mem: '{12, 6, 10, 13, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  3
+# time 1645: PORT A expected data: 1111, actual data: 0011
+# time 1645: PORT B expected data: 0110, actual data: 1111
+# time 1645: ref mem: '{12, 6, 10, 4, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 14
+# time 1655: PORT A expected data: 1111, actual data: 1110
+# time 1655: PORT B expected data: 0110, actual data: 0000
+# time 1655: ref mem: '{12, 6, 10, 4, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  2
+# time 1665: PORT A expected data: 1101, actual data: 0010
+# time 1665: PORT B expected data: 0101, actual data: 1110
+# time 1665: ref mem: '{12, 6, 10, 4, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+# 13
+# time 1675: PORT A expected data: 1101, actual data: 1101
+# time 1675: PORT B expected data: 0101, actual data: 1111
+# time 1675: ref mem: '{12, 6, 10, 4, 6, 7, 1, 13, 5, 3, 8, 14, 9, 13, 0, 2}
+# inside SCB
+#  2
+# time 1685: PORT A expected data: 1101, actual data: 0010
+# time 1685: PORT B expected data: 0101, actual data: 1000
+# time 1685: ref mem: '{12, 6, 10, 4, 6, 7, 1, 13, 5, 3, 8, 8, 9, 13, 0, 2}
+# inside SCB
+# 15
+# time 1695: PORT A expected data: 1101, actual data: 1111
+# time 1695: PORT B expected data: 0101, actual data: 1110
+# time 1695: ref mem: '{12, 6, 5, 4, 6, 7, 1, 13, 5, 3, 8, 8, 9, 13, 0, 2}
+# inside SCB
+#  4
+# time 1705: PORT A expected data: 1110, actual data: 0100
+# time 1705: PORT B expected data: 0010, actual data: 0111
+# time 1705: ref mem: '{12, 6, 5, 4, 6, 7, 1, 13, 5, 3, 8, 8, 9, 13, 0, 2}
+# inside SCB
+# 13
+# time 1715: PORT A expected data: 1010, actual data: 1101
+# time 1715: PORT B expected data: 0110, actual data: 1100
+# time 1715: ref mem: '{12, 6, 5, 4, 6, 7, 1, 13, 5, 3, 8, 8, 9, 13, 0, 2}
+# inside SCB
+#  8
+# time 1725: PORT A expected data: 1010, actual data: 1000
+# time 1725: PORT B expected data: 0110, actual data: 0000
+# time 1725: ref mem: '{12, 6, 5, 4, 6, 7, 1, 13, 5, 3, 8, 8, 9, 13, 0, 10}
+# inside SCB
+#  0
+# time 1735: PORT A expected data: 1000, actual data: 0000
+# time 1735: PORT B expected data: 1001, actual data: 1000
+# time 1735: ref mem: '{12, 6, 5, 4, 6, 7, 1, 13, 5, 3, 8, 8, 9, 13, 0, 10}
+# inside SCB
+#  0
+# time 1745: PORT A expected data: 1000, actual data: 0000
+# time 1745: PORT B expected data: 1001, actual data: 0011
+# time 1745: ref mem: '{12, 6, 5, 4, 6, 7, 1, 4, 5, 3, 8, 8, 9, 13, 0, 10}
+# inside SCB
+#  5
+# time 1755: PORT A expected data: 1000, actual data: 0101
+# time 1755: PORT B expected data: 1001, actual data: 0100
+# time 1755: ref mem: '{12, 6, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+# 14
+# time 1765: PORT A expected data: 1000, actual data: 1110
+# time 1765: PORT B expected data: 1001, actual data: 1000
+# time 1765: ref mem: '{12, 6, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+# 14
+# time 1775: PORT A expected data: 1000, actual data: 1110
+# time 1775: PORT B expected data: 1001, actual data: 0011
+# time 1775: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+#  1
+# time 1785: PORT A expected data: 0110, actual data: 0001
+# time 1785: PORT B expected data: 1010, actual data: 1000
+# time 1785: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+# 15
+# time 1795: PORT A expected data: 0110, actual data: 1111
+# time 1795: PORT B expected data: 1010, actual data: 1110
+# time 1795: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+# 14
+# time 1805: PORT A expected data: 0110, actual data: 1110
+# time 1805: PORT B expected data: 1010, actual data: 1001
+# time 1805: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+# 15
+# time 1815: PORT A expected data: 0110, actual data: 1111
+# time 1815: PORT B expected data: 1010, actual data: 1000
+# time 1815: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+#  1
+# time 1825: PORT A expected data: 1010, actual data: 0001
+# time 1825: PORT B expected data: 0111, actual data: 1101
+# time 1825: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 13, 0, 10}
+# inside SCB
+#  7
+# time 1835: PORT A expected data: 1010, actual data: 0111
+# time 1835: PORT B expected data: 0111, actual data: 1110
+# time 1835: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 3, 0, 10}
+# inside SCB
+# 14
+# time 1845: PORT A expected data: 1010, actual data: 1110
+# time 1845: PORT B expected data: 0111, actual data: 1010
+# time 1845: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 9, 3, 0, 10}
+# inside SCB
+# 12
+# time 1855: PORT A expected data: 1010, actual data: 1100
+# time 1855: PORT B expected data: 0111, actual data: 1010
+# time 1855: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 8, 0, 3, 0, 10}
+# inside SCB
+#  8
+# time 1865: PORT A expected data: 1010, actual data: 1000
+# time 1865: PORT B expected data: 0111, actual data: 1000
+# time 1865: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+# 13
+# time 1875: PORT A expected data: 1001, actual data: 1101
+# time 1875: PORT B expected data: 0001, actual data: 0001
+# time 1875: ref mem: '{12, 10, 5, 4, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+#  3
+# time 1885: PORT A expected data: 1001, actual data: 0011
+# time 1885: PORT B expected data: 0001, actual data: 1101
+# time 1885: ref mem: '{12, 10, 5, 11, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+# 13
+# time 1895: PORT A expected data: 1001, actual data: 1101
+# time 1895: PORT B expected data: 0001, actual data: 1010
+# time 1895: ref mem: '{12, 10, 5, 11, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+# 10
+# time 1905: PORT A expected data: 0100, actual data: 1010
+# time 1905: PORT B expected data: 0000, actual data: 0001
+# time 1905: ref mem: '{12, 10, 5, 11, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+# 15
+# time 1915: PORT A expected data: 0100, actual data: 1111
+# time 1915: PORT B expected data: 0000, actual data: 1000
+# time 1915: ref mem: '{12, 10, 3, 11, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+# 10
+# time 1925: PORT A expected data: 0011, actual data: 1010
+# time 1925: PORT B expected data: 0110, actual data: 1001
+# time 1925: ref mem: '{12, 10, 3, 11, 6, 7, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+#  9
+# time 1935: PORT A expected data: 0011, actual data: 1001
+# time 1935: PORT B expected data: 0110, actual data: 1111
+# time 1935: ref mem: '{12, 10, 3, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+# 14
+# time 1945: PORT A expected data: 0011, actual data: 1110
+# time 1945: PORT B expected data: 0110, actual data: 0011
+# time 1945: ref mem: '{12, 6, 3, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 10}
+# inside SCB
+#  4
+# time 1955: PORT A expected data: 0011, actual data: 0100
+# time 1955: PORT B expected data: 0110, actual data: 0011
+# time 1955: ref mem: '{12, 6, 3, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 7}
+# inside SCB
+# 15
+# time 1965: PORT A expected data: 0011, actual data: 1111
+# time 1965: PORT B expected data: 0110, actual data: 0011
+# time 1965: ref mem: '{12, 6, 13, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 7}
+# inside SCB
+#  3
+# time 1975: PORT A expected data: 1010, actual data: 0011
+# time 1975: PORT B expected data: 1011, actual data: 0100
+# time 1975: ref mem: '{12, 6, 13, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 7}
+# inside SCB
+#  4
+# time 1985: PORT A expected data: 1010, actual data: 0100
+# time 1985: PORT B expected data: 1011, actual data: 1010
+# time 1985: ref mem: '{12, 6, 13, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 14}
+# inside SCB
+# 10
+# time 1995: PORT A expected data: 1011, actual data: 1010
+# time 1995: PORT B expected data: 0111, actual data: 0001
+# time 1995: ref mem: '{12, 6, 13, 11, 6, 10, 1, 4, 5, 3, 11, 15, 0, 3, 0, 14}
+# inside SCB
+# 11
+# ** Note: $finish    : src/tb/testbench.sv(43)
+#    Time: 2 us  Iteration: 0  Instance: /tb
+# Break in Module tb at src/tb/testbench.sv line 43
+# 
+# Save coverage database
+# coverage save -assert -directive -cvg -codeAll cov.ucdb
+# 
+# Generate HTML coverage report
+# vcover report -html -output covhtmlreport \
+#     -details -assert -directive -cvg \
+#     -code bcestf -threshL 50 -threshH 90 cov.ucdb
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 11:20:01 on Apr 09,2026
+# vcover report -html -output covhtmlreport -details -assert -directive -cvg -code bcestf -threshL 50 -threshH 90 cov.ucdb 
+# End time: 11:20:04 on Apr 09,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# 
+# quit
+# 
+# Optional: open report in browser
+# exec firefox covhtmlreport/index.html &
+# 135017
+# 
+# End time: 12:51:35 on Apr 09,2026, Elapsed time: 1:31:46
+# Errors: 0, Warnings: 2

@@ -1,0 +1,105 @@
+# vsim -c -voptargs="+acc" -sv_seed 2007910053 top 
+# Start time: 11:34:53 on May 18,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading /home/paranthapa/Downloads/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# 
+# PACKET 0
+# -----------------------------------------------
+# Name            Type          Size  Value      
+# -----------------------------------------------
+# packet_0        yapp_packet   -     @470       
+#   length        integral      6     'h1d       
+#   addr          integral      2     'h1        
+#   payload       da(integral)  29    -          
+#     [0]         integral      8     'h1d       
+#     [1]         integral      8     'hdb       
+#     [2]         integral      8     'ha        
+#     [3]         integral      8     'hca       
+#     [4]         integral      8     'had       
+#     ...         ...           ...   ...        
+#     [24]        integral      8     'haa       
+#     [25]        integral      8     'h42       
+#     [26]        integral      8     'h4b       
+#     [27]        integral      8     'h42       
+#     [28]        integral      8     'h88       
+#   parity        integral      8     'ha3       
+#   parity_type   parity_t      1     GOOD_PARITY
+#   packet_delay  integral      32    'h2        
+# -----------------------------------------------
+# packet_0: (yapp_packet@470) { length: 'h1d  addr: 'h1  payload: { [0]: 'h1d  [1]: 'hdb  [2]: 'ha  [3]: 'hca  [4]: 'had  ......  [24]: 'haa  [25]: 'h42  [26]: 'h4b  [27]: 'h42  [28]: 'h88  } parity: 'ha3  parity_type: GOOD_PARITY  packet_delay: 'h2  } 
+# 
+# PACKET 1
+# -----------------------------------------------
+# Name            Type          Size  Value      
+# -----------------------------------------------
+# packet_1        yapp_packet   -     @474       
+#   length        integral      6     'hc        
+#   addr          integral      2     'h2        
+#   payload       da(integral)  12    -          
+#     [0]         integral      8     'hd4       
+#     [1]         integral      8     'hf9       
+#     [2]         integral      8     'h5d       
+#     [3]         integral      8     'hb2       
+#     [4]         integral      8     'hcf       
+#     ...         ...           ...   ...        
+#     [7]         integral      8     'hca       
+#     [8]         integral      8     'hc0       
+#     [9]         integral      8     'h9e       
+#     [10]        integral      8     'ha7       
+#     [11]        integral      8     'h14       
+#   parity        integral      8     'h26       
+#   parity_type   parity_t      1     GOOD_PARITY
+#   packet_delay  integral      32    'hc        
+# -----------------------------------------------
+# packet_1: (yapp_packet@474) { length: 'hc  addr: 'h2  payload: { [0]: 'hd4  [1]: 'hf9  [2]: 'h5d  [3]: 'hb2  [4]: 'hcf  ......  [7]: 'hca  [8]: 'hc0  [9]: 'h9e  [10]: 'ha7  [11]: 'h14  } parity: 'h26  parity_type: GOOD_PARITY  packet_delay: 'hc  } 
+# 
+# COPY
+# CLONE
+# 
+# COMPARE
+# COMPARE RESULT: packet and copy_packet are EQUAL
+# COMPARE RESULT: packet and clone_packet are EQUAL
+exit
+# End time: 11:34:56 on May 18,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

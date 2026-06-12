@@ -1,0 +1,324 @@
+# vsim -c -voptargs="+acc" -sv_seed 293691513 top 
+# Start time: 17:01:56 on Aug 12,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading /home/pranav/Documents/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# 
+# PACKET 0
+# packet_0: (yapp_packet@470) {
+#   length: 'he 
+#   addr: 'h0 
+#   payload: {
+#     [0]: 'h9a 
+#     [1]: 'h8f 
+#     [2]: 'h20 
+#     [3]: 'hcf 
+#     [4]: 'h15 
+#     ...... 
+#     [9]: 'h82 
+#     [10]: 'hbc 
+#     [11]: 'h95 
+#     [12]: 'h2a 
+#     [13]: 'hdb 
+#   }
+#   parity: 'h23 
+#   parity_type: GOOD_PARITY 
+#   packet_delay: 'h5 
+# }
+# -----------------------------------------------
+# Name            Type          Size  Value      
+# -----------------------------------------------
+# packet_0        yapp_packet   -     @470       
+#   length        integral      6     'he        
+#   addr          integral      2     'h0        
+#   payload       da(integral)  14    -          
+#     [0]         integral      8     'h9a       
+#     [1]         integral      8     'h8f       
+#     [2]         integral      8     'h20       
+#     [3]         integral      8     'hcf       
+#     [4]         integral      8     'h15       
+#     ...         ...           ...   ...        
+#     [9]         integral      8     'h82       
+#     [10]        integral      8     'hbc       
+#     [11]        integral      8     'h95       
+#     [12]        integral      8     'h2a       
+#     [13]        integral      8     'hdb       
+#   parity        integral      8     'h23       
+#   parity_type   parity_t      1     GOOD_PARITY
+#   packet_delay  integral      32    'h5        
+# -----------------------------------------------
+# packet_0: (yapp_packet@470) { length: 'he  addr: 'h0  payload: { [0]: 'h9a  [1]: 'h8f  [2]: 'h20  [3]: 'hcf  [4]: 'h15  ......  [9]: 'h82  [10]: 'hbc  [11]: 'h95  [12]: 'h2a  [13]: 'hdb  } parity: 'h23  parity_type: GOOD_PARITY  packet_delay: 'h5  } 
+# 
+# PACKET 1
+# packet_1: (yapp_packet@474) {
+#   length: 'hc 
+#   addr: 'h2 
+#   payload: {
+#     [0]: 'hb9 
+#     [1]: 'h81 
+#     [2]: 'h9d 
+#     [3]: 'h87 
+#     [4]: 'hc4 
+#     ...... 
+#     [7]: 'h43 
+#     [8]: 'he3 
+#     [9]: 'h9d 
+#     [10]: 'haa 
+#     [11]: 'h95 
+#   }
+#   parity: 'hd6 
+#   parity_type: GOOD_PARITY 
+#   packet_delay: 'h4 
+# }
+# -----------------------------------------------
+# Name            Type          Size  Value      
+# -----------------------------------------------
+# packet_1        yapp_packet   -     @474       
+#   length        integral      6     'hc        
+#   addr          integral      2     'h2        
+#   payload       da(integral)  12    -          
+#     [0]         integral      8     'hb9       
+#     [1]         integral      8     'h81       
+#     [2]         integral      8     'h9d       
+#     [3]         integral      8     'h87       
+#     [4]         integral      8     'hc4       
+#     ...         ...           ...   ...        
+#     [7]         integral      8     'h43       
+#     [8]         integral      8     'he3       
+#     [9]         integral      8     'h9d       
+#     [10]        integral      8     'haa       
+#     [11]        integral      8     'h95       
+#   parity        integral      8     'hd6       
+#   parity_type   parity_t      1     GOOD_PARITY
+#   packet_delay  integral      32    'h4        
+# -----------------------------------------------
+# packet_1: (yapp_packet@474) { length: 'hc  addr: 'h2  payload: { [0]: 'hb9  [1]: 'h81  [2]: 'h9d  [3]: 'h87  [4]: 'hc4  ......  [7]: 'h43  [8]: 'he3  [9]: 'h9d  [10]: 'haa  [11]: 'h95  } parity: 'hd6  parity_type: GOOD_PARITY  packet_delay: 'h4  } 
+# 
+# PACKET 2
+# packet_2: (yapp_packet@478) {
+#   length: 'h27 
+#   addr: 'h0 
+#   payload: {
+#     [0]: 'h84 
+#     [1]: 'hf6 
+#     [2]: 'h29 
+#     [3]: 'h37 
+#     [4]: 'h85 
+#     ...... 
+#     [34]: 'h8e 
+#     [35]: 'h54 
+#     [36]: 'he8 
+#     [37]: 'h3 
+#     [38]: 'h14 
+#   }
+#   parity: 'hb1 
+#   parity_type: GOOD_PARITY 
+#   packet_delay: 'hf 
+# }
+# -----------------------------------------------
+# Name            Type          Size  Value      
+# -----------------------------------------------
+# packet_2        yapp_packet   -     @478       
+#   length        integral      6     'h27       
+#   addr          integral      2     'h0        
+#   payload       da(integral)  39    -          
+#     [0]         integral      8     'h84       
+#     [1]         integral      8     'hf6       
+#     [2]         integral      8     'h29       
+#     [3]         integral      8     'h37       
+#     [4]         integral      8     'h85       
+#     ...         ...           ...   ...        
+#     [34]        integral      8     'h8e       
+#     [35]        integral      8     'h54       
+#     [36]        integral      8     'he8       
+#     [37]        integral      8     'h3        
+#     [38]        integral      8     'h14       
+#   parity        integral      8     'hb1       
+#   parity_type   parity_t      1     GOOD_PARITY
+#   packet_delay  integral      32    'hf        
+# -----------------------------------------------
+# packet_2: (yapp_packet@478) { length: 'h27  addr: 'h0  payload: { [0]: 'h84  [1]: 'hf6  [2]: 'h29  [3]: 'h37  [4]: 'h85  ......  [34]: 'h8e  [35]: 'h54  [36]: 'he8  [37]: 'h3  [38]: 'h14  } parity: 'hb1  parity_type: GOOD_PARITY  packet_delay: 'hf  } 
+# 
+# PACKET 3
+# packet_3: (yapp_packet@482) {
+#   length: 'h10 
+#   addr: 'h1 
+#   payload: {
+#     [0]: 'h26 
+#     [1]: 'h25 
+#     [2]: 'h4d 
+#     [3]: 'h12 
+#     [4]: 'h25 
+#     ...... 
+#     [11]: 'h6e 
+#     [12]: 'hea 
+#     [13]: 'h53 
+#     [14]: 'h1e 
+#     [15]: 'hb0 
+#   }
+#   parity: 'h9f 
+#   parity_type: GOOD_PARITY 
+#   packet_delay: 'h9 
+# }
+# -----------------------------------------------
+# Name            Type          Size  Value      
+# -----------------------------------------------
+# packet_3        yapp_packet   -     @482       
+#   length        integral      6     'h10       
+#   addr          integral      2     'h1        
+#   payload       da(integral)  16    -          
+#     [0]         integral      8     'h26       
+#     [1]         integral      8     'h25       
+#     [2]         integral      8     'h4d       
+#     [3]         integral      8     'h12       
+#     [4]         integral      8     'h25       
+#     ...         ...           ...   ...        
+#     [11]        integral      8     'h6e       
+#     [12]        integral      8     'hea       
+#     [13]        integral      8     'h53       
+#     [14]        integral      8     'h1e       
+#     [15]        integral      8     'hb0       
+#   parity        integral      8     'h9f       
+#   parity_type   parity_t      1     GOOD_PARITY
+#   packet_delay  integral      32    'h9        
+# -----------------------------------------------
+# packet_3: (yapp_packet@482) { length: 'h10  addr: 'h1  payload: { [0]: 'h26  [1]: 'h25  [2]: 'h4d  [3]: 'h12  [4]: 'h25  ......  [11]: 'h6e  [12]: 'hea  [13]: 'h53  [14]: 'h1e  [15]: 'hb0  } parity: 'h9f  parity_type: GOOD_PARITY  packet_delay: 'h9  } 
+# 
+# PACKET 4
+# packet_4: (yapp_packet@486) {
+#   length: 'h39 
+#   addr: 'h2 
+#   payload: {
+#     [0]: 'h3d 
+#     [1]: 'ha8 
+#     [2]: 'hbb 
+#     [3]: 'ha9 
+#     [4]: 'hd1 
+#     ...... 
+#     [52]: 'h6d 
+#     [53]: 'hc9 
+#     [54]: 'hdf 
+#     [55]: 'h52 
+#     [56]: 'hab 
+#   }
+#   parity: 'h94 
+#   parity_type: BAD_PARITY 
+#   packet_delay: 'he 
+# }
+# ----------------------------------------------
+# Name            Type          Size  Value     
+# ----------------------------------------------
+# packet_4        yapp_packet   -     @486      
+#   length        integral      6     'h39      
+#   addr          integral      2     'h2       
+#   payload       da(integral)  57    -         
+#     [0]         integral      8     'h3d      
+#     [1]         integral      8     'ha8      
+#     [2]         integral      8     'hbb      
+#     [3]         integral      8     'ha9      
+#     [4]         integral      8     'hd1      
+#     ...         ...           ...   ...       
+#     [52]        integral      8     'h6d      
+#     [53]        integral      8     'hc9      
+#     [54]        integral      8     'hdf      
+#     [55]        integral      8     'h52      
+#     [56]        integral      8     'hab      
+#   parity        integral      8     'h94      
+#   parity_type   parity_t      1     BAD_PARITY
+#   packet_delay  integral      32    'he       
+# ----------------------------------------------
+# packet_4: (yapp_packet@486) { length: 'h39  addr: 'h2  payload: { [0]: 'h3d  [1]: 'ha8  [2]: 'hbb  [3]: 'ha9  [4]: 'hd1  ......  [52]: 'h6d  [53]: 'hc9  [54]: 'hdf  [55]: 'h52  [56]: 'hab  } parity: 'h94  parity_type: BAD_PARITY  packet_delay: 'he  } 
+# 
+# COPY
+# ----------------------------------------------
+# Name            Type          Size  Value     
+# ----------------------------------------------
+# copy_packet     yapp_packet   -     @466      
+#   length        integral      6     'h39      
+#   addr          integral      2     'h2       
+#   payload       da(integral)  57    -         
+#     [0]         integral      8     'h3d      
+#     [1]         integral      8     'ha8      
+#     [2]         integral      8     'hbb      
+#     [3]         integral      8     'ha9      
+#     [4]         integral      8     'hd1      
+#     ...         ...           ...   ...       
+#     [52]        integral      8     'h6d      
+#     [53]        integral      8     'hc9      
+#     [54]        integral      8     'hdf      
+#     [55]        integral      8     'h52      
+#     [56]        integral      8     'hab      
+#   parity        integral      8     'h94      
+#   parity_type   parity_t      1     BAD_PARITY
+#   packet_delay  integral      32    'he       
+# ----------------------------------------------
+# CLONE
+# ----------------------------------------------
+# Name            Type          Size  Value     
+# ----------------------------------------------
+# packet_4        yapp_packet   -     @490      
+#   length        integral      6     'h39      
+#   addr          integral      2     'h2       
+#   payload       da(integral)  57    -         
+#     [0]         integral      8     'h3d      
+#     [1]         integral      8     'ha8      
+#     [2]         integral      8     'hbb      
+#     [3]         integral      8     'ha9      
+#     [4]         integral      8     'hd1      
+#     ...         ...           ...   ...       
+#     [52]        integral      8     'h6d      
+#     [53]        integral      8     'hc9      
+#     [54]        integral      8     'hdf      
+#     [55]        integral      8     'h52      
+#     [56]        integral      8     'hab      
+#   parity        integral      8     'h94      
+#   parity_type   parity_t      1     BAD_PARITY
+#   packet_delay  integral      32    'he       
+# ----------------------------------------------
+# 
+# COMPARE
+# COMPARE RESULT: packet and copy_packet are EQUAL
+# COMPARE RESULT: packet and clone_packet are EQUAL
+exit
+# End time: 17:02:00 on Aug 12,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

@@ -1,0 +1,254 @@
+# vsim -c -voptargs="+acc" -sv_seed 953299660 "+UVM_TESTNAME=base_test" "+UVM_VERBOSITY=UVM_MEDIUM" top_dut 
+# Start time: 11:15:25 on Jun 08,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.channel_if(fast)
+# Loading work.yapp_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.yapp_pkg(fast)
+# Loading work.channel_pkg(fast)
+# Loading work.hbus_if(fast)
+# Loading work.hbus_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_dut(fast)
+# Loading work.yapp_if(fast__2)
+# Loading work.hbus_if(fast__2)
+# Loading work.channel_if(fast__2)
+# Loading work.yapp_router(fast)
+# Loading work.host_ctl(fast)
+# Loading work.port_fsm(fast)
+# Loading work.fifo(fast)
+# Loading /home/paranthapa/Downloads/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO @ 0 ns: reporter [UVMTOP] UVM testbench topology:
+# -------------------------------------------------------------------------
+# Name                           Type                      Size  Value     
+# -------------------------------------------------------------------------
+# uvm_test_top                   base_test                 -     @481      
+#   route                        router_tb                 -     @488      
+#     channel_env0               channel_env               -     @508      
+#       monitor                  channel_monitor           -     @698      
+#         item_collected_port    uvm_analysis_port         -     @706      
+#         resp_collected_port    uvm_analysis_port         -     @714      
+#         instance_id            string                    9     Channel_0 
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       rx_agent                 channel_rx_agent          -     @691      
+#         driver                 channel_rx_driver         -     @836      
+#           rsp_port             uvm_analysis_port         -     @851      
+#           seq_item_port        uvm_seq_item_pull_port    -     @843      
+#         sequencer              channel_rx_sequencer      -     @727      
+#           rsp_export           uvm_analysis_export       -     @734      
+#           seq_item_export      uvm_seq_item_pull_imp     -     @828      
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                channel_monitor           -     @698      
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#       has_tx                   integral                  1     'h0       
+#       has_rx                   integral                  1     'h1       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     channel_env1               channel_env               -     @515      
+#       monitor                  channel_monitor           -     @871      
+#         item_collected_port    uvm_analysis_port         -     @879      
+#         resp_collected_port    uvm_analysis_port         -     @887      
+#         instance_id            string                    9     Channel_1 
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       rx_agent                 channel_rx_agent          -     @864      
+#         driver                 channel_rx_driver         -     @1009     
+#           rsp_port             uvm_analysis_port         -     @1024     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1016     
+#         sequencer              channel_rx_sequencer      -     @900      
+#           rsp_export           uvm_analysis_export       -     @907      
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1001     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                channel_monitor           -     @871      
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#       has_tx                   integral                  1     'h0       
+#       has_rx                   integral                  1     'h1       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     channel_env2               channel_env               -     @522      
+#       monitor                  channel_monitor           -     @1044     
+#         item_collected_port    uvm_analysis_port         -     @1052     
+#         resp_collected_port    uvm_analysis_port         -     @1060     
+#         instance_id            string                    9     Channel_2 
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       rx_agent                 channel_rx_agent          -     @1037     
+#         driver                 channel_rx_driver         -     @1182     
+#           rsp_port             uvm_analysis_port         -     @1197     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1189     
+#         sequencer              channel_rx_sequencer      -     @1073     
+#           rsp_export           uvm_analysis_export       -     @1080     
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1174     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                channel_monitor           -     @1044     
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#       has_tx                   integral                  1     'h0       
+#       has_rx                   integral                  1     'h1       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     env                        uvm_env                   -     @497      
+#       agent                    uvm_agent                 -     @1207     
+#         driver                 uvm_driver #(REQ,RSP)     -     @1230     
+#           rsp_port             uvm_analysis_port         -     @1245     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1237     
+#         monitor                yapp_tx_monitor           -     @1215     
+#           item_collected_port  uvm_analysis_port         -     @1222     
+#         sequencer              yapp_tx_sequencer         -     @1253     
+#           rsp_export           uvm_analysis_export       -     @1260     
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1354     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#     hbus                       hbus_env                  -     @533      
+#       masters[0]               hbus_master_agent         -     @1388     
+#         driver                 hbus_master_driver        -     @1508     
+#           rsp_port             uvm_analysis_port         -     @1523     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1515     
+#           random_delay         integral                  1     'h0       
+#           master_id            integral                  32    'h0       
+#         sequencer              hbus_master_sequencer     -     @1399     
+#           rsp_export           uvm_analysis_export       -     @1406     
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1500     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                hbus_monitor              -     @1372     
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#         master_id              integral                  32    'h0       
+#       monitor                  hbus_monitor              -     @1372     
+#         item_collected_port    uvm_analysis_port         -     @1379     
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       num_masters              integral                  32    'h1       
+#       num_slaves               integral                  32    'h0       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     sb                         router_scoreboard         -     @649      
+#       sb_chan0_in              uvm_analysis_imp_chan0    -     @664      
+#       sb_chan1_in              uvm_analysis_imp_chan1    -     @672      
+#       sb_chan2_in              uvm_analysis_imp_chan2    -     @680      
+#       sb_yapp_in               uvm_analysis_imp_yapp     -     @656      
+#     vseqr                      router_virtual_sequencer  -     @540      
+#       rsp_export               uvm_analysis_export       -     @547      
+#       seq_item_export          uvm_seq_item_pull_imp     -     @641      
+#       arbitration_queue        array                     0     -         
+#       lock_queue               array                     0     -         
+#       num_last_reqs            integral                  32    'd1       
+#       num_last_rsps            integral                  32    'd1       
+# -------------------------------------------------------------------------
+# 
+# UVM_INFO ../../yapp/sv/yapp_env.sv(23) @ 0 ns: uvm_test_top.route.env [uvm_env] its now in environment  
+# UVM_INFO ../../channel/sv/channel_monitor.sv(131) @ 0 ns: uvm_test_top.route.channel_env2.monitor [channel_monitor] Inside the run() phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(131) @ 0 ns: uvm_test_top.route.channel_env1.monitor [channel_monitor] Inside the run() phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(131) @ 0 ns: uvm_test_top.route.channel_env0.monitor [channel_monitor] Inside the run() phase
+# UVM_INFO ../../yapp/sv/yapp_tx_driver.sv(42) @ 11 ns: uvm_test_top.route.env.agent.driver [uvm_driver #(REQ,RSP)] Reset observed
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(273) @ 11 ns: uvm_test_top.route.hbus.masters[0].driver [hbus_master_driver] Reset Observed
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(121) @ 11 ns: uvm_test_top.route.hbus.monitor [hbus_monitor] Reset Active
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(88) @ 11 ns: uvm_test_top.route.channel_env0.rx_agent.driver [channel_rx_driver] Reset Observed
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(88) @ 11 ns: uvm_test_top.route.channel_env1.rx_agent.driver [channel_rx_driver] Reset Observed
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(88) @ 11 ns: uvm_test_top.route.channel_env2.rx_agent.driver [channel_rx_driver] Reset Observed
+# UVM_INFO ../../yapp/sv/yapp_tx_driver.sv(30) @ 31 ns: uvm_test_top.route.env.agent.driver [uvm_driver #(REQ,RSP)] Reset dropped
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(55) @ 31 ns: uvm_test_top.route.env.agent.monitor [yapp_tx_monitor] Detected Reset Done
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(123) @ 31 ns: uvm_test_top.route.hbus.monitor [hbus_monitor] Reset Deasserted
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(255) @ 31 ns: uvm_test_top.route.hbus.masters[0].driver [hbus_master_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_monitor.sv(139) @ 31 ns: uvm_test_top.route.channel_env0.monitor [channel_monitor] Detected Reset Done
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(71) @ 31 ns: uvm_test_top.route.channel_env0.rx_agent.driver [channel_rx_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_monitor.sv(139) @ 31 ns: uvm_test_top.route.channel_env1.monitor [channel_monitor] Detected Reset Done
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(71) @ 31 ns: uvm_test_top.route.channel_env1.rx_agent.driver [channel_rx_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_monitor.sv(139) @ 31 ns: uvm_test_top.route.channel_env2.monitor [channel_monitor] Detected Reset Done
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(71) @ 31 ns: uvm_test_top.route.channel_env2.rx_agent.driver [channel_rx_driver] Reset Dropped
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 100000 ns: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(215) @ 100000 ns: uvm_test_top.route.channel_env0.monitor [channel_monitor] Report: Channel_0 Monitor Collected 0 Packets and 0 Responses
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(122) @ 100000 ns: uvm_test_top.route.channel_env0.rx_agent.driver [channel_rx_driver] Report: Channel_0 RX Driver Sent 0 Responses
+# UVM_INFO ../../channel/sv/channel_monitor.sv(215) @ 100000 ns: uvm_test_top.route.channel_env1.monitor [channel_monitor] Report: Channel_1 Monitor Collected 0 Packets and 0 Responses
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(122) @ 100000 ns: uvm_test_top.route.channel_env1.rx_agent.driver [channel_rx_driver] Report: Channel_1 RX Driver Sent 0 Responses
+# UVM_INFO ../../channel/sv/channel_monitor.sv(215) @ 100000 ns: uvm_test_top.route.channel_env2.monitor [channel_monitor] Report: Channel_2 Monitor Collected 0 Packets and 0 Responses
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(122) @ 100000 ns: uvm_test_top.route.channel_env2.rx_agent.driver [channel_rx_driver] Report: Channel_2 RX Driver Sent 0 Responses
+# UVM_INFO ../../yapp/sv/yapp_tx_driver.sv(85) @ 100000 ns: uvm_test_top.route.env.agent.driver [uvm_driver #(REQ,RSP)] Report: YAPP TX driver sent 0 packets
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(104) @ 100000 ns: uvm_test_top.route.env.agent.monitor [yapp_tx_monitor] Report: YAPP Monitor Collected 0 Packets
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(190) @ 100000 ns: uvm_test_top.route.hbus.monitor [hbus_monitor] Report: HBUS Monitor Collected 0 WRITE and 0 READ Transactions
+# UVM_INFO ../sv/router_scoreboard.sv(144) @ 100000 ns: uvm_test_top.route.sb [router_scoreboard] Report:
+# 
+#    Scoreboard: Packet Statistics 
+#      Packets In:   0     Packets Dropped: 0
+#      Channel 0 Total: 0  Pass: 0  Miscompare: 0  Dropped: 0
+#      Channel 1 Total: 0  Pass: 0  Miscompare: 0  Dropped: 0
+#      Channel 2 Total: 0  Pass: 0  Miscompare: 0  Dropped: 0
+# 
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   35
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [channel_monitor]     9
+# [channel_rx_driver]     9
+# [hbus_master_driver]     2
+# [hbus_monitor]     3
+# [router_scoreboard]     1
+# [uvm_driver #(REQ,RSP)]     3
+# [uvm_env]     1
+# [yapp_tx_monitor]     2
+# ** Note: $finish    : /home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 100 us  Iteration: 54  Instance: /top_dut
+# End time: 11:15:28 on Jun 08,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
