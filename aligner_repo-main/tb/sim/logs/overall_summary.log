@@ -1,0 +1,41 @@
+
+========== PASS 1 of 1 ==========
+==== REGRESSION ERROR SUMMARY (Pass 1) ====
+sim_cfs_algn_apb_tests_3_1_1_164636160.log: Errors=0, Fatals=0
+sim_cfs_algn_apb_tests_3_1_3_24938790.log: Errors=0, Fatals=0
+sim_cfs_algn_apb_tests_3_1_4_220779069.log: Errors=0, Fatals=0
+sim_cfs_algn_apb_tests_3_1_5_183647222.log: Errors=0, Fatals=0
+sim_cfs_algn_apb_tests_mapped_unmapped_45508155.log: Errors=0, Fatals=0
+sim_cfs_algn_clock_reset_during_apb_access_253024020.log: Errors=0, Fatals=0
+sim_cfs_algn_clock_reset_tests_3_5_1_339831352.log: Errors=0, Fatals=0
+sim_cfs_algn_clock_reset_tests_3_5_2_807457770.log: Errors=0, Fatals=0
+sim_cfs_algn_directed_test_md_size1_offset3_2133950.log: Errors=0, Fatals=0
+sim_cfs_algn_err_tests_3_4_1_104139945.log: Errors=0, Fatals=0
+sim_cfs_algn_err_tests_3_4_2_93998727.log: Errors=0, Fatals=0
+sim_cfs_algn_err_tests_3_4_3_104869226.log: Errors=0, Fatals=0
+sim_cfs_algn_err_tests_3_4_5_102840870.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_1_25163010.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_2_1_342212640.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_2_500555328.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_3_315971895.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_4_282434283.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_5_50341488.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_6_628866180.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_7_6948825.log: Errors=0, Fatals=0
+sim_cfs_algn_int_tests_3_3_8_935877648.log: Errors=0, Fatals=0
+sim_cfs_algn_md_test_rx_size0_435713077.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_3_2_1_230957375.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_3_2_2_94345134.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_3_2_3_191667175.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_3_2_4_655924752.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_cnt_drop_377118181.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_random_traffic_666918004.log: Errors=0, Fatals=0
+sim_cfs_algn_md_tests_target_length_396516453.log: Errors=0, Fatals=1
+sim_cfs_algn_num_bytes_51969682.log: Errors=0, Fatals=0
+sim_cfs_algn_test_ctrl4_off0_two_pkts_480157128.log: Errors=0, Fatals=0
+sim_cfs_algn_test_random_245145138.log: Errors=0, Fatals=0
+sim_cfs_algn_test_reg_access_418035352.log: Errors=0, Fatals=0
+sim_cfs_algn_test_size_offset_cross_reset_rand_472609300.log: Errors=0, Fatals=0
+sim_cfs_algn_test_split_cover_directed_160755004.log: Errors=0, Fatals=0
+sim_cfs_algn_test_split_cross_cover_directed_86115600.log: Errors=0, Fatals=0
+sim_cfs_algn_test_split_legal_combinations_127850544.log: Errors=0, Fatals=0
