@@ -43,7 +43,7 @@ class yapp_packet extends uvm_sequence_item;
   constraint parity_dist {
     parity_type dist {
       GOOD_PARITY := 5,
-      BAD_PARITY  := 1
+      BAD_PARITY  := 5
     };
   }
 

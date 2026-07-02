@@ -1,0 +1,783 @@
+make[1]: Entering directory '/home/paranthapa/Documents/aligner_repo-main/tb/sim'
+[Compiling...]
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap work work 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 01:25:42 on Jul 03,2026
+vlog -sv -cover bcest -work work ../../rtl/design.sv ../top/testbench.sv "+acc" "+define+QUESTA" "+incdir+../../rtl" "+incdir+../top" 
+-- Compiling module cfs_synch
+-- Compiling module cfs_synch_fifo
+-- Compiling module cfs_rx_ctrl
+-- Compiling module cfs_ctrl
+-- Compiling module cfs_tx_ctrl
+-- Compiling module cfs_edge_detect
+-- Compiling module cfs_regs
+-- Compiling module cfs_aligner_core
+-- Compiling module cfs_aligner
+** Note: (vlog-2286) ../test/cfs_algn_test_pkg.sv(10): Using implicit +incdir+/home/paranthapa/Downloads/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package uvm_ext_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface cfs_apb_if
+-- Compiling package cfs_apb_pkg
+-- Importing package uvm_ext_pkg
+-- Compiling interface cfs_md_if
+-- Compiling package cfs_md_pkg
+-- Compiling package cfs_algn_reg_pkg
+-- Compiling interface cfs_algn_if
+-- Compiling package cfs_algn_pkg
+-- Importing package cfs_apb_pkg
+-- Importing package cfs_md_pkg
+-- Importing package cfs_algn_reg_pkg
+-- Compiling package cfs_algn_test_pkg
+-- Importing package cfs_algn_pkg
+-- Compiling module testbench
+-- Importing package cfs_algn_test_pkg
+
+Top level modules:
+	testbench
+End time: 01:25:43 on Jul 03,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+[Running Simulation with TESTNAME=cfs_algn_int_tests_3_3_2...]
+Reading pref.tcl
+
+# 2021.2_1
+
+# vsim -coverage -c work.testbench "+UVM_TESTNAME=cfs_algn_int_tests_3_3_2" "+sv_seed=49848120" "+UVM_MAX_QUIT_COUNT=1" "+access" "+rw" -f messages.f -do "do ../../tb/sim/toggle_exclude.do; coverage save -onexit ./ucdb/cfs_algn_int_tests_3_3_2.ucdb; run -all; quit;" 
+# Start time: 01:25:45 on Jul 03,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Warning: ../agent_md/cfs_md_sequencer_base.sv(16): (vopt-2250) Function "get_data_width" has no return value assignment.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.cfs_algn_if(fast)
+# Loading work.cfs_apb_if(fast)
+# Loading work.cfs_md_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.cfs_algn_reg_pkg(fast)
+# Loading work.uvm_ext_pkg(fast)
+# Loading work.cfs_md_pkg(fast)
+# Loading work.cfs_apb_pkg(fast)
+# Loading work.cfs_algn_pkg(fast)
+# Loading work.cfs_algn_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.cfs_apb_if(fast__2)
+# Loading work.cfs_md_if(fast__2)
+# Loading work.cfs_algn_if(fast__2)
+# Loading work.cfs_aligner(fast)
+# Loading work.cfs_aligner_core(fast)
+# Loading work.cfs_rx_ctrl(fast)
+# Loading work.cfs_synch(fast)
+# Loading work.cfs_synch_fifo(fast)
+# Loading work.cfs_tx_ctrl(fast)
+# Loading work.cfs_ctrl(fast)
+# Loading work.cfs_regs(fast)
+# Loading work.cfs_edge_detect(fast)
+# Loading work.cfs_edge_detect(fast__1)
+# Loading /home/paranthapa/Downloads/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# do ../../tb/sim/toggle_exclude.do
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+#  coverage save -onexit ./ucdb/cfs_algn_int_tests_3_3_2.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test cfs_algn_int_tests_3_3_2...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.ignore_ctrl' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'new_ignore_ctrl_invalid_pairs' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'new_ignore_ctrl_invalid_pairs' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.new_ignore_ctrl_invalid_pairs' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_num_bytes_needed_gt_ctrl_size' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.illegal_num_bytes_needed_gt_ctrl_size' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_3' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.illegal_ctrl_size_1_num_bytes_needed_3' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_2' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_2' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'length_eq_2' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[1]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[2]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[3]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[4]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[5]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[6]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[7]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'length_gt_10' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-12051) Illegal assignment in cast to class work.cfs_md_pkg::cfs_md_sequencer_base_master from class work.uvm_ext_pkg::uvm_ext_sequencer #(class work.cfs_md_pkg::cfs_md_item_drv_master)
+#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe449db0 File: ../env/cfs_algn_env.sv Line: 129
+# ** Warning: (vsim-12051) Illegal assignment in cast to class work.cfs_md_pkg::cfs_md_sequencer_base_slave from class work.uvm_ext_pkg::uvm_ext_sequencer #(class work.cfs_md_pkg::cfs_md_item_drv_slave)
+#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe449db0 File: ../env/cfs_algn_env.sv Line: 130
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 165: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h13 : updated value = 'h13
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 175 ns Started: 175 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 175 ns Started: 165 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 185: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h13 : updated value = 'h13
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 185 ns Started: 175 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 195 ns Started: 195 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 205: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h2 : updated value = 'h2
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 205 ns Started: 195 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 235: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQ: value='hd : updated value = 'h0
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 245 ns Started: 245 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 245 ns Started: 235 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 255: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQ: value='hd : updated value = 'h0
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 255 ns Started: 245 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 325: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h101 : updated value = 'h101
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 335 ns Started: 335 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 335 ns Started: 325 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 345: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h101 : updated value = 'h101
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 345 ns Started: 335 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 385: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.IRQEN: value='h13
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 395 ns Started: 395 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 395 ns Started: 385 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 405: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.IRQEN: value='h13
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 405 ns Started: 395 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 445: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h0 : updated value = 'h0
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 455 ns Started: 455 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 455 ns Started: 445 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 465: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h0 : updated value = 'h0
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 465 ns Started: 455 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 595: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 605 ns Started: 605 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 605 ns Started: 595 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 615: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 615 ns Started: 605 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 665: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [656..665] data: {'hf7, 'h2b}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 62
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 675: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 675: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [656..665] data: {'hf7, 'h2b}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 62
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 675: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 745: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [736..745] data: {'h08, 'h11, 'h96, 'hb1}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 755: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 755: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [736..745] data: {'h08, 'h11, 'h96, 'hb1}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 755: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 755: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 755: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 765: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [656..745] data: {'hf7, 'h2b, 'h08, 'h11}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 766: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{247, 43, 8, 17}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 766: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 3, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 805: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [656..745] data: {'hf7, 'h2b, 'h08, 'h11}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 805: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [766..805] data: {'hf7, 'h2b, 'h08, 'h11}, size: 4, offset: 0, response: CFS_MD_ERR, length: 4, prev_item_delay: 73
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 805: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 965: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 975 ns Started: 975 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 975 ns Started: 965 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 985: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 985 ns Started: 975 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1005: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [996..1005] data: {'ha7, 'hb2}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 25
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1015: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1015: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [996..1005] data: {'ha7, 'hb2}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 25
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1015: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1015: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1025: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [736..1005] data: {'h96, 'hb1, 'ha7, 'hb2}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 1026: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{150, 177, 167, 178}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1026: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 0, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1035: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [736..1005] data: {'h96, 'hb1, 'ha7, 'hb2}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1035: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1026..1035] data: {'h96, 'hb1, 'ha7, 'hb2}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 22
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1035: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1075: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1066..1075] data: {'hd3, 'he6, 'h37, 'h85}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1085: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1085: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1066..1075] data: {'hd3, 'he6, 'h37, 'h85}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1085: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1085: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1095: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1066..1075] data: {'hd3, 'he6, 'h37, 'h85}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 1096: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{211, 230, 55, 133}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1096: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 1, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1115: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1066..1075] data: {'hd3, 'he6, 'h37, 'h85}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1115: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1096..1115] data: {'hd3, 'he6, 'h37, 'h85}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 2, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1115: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 1245: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 1255 ns Started: 1255 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 1255 ns Started: 1245 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 1265: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 1265 ns Started: 1255 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1325: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1316..1325] data: {'hdf, 'hce}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1335: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1335: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1316..1325] data: {'hdf, 'hce}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1335: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1375: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1366..1375] data: {'ha3, 'h26, 'hf5, 'h70}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1385: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1385: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1366..1375] data: {'ha3, 'h26, 'hf5, 'h70}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 1385: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1385: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1385: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1395: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1316..1375] data: {'hdf, 'hce, 'ha3, 'h26}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 1396: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{223, 206, 163, 38}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1396: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 2, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1425: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1316..1375] data: {'hdf, 'hce, 'ha3, 'h26}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1425: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1396..1425] data: {'hdf, 'hce, 'ha3, 'h26}, size: 4, offset: 0, response: CFS_MD_ERR, length: 3, prev_item_delay: 28
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1425: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 1555: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 1565 ns Started: 1565 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 1565 ns Started: 1555 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 1575: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 1575 ns Started: 1565 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1675: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1666..1675] data: {'h83, 'hca}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 29
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1685: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1685: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 1, popped entry: [1666..1675] data: {'h83, 'hca}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 29
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1685: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1676..1685] data: {'h2e, 'h4d, 'h7c, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1685: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1695: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1366..1675] data: {'hf5, 'h70, 'h83, 'hca}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1695: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1695: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1676..1685] data: {'h2e, 'h4d, 'h7c, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1695: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1695: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 1696: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{245, 112, 131, 202}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1696: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 0, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1705: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 2, pushed entry: [1676..1685] data: {'h2e, 'h4d, 'h7c, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1705: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 1, popped entry: [1366..1675] data: {'hf5, 'h70, 'h83, 'hca}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1705: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1696..1705] data: {'hf5, 'h70, 'h83, 'hca}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 27
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 1706: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{46, 77, 124, 19}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1706: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 1, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1725: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1676..1685] data: {'h2e, 'h4d, 'h7c, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1725: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1706..1725] data: {'h2e, 'h4d, 'h7c, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 2, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1725: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 1855: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 1865 ns Started: 1865 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 1865 ns Started: 1855 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 1875: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 1875 ns Started: 1865 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1895: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1886..1895] data: {'he8, 'hd6}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 20
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1905: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1905: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1886..1895] data: {'he8, 'hd6}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 20
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1905: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1955: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1946..1955] data: {'hc2, 'hc9, 'hf0, 'h38}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1965: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1965: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1946..1955] data: {'hc2, 'hc9, 'hf0, 'h38}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 1965: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1965: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1965: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1975: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1886..1955] data: {'he8, 'hd6, 'hc2, 'hc9}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 1976: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{232, 214, 194, 201}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1976: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 2025: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1886..1955] data: {'he8, 'hd6, 'hc2, 'hc9}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2025: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1976..2025] data: {'he8, 'hd6, 'hc2, 'hc9}, size: 4, offset: 0, response: CFS_MD_ERR, length: 5, prev_item_delay: 25
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 2025: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2085: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 2095 ns Started: 2095 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 2095 ns Started: 2085 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2105: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 2105 ns Started: 2095 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2125: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [2116..2125] data: {'hbe, 'h7a}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 16
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 2135: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 2135: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [2116..2125] data: {'hbe, 'h7a}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 16
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 2135: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 2135: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 2145: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1946..2125] data: {'hf0, 'h38, 'hbe, 'h7a}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 2146: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{240, 56, 190, 122}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 2146: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 1, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 2165: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1946..2125] data: {'hf0, 'h38, 'hbe, 'h7a}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2165: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [2146..2165] data: {'hf0, 'h38, 'hbe, 'h7a}, size: 4, offset: 0, response: CFS_MD_ERR, length: 2, prev_item_delay: 12
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 2165: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2175: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [2166..2175] data: {'h97, 'h7a, 'ha8, 'h9b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 2185: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 2185: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [2166..2175] data: {'h97, 'h7a, 'ha8, 'h9b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 2185: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 2185: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 2195: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [2166..2175] data: {'h97, 'h7a, 'ha8, 'h9b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 2196: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{151, 122, 168, 155}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 2196: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 2245: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [2166..2175] data: {'h97, 'h7a, 'ha8, 'h9b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2245: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [2196..2245] data: {'h97, 'h7a, 'ha8, 'h9b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 5, prev_item_delay: 3
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 2245: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2375: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 2385 ns Started: 2385 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 2385 ns Started: 2375 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2395: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 2395 ns Started: 2385 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2445: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [2436..2445] data: {'h36, 'h69}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 26
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 2455: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 2455: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [2436..2445] data: {'h36, 'h69}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 26
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 2455: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2505: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [2496..2505] data: {'h85, 'h22, 'h25, 'hda}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 2515: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 2515: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [2496..2505] data: {'h85, 'h22, 'h25, 'hda}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 2515: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 2515: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 2515: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 2525: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [2436..2505] data: {'h36, 'h69, 'h85, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 2526: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{54, 105, 133, 34}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 2526: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 1, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 2545: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [2436..2505] data: {'h36, 'h69, 'h85, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2545: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [2526..2545] data: {'h36, 'h69, 'h85, 'h22}, size: 4, offset: 0, response: CFS_MD_ERR, length: 2, prev_item_delay: 28
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 2545: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2685: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 2695 ns Started: 2695 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 2695 ns Started: 2685 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2705: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 2705 ns Started: 2695 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2765: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [2756..2765] data: {'h10, 'h16}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 25
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 2775: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 2775: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [2756..2765] data: {'h10, 'h16}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 25
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 2775: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 2775: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 2785: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [2496..2765] data: {'h25, 'hda, 'h10, 'h16}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 2786: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{37, 218, 16, 22}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 2786: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 0, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 2795: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [2496..2765] data: {'h25, 'hda, 'h10, 'h16}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2795: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [2786..2795] data: {'h25, 'hda, 'h10, 'h16}, size: 4, offset: 0, response: CFS_MD_ERR, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 2795: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2835: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [2826..2835] data: {'h53, 'h79, 'h29, 'hed}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 2845: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 2845: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [2826..2835] data: {'h53, 'h79, 'h29, 'hed}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 2845: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 2845: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 2855: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [2826..2835] data: {'h53, 'h79, 'h29, 'hed}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 2856: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{83, 121, 41, 237}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 2856: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 3, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 2895: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [2826..2835] data: {'h53, 'h79, 'h29, 'hed}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 2895: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [2856..2895] data: {'h53, 'h79, 'h29, 'hed}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 4, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 2895: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 2995: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 3005 ns Started: 3005 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 3005 ns Started: 2995 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3015: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 3015 ns Started: 3005 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3065: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3056..3065] data: {'h8c, 'h6f}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 22
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3075: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3075: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3056..3065] data: {'h8c, 'h6f}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 22
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3075: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3115: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3106..3115] data: {'hac, 'hfb, 'hee, 'h05}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3125: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3125: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3106..3115] data: {'hac, 'hfb, 'hee, 'h05}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 3125: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 3125: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3125: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 3135: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [3056..3115] data: {'h8c, 'h6f, 'hac, 'hfb}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 3136: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{140, 111, 172, 251}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 3136: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 3185: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [3056..3115] data: {'h8c, 'h6f, 'hac, 'hfb}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3185: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [3136..3185] data: {'h8c, 'h6f, 'hac, 'hfb}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 5, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 3185: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3295: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 3305 ns Started: 3305 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 3305 ns Started: 3295 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3315: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 3315 ns Started: 3305 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3365: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3356..3365] data: {'ha4, 'h4d}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3375: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3375: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3356..3365] data: {'ha4, 'h4d}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 3375: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3375: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 3385: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [3106..3365] data: {'hee, 'h05, 'ha4, 'h4d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 3386: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{238, 5, 164, 77}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 3386: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 5, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 3445: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [3106..3365] data: {'hee, 'h05, 'ha4, 'h4d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3445: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [3386..3445] data: {'hee, 'h05, 'ha4, 'h4d}, size: 4, offset: 0, response: CFS_MD_ERR, length: 6, prev_item_delay: 20
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 3445: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3465: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3456..3465] data: {'h62, 'hb0, 'hd1, 'h49}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 9
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3475: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3475: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3456..3465] data: {'h62, 'hb0, 'hd1, 'h49}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 9
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 3475: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3475: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 3485: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [3456..3465] data: {'h62, 'hb0, 'hd1, 'h49}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 3486: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{98, 176, 209, 73}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 3486: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 2, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 3515: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [3456..3465] data: {'h62, 'hb0, 'hd1, 'h49}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3515: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [3486..3515] data: {'h62, 'hb0, 'hd1, 'h49}, size: 4, offset: 0, response: CFS_MD_ERR, length: 3, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 3515: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3635: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 3645 ns Started: 3645 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 3645 ns Started: 3635 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3655: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 3655 ns Started: 3645 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3685: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3676..3685] data: {'h5b, 'h44}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 21
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3695: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3695: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3676..3685] data: {'h5b, 'h44}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 21
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3695: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3735: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3726..3735] data: {'h14, 'ha9, 'h0a, 'h98}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3745: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3745: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3726..3735] data: {'h14, 'ha9, 'h0a, 'h98}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 3745: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 3745: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3745: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 3755: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [3676..3735] data: {'h5b, 'h44, 'h14, 'ha9}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 3756: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{91, 68, 20, 169}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 3756: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 3805: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [3676..3735] data: {'h5b, 'h44, 'h14, 'ha9}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3805: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [3756..3805] data: {'h5b, 'h44, 'h14, 'ha9}, size: 4, offset: 0, response: CFS_MD_ERR, length: 5, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 3805: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3925: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 3935 ns Started: 3935 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 3935 ns Started: 3925 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 3945: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 3945 ns Started: 3935 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 3985: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [3976..3985] data: {'h7e, 'h76}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 3995: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 3995: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [3976..3985] data: {'h7e, 'h76}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 3995: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 3995: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 4005: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [3726..3985] data: {'h0a, 'h98, 'h7e, 'h76}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 4006: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{10, 152, 126, 118}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 4006: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 5, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4055: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [4046..4055] data: {'h50, 'h56, 'hed, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 4065: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 4065: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [4046..4055] data: {'h50, 'h56, 'hed, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 4065: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [3726..3985] data: {'h0a, 'h98, 'h7e, 'h76}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4065: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [4006..4065] data: {'h0a, 'h98, 'h7e, 'h76}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 6, prev_item_delay: 20
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 4065: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 4065: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 4065: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 4075: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [4046..4055] data: {'h50, 'h56, 'hed, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 4076: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{80, 86, 237, 19}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 4076: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 2, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 4105: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [4046..4055] data: {'h50, 'h56, 'hed, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4105: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [4076..4105] data: {'h50, 'h56, 'hed, 'h13}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 3, prev_item_delay: 1
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 4105: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 4225: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 4235 ns Started: 4235 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 4235 ns Started: 4225 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 4245: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 4245 ns Started: 4235 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4305: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [4296..4305] data: {'h88, 'h63}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 4315: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 4315: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [4296..4305] data: {'h88, 'h63}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 24
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 4315: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4355: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [4346..4355] data: {'hf4, 'h41, 'he2, 'h34}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 4365: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 4365: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [4346..4355] data: {'hf4, 'h41, 'he2, 'h34}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 4365: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 4365: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 4365: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 4375: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [4296..4355] data: {'h88, 'h63, 'hf4, 'h41}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 4376: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{136, 99, 244, 65}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 4376: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 3, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 4415: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [4296..4355] data: {'h88, 'h63, 'hf4, 'h41}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4415: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [4376..4415] data: {'h88, 'h63, 'hf4, 'h41}, size: 4, offset: 0, response: CFS_MD_ERR, length: 4, prev_item_delay: 27
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 4415: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 4545: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 4555 ns Started: 4555 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 4555 ns Started: 4545 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 4565: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 4565 ns Started: 4555 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4625: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [4616..4625] data: {'h00, 'h1f}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 26
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 4635: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 4635: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [4616..4625] data: {'h00, 'h1f}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 26
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 4635: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 4635: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 4645: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [4346..4625] data: {'he2, 'h34, 'h00, 'h1f}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 4646: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{226, 52, 0, 31}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 4646: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 5, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 4705: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [4346..4625] data: {'he2, 'h34, 'h00, 'h1f}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4705: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [4696..4705] data: {'hd9, 'h0e, 'h0f, 'hd5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4705: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [4646..4705] data: {'he2, 'h34, 'h00, 'h1f}, size: 4, offset: 0, response: CFS_MD_ERR, length: 6, prev_item_delay: 23
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 4705: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 4715: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 4715: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [4696..4705] data: {'hd9, 'h0e, 'h0f, 'hd5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 4715: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 4715: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 4725: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [4696..4705] data: {'hd9, 'h0e, 'h0f, 'hd5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 4726: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{217, 14, 15, 213}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 4726: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 3, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 4765: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [4696..4705] data: {'hd9, 'h0e, 'h0f, 'hd5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 4765: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [4726..4765] data: {'hd9, 'h0e, 'h0f, 'hd5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 4, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 4765: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 4935: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 4945 ns Started: 4945 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 4945 ns Started: 4935 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 4955: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 4955 ns Started: 4945 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5045: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5036..5045] data: {'hc1, 'h1d}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 33
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5055: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5055: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5036..5045] data: {'hc1, 'h1d}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 33
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5055: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5085: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5076..5085] data: {'hcd, 'h41, 'h9c, 'hc6}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 3
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5095: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5095: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5076..5085] data: {'hcd, 'h41, 'h9c, 'hc6}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 3
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 5095: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 5095: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5095: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 5105: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [5036..5085] data: {'hc1, 'h1d, 'hcd, 'h41}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 5106: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{193, 29, 205, 65}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 5106: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 1, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 5125: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [5036..5085] data: {'hc1, 'h1d, 'hcd, 'h41}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5125: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [5106..5125] data: {'hc1, 'h1d, 'hcd, 'h41}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 2, prev_item_delay: 34
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 5125: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 5285: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 5295 ns Started: 5295 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 5295 ns Started: 5285 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 5305: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 5305 ns Started: 5295 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5315: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5306..5315] data: {'h6f, 'h50}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 22
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5325: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5325: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5306..5315] data: {'h6f, 'h50}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 22
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 5325: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5325: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 5335: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [5076..5315] data: {'h9c, 'hc6, 'h6f, 'h50}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 5336: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{156, 198, 111, 80}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 5336: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 5385: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [5076..5315] data: {'h9c, 'hc6, 'h6f, 'h50}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5385: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5376..5385] data: {'h43, 'hcc, 'h40, 'he3}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5385: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [5336..5385] data: {'h9c, 'hc6, 'h6f, 'h50}, size: 4, offset: 0, response: CFS_MD_ERR, length: 5, prev_item_delay: 21
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 5385: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5395: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5395: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5376..5385] data: {'h43, 'hcc, 'h40, 'he3}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 5395: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5395: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 5405: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [5376..5385] data: {'h43, 'hcc, 'h40, 'he3}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 5406: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{67, 204, 64, 227}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 5406: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 5455: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [5376..5385] data: {'h43, 'hcc, 'h40, 'he3}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5455: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [5406..5455] data: {'h43, 'hcc, 'h40, 'he3}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 5, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 5455: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 5585: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 5595 ns Started: 5595 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 5595 ns Started: 5585 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 5605: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 5605 ns Started: 5595 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5675: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5666..5675] data: {'ha0, 'hf8}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 28
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5685: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5685: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5666..5675] data: {'ha0, 'hf8}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 28
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5685: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5735: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5726..5735] data: {'h02, 'h4b, 'hbc, 'h3a}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5745: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5745: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5726..5735] data: {'h02, 'h4b, 'hbc, 'h3a}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 5745: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 5745: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5745: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 5755: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [5666..5735] data: {'ha0, 'hf8, 'h02, 'h4b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 5756: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{160, 248, 2, 75}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 5756: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 5, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 5815: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [5666..5735] data: {'ha0, 'hf8, 'h02, 'h4b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5815: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [5756..5815] data: {'ha0, 'hf8, 'h02, 'h4b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 6, prev_item_delay: 30
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 5815: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 5915: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 5925 ns Started: 5925 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 5925 ns Started: 5915 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 5935: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 5935 ns Started: 5925 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5945: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [5936..5945] data: {'h63, 'h7d}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 20
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 5955: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 5955: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [5936..5945] data: {'h63, 'h7d}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 20
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 5955: uvm_test_top.env.model [DEBUG1] md_offset:         2, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 5955: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 5965: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [5726..5945] data: {'hbc, 'h3a, 'h63, 'h7d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 5966: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{188, 58, 99, 125}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 5966: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 0, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 5975: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [5726..5945] data: {'hbc, 'h3a, 'h63, 'h7d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 5975: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [5966..5975] data: {'hbc, 'h3a, 'h63, 'h7d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 15
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 5975: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 6025: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [6016..6025] data: {'h9c, 'h44, 'h78, 'hb8}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 6035: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 6035: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [6016..6025] data: {'h9c, 'h44, 'h78, 'hb8}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 6035: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 6035: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 6045: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [6016..6025] data: {'h9c, 'h44, 'h78, 'hb8}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 6046: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{156, 68, 120, 184}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 6046: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 4, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 6095: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [6016..6025] data: {'h9c, 'h44, 'h78, 'hb8}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 6095: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [6046..6095] data: {'h9c, 'h44, 'h78, 'hb8}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 5, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 6095: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 6155: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 6215: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.STATUS: value='h0
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 6225 ns Started: 6225 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 6225 ns Started: 6215 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 6235: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.STATUS: value='h0
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 6235 ns Started: 6225 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 6295: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 6305 ns Started: 6305 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 6305 ns Started: 6295 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 6315: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 6315 ns Started: 6305 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 6355: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [6346..6355] data: {'hcd, 'h4c}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 32
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 6365: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 6365: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [6346..6355] data: {'hcd, 'h4c}, size: 2, offset: 2, response: CFS_MD_OKAY, length: 1, prev_item_delay: 32
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 6365: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 6385: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [6376..6385] data: {'h93, 'h95, 'h3b, 'hce}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 6395: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 6395: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [6376..6385] data: {'h93, 'h95, 'h3b, 'hce}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(879) @ 6395: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4---------------------------------------------------------
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 6395: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         2##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 6395: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 6405: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [6346..6385] data: {'hcd, 'h4c, 'h93, 'h95}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../sequence/cfs_md_sequence_tx_ready_block.sv(26) @ 6406: uvm_test_top.env.md_tx_agent.sequencer@@tx_block_seq [cfs_md_sequence_tx_ready_block] Received item with data: '{205, 76, 147, 149}
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 6406: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.tx_block_seq.seq.item": length: 2, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 6435: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [6346..6385] data: {'hcd, 'h4c, 'h93, 'h95}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 6435: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [6406..6435] data: {'hcd, 'h4c, 'h93, 'h95}, size: 4, offset: 0, response: CFS_MD_ERR, length: 3, prev_item_delay: 31
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 6435: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_field.svh(1714) @ 6495: reporter [RegModel] Individual field access not available for field 'reg_block.STATUS.RX_LVL'. Accessing complete register instead.
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 6545: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.STATUS: value='h0
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 6555 ns Started: 6555 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 6555 ns Started: 6545 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 6565: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.STATUS: value='h0
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 6565 ns Started: 6555 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 6715: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQ: value='h2 : updated value = 'h5
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 6725 ns Started: 6725 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 6725 ns Started: 6715 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 6735: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQ: value='h2 : updated value = 'h5
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 6735 ns Started: 6725 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 7245: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of     1
+# ** Report counts by severity
+# UVM_INFO :  416
+# UVM_WARNING :    2
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DEBUG1]    38
+# [ITEM_END]    66
+# [ITEM_START]    28
+# [MAXQUITSET]     1
+# [Questa UVM]     2
+# [REG_PREDICT]    55
+# [RNTST]     1
+# [RX_FIFO]    75
+# [RegModel]     2
+# [SYNC]    38
+# [TEST_DONE]     1
+# [TX_FIFO]    83
+# [cfs_md_sequence_tx_ready_block]    28
+# ** Note: $finish    : /home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 7245 ns  Iteration: 54  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 01:25:52 on Jul 03,2026, Elapsed time: 0:00:07
+# Errors: 83, Warnings: 32
+make[1]: Leaving directory '/home/paranthapa/Documents/aligner_repo-main/tb/sim'

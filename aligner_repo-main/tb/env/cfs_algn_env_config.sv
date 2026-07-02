@@ -35,7 +35,7 @@ class cfs_algn_env_config extends uvm_component;
   function new(string name = "", uvm_component parent);
     super.new(name, parent);
 
-    has_checks                = 0;
+    has_checks                = 1;
     has_coverage              = 1;
     algn_data_width           = 8;
     exp_rx_response_threshold = 10;

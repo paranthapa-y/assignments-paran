@@ -33,9 +33,7 @@ class cfs_algn_apb_tests_mapped_unmapped extends cfs_algn_test_base;
 
     fork
       begin
-        cfs_algn_virtual_sequence_reg_access_random seq = cfs_algn_virtual_sequence_reg_access_random::type_id::create(
-            "seq"
-        );
+        cfs_algn_virtual_sequence_reg_access_random seq = cfs_algn_virtual_sequence_reg_access_random::type_id::create("seq");
 
         void'(seq.randomize() with {num_accesses == num_reg_accesses;});
 

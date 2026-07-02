@@ -1,0 +1,354 @@
+make[1]: Entering directory '/home/paranthapa/Documents/aligner_repo-main/tb/sim'
+[Compiling...]
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap work work 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 01:25:01 on Jul 03,2026
+vlog -sv -cover bcest -work work ../../rtl/design.sv ../top/testbench.sv "+acc" "+define+QUESTA" "+incdir+../../rtl" "+incdir+../top" 
+-- Compiling module cfs_synch
+-- Compiling module cfs_synch_fifo
+-- Compiling module cfs_rx_ctrl
+-- Compiling module cfs_ctrl
+-- Compiling module cfs_tx_ctrl
+-- Compiling module cfs_edge_detect
+-- Compiling module cfs_regs
+-- Compiling module cfs_aligner_core
+-- Compiling module cfs_aligner
+** Note: (vlog-2286) ../test/cfs_algn_test_pkg.sv(10): Using implicit +incdir+/home/paranthapa/Downloads/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package uvm_ext_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface cfs_apb_if
+-- Compiling package cfs_apb_pkg
+-- Importing package uvm_ext_pkg
+-- Compiling interface cfs_md_if
+-- Compiling package cfs_md_pkg
+-- Compiling package cfs_algn_reg_pkg
+-- Compiling interface cfs_algn_if
+-- Compiling package cfs_algn_pkg
+-- Importing package cfs_apb_pkg
+-- Importing package cfs_md_pkg
+-- Importing package cfs_algn_reg_pkg
+-- Compiling package cfs_algn_test_pkg
+-- Importing package cfs_algn_pkg
+-- Compiling module testbench
+-- Importing package cfs_algn_test_pkg
+
+Top level modules:
+	testbench
+End time: 01:25:02 on Jul 03,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+[Running Simulation with TESTNAME=cfs_algn_md_tests_3_2_2...]
+Reading pref.tcl
+
+# 2021.2_1
+
+# vsim -coverage -c work.testbench "+UVM_TESTNAME=cfs_algn_md_tests_3_2_2" "+sv_seed=279080475" "+UVM_MAX_QUIT_COUNT=1" "+access" "+rw" -f messages.f -do "do ../../tb/sim/toggle_exclude.do; coverage save -onexit ./ucdb/cfs_algn_md_tests_3_2_2.ucdb; run -all; quit;" 
+# Start time: 01:25:04 on Jul 03,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Warning: ../agent_md/cfs_md_sequencer_base.sv(16): (vopt-2250) Function "get_data_width" has no return value assignment.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.cfs_algn_if(fast)
+# Loading work.cfs_apb_if(fast)
+# Loading work.cfs_md_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.cfs_algn_reg_pkg(fast)
+# Loading work.uvm_ext_pkg(fast)
+# Loading work.cfs_md_pkg(fast)
+# Loading work.cfs_apb_pkg(fast)
+# Loading work.cfs_algn_pkg(fast)
+# Loading work.cfs_algn_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.cfs_apb_if(fast__2)
+# Loading work.cfs_md_if(fast__2)
+# Loading work.cfs_algn_if(fast__2)
+# Loading work.cfs_aligner(fast)
+# Loading work.cfs_aligner_core(fast)
+# Loading work.cfs_rx_ctrl(fast)
+# Loading work.cfs_synch(fast)
+# Loading work.cfs_synch_fifo(fast)
+# Loading work.cfs_tx_ctrl(fast)
+# Loading work.cfs_ctrl(fast)
+# Loading work.cfs_regs(fast)
+# Loading work.cfs_edge_detect(fast)
+# Loading work.cfs_edge_detect(fast__1)
+# Loading /home/paranthapa/Downloads/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# do ../../tb/sim/toggle_exclude.do
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+# ** Warning: -comment options is supported in post simulation viewcov mode only, ignoring it.
+#  coverage save -onexit ./ucdb/cfs_algn_md_tests_3_2_2.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test cfs_algn_md_tests_3_2_2...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.ignore_ctrl' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'new_ignore_ctrl_invalid_pairs' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'new_ignore_ctrl_invalid_pairs' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.new_ignore_ctrl_invalid_pairs' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_num_bytes_needed_gt_ctrl_size' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.illegal_num_bytes_needed_gt_ctrl_size' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_3' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.illegal_ctrl_size_1_num_bytes_needed_3' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_2' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_2' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'length_eq_2' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[1]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[2]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[3]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[4]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[5]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[6]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[7]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'length_gt_10' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-12051) Illegal assignment in cast to class work.cfs_md_pkg::cfs_md_sequencer_base_master from class work.uvm_ext_pkg::uvm_ext_sequencer #(class work.cfs_md_pkg::cfs_md_item_drv_master)
+#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe449db0 File: ../env/cfs_algn_env.sv Line: 129
+# ** Warning: (vsim-12051) Illegal assignment in cast to class work.cfs_md_pkg::cfs_md_sequencer_base_slave from class work.uvm_ext_pkg::uvm_ext_sequencer #(class work.cfs_md_pkg::cfs_md_item_drv_slave)
+#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe449db0 File: ../env/cfs_algn_env.sv Line: 130
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 165: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h13 : updated value = 'h13
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 175 ns Started: 175 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 175 ns Started: 165 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 185: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h13 : updated value = 'h13
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 185 ns Started: 175 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 195 ns Started: 195 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 205: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h2 : updated value = 'h2
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 205 ns Started: 195 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 235: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQ: value='hd : updated value = 'h0
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 245 ns Started: 245 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 245 ns Started: 235 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 255: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQ: value='hd : updated value = 'h0
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 255 ns Started: 245 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 325: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 335 ns Started: 335 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 335 ns Started: 325 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 345: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.CTRL: value='h4 : updated value = 'h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 345 ns Started: 335 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 385: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.CTRL: value='h4
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 395 ns Started: 395 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 395 ns Started: 385 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 405: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.CTRL: value='h4
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 405 ns Started: 395 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 455: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [446..455] data: {'h0a, 'hc5, 'h07, 'h86}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 41
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 465: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 465: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [446..455] data: {'h0a, 'hc5, 'h07, 'h86}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 41
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 465: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 465: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 475: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [446..455] data: {'h0a, 'hc5, 'h07, 'h86}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 476: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 2, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 485: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [476..485] data: {'h68, 'h1a, 'h30, 'h1b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 495: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 495: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [476..485] data: {'h68, 'h1a, 'h30, 'h1b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 495: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 495: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 505: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 2, pushed entry: [476..485] data: {'h68, 'h1a, 'h30, 'h1b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 505: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 1, popped entry: [446..455] data: {'h0a, 'hc5, 'h07, 'h86}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 505: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [476..505] data: {'h0a, 'hc5, 'h07, 'h86}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 3, prev_item_delay: 44
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 506: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 2, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 535: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [476..485] data: {'h68, 'h1a, 'h30, 'h1b}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 535: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [506..535] data: {'h68, 'h1a, 'h30, 'h1b}, size: 4, offset: 0, response: CFS_MD_ERR, length: 3, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 535: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 565: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [556..565] data: {'hc4, 'h55, 'h65, 'h99}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 575: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 575: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [556..565] data: {'hc4, 'h55, 'h65, 'h99}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 7
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 575: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 575: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 585: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [556..565] data: {'hc4, 'h55, 'h65, 'h99}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 586: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 5, response: CFS_MD_ERR, ready_at_end: 1
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 625: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [616..625] data: {'hda, 'h3b, 'h24, 'h59}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 635: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 635: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [616..625] data: {'hda, 'h3b, 'h24, 'h59}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 635: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 635: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 645: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 2, pushed entry: [616..625] data: {'hda, 'h3b, 'h24, 'h59}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 645: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 1, popped entry: [556..565] data: {'hc4, 'h55, 'h65, 'h99}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 645: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [586..645] data: {'hc4, 'h55, 'h65, 'h99}, size: 4, offset: 0, response: CFS_MD_ERR, length: 6, prev_item_delay: 5
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 646: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 0, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 655: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [616..625] data: {'hda, 'h3b, 'h24, 'h59}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 655: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [646..655] data: {'hda, 'h3b, 'h24, 'h59}, size: 4, offset: 0, response: CFS_MD_ERR, length: 1, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 655: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 695: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [686..695] data: {'h01, 'hc6, 'h91, 'haa}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 705: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 705: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [686..695] data: {'h01, 'hc6, 'h91, 'haa}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 705: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 705: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 715: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [686..695] data: {'h01, 'hc6, 'h91, 'haa}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 716: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 1, response: CFS_MD_ERR, ready_at_end: 1
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 735: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [686..695] data: {'h01, 'hc6, 'h91, 'haa}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 735: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [716..735] data: {'h01, 'hc6, 'h91, 'haa}, size: 4, offset: 0, response: CFS_MD_ERR, length: 2, prev_item_delay: 6
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 735: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(379) @ 806: uvm_test_top.env.model [CNT_DROP] Increment reg_block.STATUS.CNT_DROP: 1 due to: CFS_MD_ERR
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 815: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [806..815] data: {'hcf, 'h2b, 'he4}, size: 3, offset: 0, response: CFS_MD_ERR, length: 1, prev_item_delay: 11
+# UVM_INFO ../model/cfs_algn_model.sv(379) @ 866: uvm_test_top.env.model [CNT_DROP] Increment reg_block.STATUS.CNT_DROP: 2 due to: CFS_MD_ERR
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 875: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [866..875] data: {'h29, 'h67, 'h5f}, size: 3, offset: 0, response: CFS_MD_ERR, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(379) @ 926: uvm_test_top.env.model [CNT_DROP] Increment reg_block.STATUS.CNT_DROP: 3 due to: CFS_MD_ERR
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 935: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [926..935] data: {'hbe, 'h41}, size: 2, offset: 1, response: CFS_MD_ERR, length: 1, prev_item_delay: 5
+# UVM_INFO ../model/cfs_algn_model.sv(379) @ 976: uvm_test_top.env.model [CNT_DROP] Increment reg_block.STATUS.CNT_DROP: 4 due to: CFS_MD_ERR
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 985: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [976..985] data: {'hbf, 'h77}, size: 2, offset: 1, response: CFS_MD_ERR, length: 1, prev_item_delay: 4
+# UVM_INFO ../model/cfs_algn_model.sv(379) @ 1036: uvm_test_top.env.model [CNT_DROP] Increment reg_block.STATUS.CNT_DROP: 5 due to: CFS_MD_ERR
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1045: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1036..1045] data: {'h6c, 'hc9, 'he7}, size: 3, offset: 1, response: CFS_MD_ERR, length: 1, prev_item_delay: 5
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1225: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1216..1225] data: {'h46, 'h23, 'h58, 'h1d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 17
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1235: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1235: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1216..1225] data: {'h46, 'h23, 'h58, 'h1d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 17
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1235: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1235: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1245: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1216..1225] data: {'h46, 'h23, 'h58, 'h1d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1246: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 5, response: CFS_MD_ERR, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1305: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1216..1225] data: {'h46, 'h23, 'h58, 'h1d}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1305: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1246..1305] data: {'h46, 'h23, 'h58, 'h1d}, size: 4, offset: 0, response: CFS_MD_ERR, length: 6, prev_item_delay: 51
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1305: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1315: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1306..1315] data: {'h1f, 'hcb, 'h3f, 'he6}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 8
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1325: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1325: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1306..1315] data: {'h1f, 'hcb, 'h3f, 'he6}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 8
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1325: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1325: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1335: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1306..1315] data: {'h1f, 'hcb, 'h3f, 'he6}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1336: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 2, response: CFS_MD_ERR, ready_at_end: 1
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1355: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1346..1355] data: {'ha6, 'h34, 'h2e, 'h82}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 3
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1365: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1365: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1346..1355] data: {'ha6, 'h34, 'h2e, 'h82}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 3
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1365: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1306..1315] data: {'h1f, 'hcb, 'h3f, 'he6}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1365: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1336..1365] data: {'h1f, 'hcb, 'h3f, 'he6}, size: 4, offset: 0, response: CFS_MD_ERR, length: 3, prev_item_delay: 3
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1365: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1365: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1365: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1375: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 1, pushed entry: [1346..1355] data: {'ha6, 'h34, 'h2e, 'h82}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1376: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 4, response: CFS_MD_ERR, ready_at_end: 1
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1385: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1376..1385] data: {'h4e, 'h6a, 'h77, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1395: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1395: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1376..1385] data: {'h4e, 'h6a, 'h77, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1395: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1395: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1405: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 2, pushed entry: [1376..1385] data: {'h4e, 'h6a, 'h77, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1415: uvm_test_top.env.md_rx_agent.monitor [ITEM_END] Monitored item: [1406..1415] data: {'hf3, 'h06, 'h72, 'hc5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(483) @ 1425: uvm_test_top.env.model [SYNC] fifo reg level before pop: 8
+# UVM_INFO ../model/cfs_algn_model.sv(765) @ 1425: uvm_test_top.env.model [RX_FIFO] RX FIFO pop - new level: 0, popped entry: [1406..1415] data: {'hf3, 'h06, 'h72, 'hc5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 1, prev_item_delay: 2
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1425: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 1, popped entry: [1346..1355] data: {'ha6, 'h34, 'h2e, 'h82}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1425: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1376..1425] data: {'ha6, 'h34, 'h2e, 'h82}, size: 4, offset: 0, response: CFS_MD_ERR, length: 5, prev_item_delay: 1
+# UVM_INFO ../model/cfs_algn_model.sv(855) @ 1425: uvm_test_top.env.model [DEBUG1] md_offset:         0, md_size:         4##########################################################
+# UVM_INFO ../model/cfs_algn_model.sv(258) @ 1425: uvm_test_top.env.model [RX_FIFO] RX FIFO became empty - reg_block.IRQEN.RX_FIFO_EMPTY: 1
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1426: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 2, response: CFS_MD_OKAY, ready_at_end: 0
+# UVM_INFO ../model/cfs_algn_model.sv(780) @ 1435: uvm_test_top.env.model [TX_FIFO] TX FIFO push - new level: 2, pushed entry: [1406..1415] data: {'hf3, 'h06, 'h72, 'hc5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1455: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 1, popped entry: [1376..1385] data: {'h4e, 'h6a, 'h77, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1455: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1426..1455] data: {'h4e, 'h6a, 'h77, 'h22}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 3, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_driver_slave.sv(45) @ 1456: uvm_test_top.env.md_tx_agent.driver [ITEM_START] Driving "uvm_test_top.env.md_tx_agent.sequencer.resp_seq.seq.seq.item": length: 2, response: CFS_MD_OKAY, ready_at_end: 1
+# UVM_INFO ../model/cfs_algn_model.sv(795) @ 1485: uvm_test_top.env.model [TX_FIFO] TX FIFO pop - new level: 0, popped entry: [1406..1415] data: {'hf3, 'h06, 'h72, 'hc5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 0, prev_item_delay: 0
+# UVM_INFO ../agent_md/cfs_md_monitor.sv(88) @ 1485: uvm_test_top.env.md_tx_agent.monitor [ITEM_END] Monitored item: [1456..1485] data: {'hf3, 'h06, 'h72, 'hc5}, size: 4, offset: 0, response: CFS_MD_OKAY, length: 3, prev_item_delay: 0
+# UVM_INFO ../model/cfs_algn_model.sv(312) @ 1485: uvm_test_top.env.model [TX_FIFO] TX FIFO became empty - reg_block.IRQEN.TX_FIFO_EMPTY: 0
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 1985: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.STATUS: value='h5
+# ** Error: PENABLE at "Setup Phase" is not equal to 0
+#    Time: 1995 ns Started: 1995 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
+# ** Error: PENABLE when exiting "Access Phase" did not became 0
+#    Time: 1995 ns Started: 1985 ns  Scope: testbench.apb_if.PENABLE_EXITING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 87
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 2005: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register reg_block.STATUS: value='h5
+# ** Error: PENABLE when entering "Access Phase" did not became 1
+#    Time: 2005 ns Started: 1995 ns  Scope: testbench.apb_if.PENABLE_ENTERING_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 74
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 2235: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of     1
+# ** Report counts by severity
+# UVM_INFO :  122
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [CNT_DROP]     5
+# [DEBUG1]    10
+# [ITEM_END]    25
+# [ITEM_START]    10
+# [MAXQUITSET]     1
+# [Questa UVM]     2
+# [REG_PREDICT]    11
+# [RNTST]     1
+# [RX_FIFO]    20
+# [SYNC]    10
+# [TEST_DONE]     1
+# [TX_FIFO]    26
+# ** Note: $finish    : /home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2235 ns  Iteration: 54  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 01:25:11 on Jul 03,2026, Elapsed time: 0:00:07
+# Errors: 17, Warnings: 32
+make[1]: Leaving directory '/home/paranthapa/Documents/aligner_repo-main/tb/sim'

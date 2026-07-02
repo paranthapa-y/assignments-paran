@@ -27,6 +27,7 @@ package cfs_algn_pkg;
   `include "../coverage/cfs_algn_split_info.sv"
   `include "../model/cfs_algn_model.sv"
   `include "../coverage/cfs_algn_coverage.sv"
+  // `include "../coverage/cfs_algn_reg_coverage.sv"
   `include "../model/cfs_algn_reg_access_status_info.sv"
   `include "../model/cfs_algn_reg_predictor.sv"
   `include "../model/cfs_apb_reg_adapter.sv"

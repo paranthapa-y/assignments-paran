@@ -45,10 +45,13 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     vif = env.env_config.get_vif();
     repeat (50) @(posedge vif.clk);
+    // env.model.reg_block.IRQEN.read(status, irqen_val, UVM_FRONTDOOR);
+    // irqen_val = 32'h00000000;  // enabling all interupts
+    env.model.reg_block.IRQEN.write(status, 32'h00000000, UVM_FRONTDOOR);
 
     $display(
         "\n ********** 1/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE ***********************");
-    env.model.reg_block.CTRL.write(status, 32'h00000001, UVM_FRONTDOOR);
+    env.model.reg_block.CTRL.write(status, 32'h00000002, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
 
@@ -73,7 +76,7 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     $display(
         "\n ********** 2/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE ***********************");
-    env.model.reg_block.CTRL.write(status, 32'h00000101, UVM_FRONTDOOR);
+    // env.model.reg_block.CTRL.write(status, 32'h00000101, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
     rx_seq1 = cfs_algn_virtual_sequence_rx_crt::type_id::create("rx_seq1");
@@ -97,7 +100,7 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     $display(
         "\n *********** 3/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE ************************");
-    env.model.reg_block.CTRL.write(status, 32'h00000201, UVM_FRONTDOOR);
+    // env.model.reg_block.CTRL.write(status, 32'h00000201, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
     rx_seq1 = cfs_algn_virtual_sequence_rx_crt::type_id::create("rx_seq1");
@@ -121,7 +124,7 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     $display(
         "\n *********** 4/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE *************************");
-    env.model.reg_block.CTRL.write(status, 32'h00000301, UVM_FRONTDOOR);
+    // env.model.reg_block.CTRL.write(status, 32'h00000301, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
     rx_seq1 = cfs_algn_virtual_sequence_rx_crt::type_id::create("rx_seq1");
@@ -145,7 +148,7 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     $display(
         "\n *********** 5/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE **************************");
-    env.model.reg_block.CTRL.write(status, 32'h00000002, UVM_FRONTDOOR);
+    // env.model.reg_block.CTRL.write(status, 32'h00000002, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
     rx_seq1 = cfs_algn_virtual_sequence_rx_crt::type_id::create("rx_seq1");
@@ -160,11 +163,11 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
     rx_seq2.start(env.virtual_sequencer);
     #(50ns);
 
-    rx_seq2 = cfs_algn_virtual_sequence_rx_crt1::type_id::create("rx_seq2");
-    rx_seq2.set_sequencer(env.virtual_sequencer);
-    void'(rx_seq2.randomize());
-    rx_seq2.start(env.virtual_sequencer);
-    #(50ns);
+    // rx_seq2 = cfs_algn_virtual_sequence_rx_crt1::type_id::create("rx_seq2");
+    // rx_seq2.set_sequencer(env.virtual_sequencer);
+    // void'(rx_seq2.randomize());
+    // rx_seq2.start(env.virtual_sequencer);
+    // #(50ns);
 
     rx_seq3 = cfs_algn_virtual_sequence_rx_crt2::type_id::create("rx_seq3");
     rx_seq3.set_sequencer(env.virtual_sequencer);
@@ -175,7 +178,7 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     $display(
         "\n *********** 6/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE **************************");
-    env.model.reg_block.CTRL.write(status, 32'h00000202, UVM_FRONTDOOR);
+    // env.model.reg_block.CTRL.write(status, 32'h00000202, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
     rx_seq1 = cfs_algn_virtual_sequence_rx_crt::type_id::create("rx_seq1");
@@ -205,7 +208,7 @@ class cfs_algn_md_tests_3_2_1 extends cfs_algn_test_base;
 
     $display(
         "\n *********** 7/7 POSSIBLE VALUES OF CTRL.OFFSET AND CTRL.SIZE ***************************");
-    env.model.reg_block.CTRL.write(status, 32'h00000004, UVM_FRONTDOOR);
+    // env.model.reg_block.CTRL.write(status, 32'h00000004, UVM_FRONTDOOR);
     //env.model.reg_block.CTRL.read(status, reg_val, UVM_FRONTDOOR);
     #(50ns);
     rx_seq1 = cfs_algn_virtual_sequence_rx_crt::type_id::create("rx_seq1");

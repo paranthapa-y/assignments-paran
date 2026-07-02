@@ -29,9 +29,11 @@ TOP_SRCS = $(RTL_DIR)/design.sv $(TB_TOP_DIR)/testbench.sv
 # Default test if none specified
 DEFAULT_TEST = cfs_algn_apb_tests_mapped_unmapped
 TESTNAME ?= $(DEFAULT_TEST)
+SEED ?= random
+VERBOSITY ?= UVM_LOW
 
 # UVM options with dynamic test name and random seed
-UVM_ARGS = +UVM_TESTNAME=$(TESTNAME) +UVM_MAX_QUIT_COUNT=1 +access +rw -f messages.f -sv_seed random 
+UVM_ARGS = +UVM_TESTNAME=$(TESTNAME) +UVM_MAX_QUIT_COUNT=100 +UVM_VERBOSITY=$(VERBOSITY) +access +rw -f messages.f -sv_seed $(SEED)
 TOGGLE_DO=../../tb/sim/toggle_exclude.do
 
 # Simulation libraries
@@ -57,14 +59,14 @@ comp:
 	@vlog -sv -cover bcest -work $(WORKLIB) $(TOP_SRCS) +acc +define+QUESTA +incdir+$(RTL_DIR) +incdir+$(TB_TOP_DIR) | tee -a $(COMP_LOG) | tee -a $(TRANSCRIPT)
 
 # Run simulation (command-line mode)
-run:
+run: comp
 	@mkdir -p $(UCDB_DIR)
 	@echo "[Running Simulation with TESTNAME=$(TESTNAME)...]" | tee $(SIM_LOG)
 	@vsim -coverage -c work.testbench $(UVM_ARGS) \
 	 -do "do $(TOGGLE_DO); coverage save -onexit $(UCDB_FILE); run -all; quit;" \
 	 | tee -a $(SIM_LOG) | tee -a $(TRANSCRIPT)
 
-grun:
+grun: comp
 	@echo "[Running Simulation with TESTNAME=$(TESTNAME) in GUI mode...]" | tee $(SIM_LOG)
 	@vsim -coverage work.testbench $(UVM_ARGS) -do "do wave.do; run -all; quit" | tee -a $(SIM_LOG) | tee -a $(TRANSCRIPT)
 

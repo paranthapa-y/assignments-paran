@@ -54,9 +54,9 @@ class cfs_algn_reg_block extends uvm_reg_block;
     IRQ.build();
 
     default_map.add_reg(.rg(CTRL), .offset('h0000), .rights("RW"));
-    default_map.add_reg(.rg(STATUS), .offset('h0008), .rights("RO"));
-    default_map.add_reg(.rg(IRQEN), .offset('h00F0), .rights("RW"));
-    default_map.add_reg(.rg(IRQ), .offset('h00F4), .rights("RW"));
+    default_map.add_reg(.rg(STATUS), .offset('h000c), .rights("RO"));
+    default_map.add_reg(.rg(IRQEN), .offset('h00f0), .rights("RW"));
+    default_map.add_reg(.rg(IRQ), .offset('h00f4), .rights("RW"));
 
   endfunction
 

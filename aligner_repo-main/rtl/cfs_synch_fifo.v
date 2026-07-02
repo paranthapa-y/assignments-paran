@@ -123,7 +123,7 @@ module cfs_synch_fifo #(
   end
 
   assign push_empty = (push_fifo_lvl == 0);
-  assign push_full  = (push_fifo_lvl == FIFO_DEPTH-1);
+  assign push_full  = (push_fifo_lvl == FIFO_DEPTH);
 
   always @(posedge push_clk or negedge reset_n) begin
     if (reset_n == 0) begin
@@ -187,7 +187,7 @@ module cfs_synch_fifo #(
     end
   end
 
-  assign pop_valid = !(pop_empty & pop_ready);
+  assign pop_valid = !pop_empty;
   assign pop_data  = fifo[rd_ptr_pop];
 
   if (CDC == 1) begin

@@ -45,13 +45,7 @@ interface cfs_apb_if (
   end
 
   sequence setup_phase_s;
-    (psel == 1) && (($past(
-        psel
-    ) == 0) || ($past(
-        psel
-    ) == 1 && $past(
-        pready
-    ) == 1));
+    (psel == 1) && (($past(psel) == 0) || ($past(psel) == 1 && $past(pready) == 1));
   endsequence
 
   sequence access_phase_s; (psel == 1) && (penable == 1); endsequence

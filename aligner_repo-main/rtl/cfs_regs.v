@@ -123,7 +123,7 @@ module cfs_regs #(
   always_comb begin
     status_rd_val = 0;
 
-    status_rd_val[LSB_STATUS_CNT_DROP+ STATUS_CNT_DROP_WIDTH-1:LSB_STATUS_CNT_DROP] = status_cnt_drop+1;
+    status_rd_val[LSB_STATUS_CNT_DROP+ STATUS_CNT_DROP_WIDTH-1:LSB_STATUS_CNT_DROP] = status_cnt_drop;
     status_rd_val[LSB_STATUS_RX_LVL+STATUS_RX_LVL_WIDTH-1 : LSB_STATUS_RX_LVL] = status_rx_lvl;
     status_rd_val[LSB_STATUS_TX_LVL+STATUS_TX_LVL_WIDTH-1 : LSB_STATUS_TX_LVL] = status_tx_lvl;
   end
@@ -208,6 +208,7 @@ module cfs_regs #(
       (edge_rx_fifo_empty & irqen_rx_fifo_empty) | 
       (edge_rx_fifo_full  & irqen_rx_fifo_full)  | 
       (edge_tx_fifo_empty & irqen_tx_fifo_empty) | 
+      (edge_max_drop & irqen_max_drop) | 
       (edge_tx_fifo_full  & irqen_tx_fifo_full);
 
 
@@ -260,7 +261,7 @@ module cfs_regs #(
 
                     ctrl_size          <= ctrl_size_wr_val;
                     ctrl_offset        <= ctrl_offset_wr_val;
-                    ctrl_clr           <= ~pwdata[LSB_CTRL_CLR];
+                    ctrl_clr           <= pwdata[LSB_CTRL_CLR];
                   end
                 end else begin
                   wr_ctrl_is_illegal <= 0;

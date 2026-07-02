@@ -184,12 +184,12 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
   //Get the expected response
   protected virtual function cfs_md_response get_exp_response(cfs_md_item_mon item);
     //Size of the access is 0.
-    if (item.data.size() != 0) begin
+    if (item.data.size() == 0) begin
       return CFS_MD_ERR;
     end
 
     //Illegal combination between size and offset: (aligner data width + offset) % size != 0
-    if (((env_config.get_algn_data_width() / 8) + item.offset-1) % item.data.size() != 0) begin
+    if (((env_config.get_algn_data_width() / 8) + item.offset) % item.data.size() != 0) begin
       return CFS_MD_ERR;
     end
 
@@ -232,7 +232,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
                   "RX FIFO became full - %0s: %0d",
                   reg_block.IRQEN.RX_FIFO_FULL.get_full_name(),
                   reg_block.IRQEN.RX_FIFO_FULL.get_mirrored_value()
-                  ), UVM_MEDIUM)
+                  ), UVM_NONE)
 
         if (reg_block.IRQEN.RX_FIFO_FULL.get_mirrored_value() == 1) begin
           exp_irq = 1;
@@ -286,7 +286,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
                   "TX FIFO became full - %0s: %0d",
                   reg_block.IRQEN.TX_FIFO_FULL.get_full_name(),
                   reg_block.IRQEN.TX_FIFO_FULL.get_mirrored_value()
-                  ), UVM_MEDIUM)
+                  ), UVM_NONE)
 
         if (reg_block.IRQEN.TX_FIFO_FULL.get_mirrored_value() == 1) begin
           exp_irq = 1;
@@ -371,6 +371,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
   //Function to increment STATUS.CNT_DROP whenever an error is detected
   protected virtual function void inc_cnt_drop(cfs_md_response response);
     uvm_reg_data_t max_value = ('h1 << reg_block.STATUS.CNT_DROP.get_n_bits()) - 1;
+    `uvm_info("max_value", $sformatf("max_value: %0d , dropped count: %0d", max_value, reg_block.STATUS.CNT_DROP.get_mirrored_value()), UVM_MEDIUM)
 
     if (reg_block.STATUS.CNT_DROP.get_mirrored_value() < max_value) begin
       void'(reg_block.STATUS.CNT_DROP.predict(reg_block.STATUS.CNT_DROP.get_mirrored_value() + 1));
@@ -378,7 +379,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
       `uvm_info("CNT_DROP", $sformatf("Increment %9s: %0d due to: %0s",
                                       reg_block.STATUS.CNT_DROP.get_full_name(),
                                       reg_block.STATUS.CNT_DROP.get_mirrored_value,
-                                      response.name()), UVM_LOW)
+                                      response.name()), UVM_MEDIUM)
       if (reg_block.STATUS.CNT_DROP.get_mirrored_value() == max_value) begin
         set_max_drop();
       end
@@ -410,6 +411,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
 
     if (reg_block.STATUS.TX_LVL.get_mirrored_value() == tx_fifo.size()) begin
       set_tx_fifo_full();
+      `uvm_info("TX_FIFO", $sformatf("TX FIFO is full: %0d", reg_block.STATUS.TX_LVL.get_mirrored_value()), UVM_NONE)
     end
   endfunction
 
@@ -423,7 +425,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
   endfunction
   protected virtual task sync_push_to_rx_fifo();
     cfs_algn_vif vif = env_config.get_vif();
-
+    
     int timeout = 10;
     bit rtl_push_detected = 0;
     fork
@@ -450,6 +452,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
     if (!rtl_push_detected) `uvm_warning("DUT_WARNING", "RX FIFO push did NOT synchronize with RTL")
   endtask
   protected virtual task sync_pop_from_rx_fifo();
+  
     cfs_algn_vif vif = env_config.get_vif();
     int timeout = 10;
     bit rtl_pop_detected = 0;
@@ -477,6 +480,7 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
       end
     join_any
     disable fork;
+    `uvm_info("SYNC", $sformatf("fifo reg level before pop: %0d", tx_fifo.size()), UVM_NONE)
     if (!rtl_pop_detected) `uvm_warning("DUT_WARNING", "RX FIFO pop did NOT synchronize with RTL")
   endtask
 
@@ -536,14 +540,18 @@ class cfs_algn_model extends uvm_component implements uvm_ext_reset_handler;
   endtask
   //Task to push to RX FIFO the incoming data
   protected virtual task push_to_rx_fifo(cfs_md_item_mon item);
+    
+
     sync_push_to_rx_fifo();
+    `uvm_info("MOD", $sformatf("write called port in model inside fn call: %0s", item.convert2string()), UVM_MEDIUM)
     rx_fifo.put(item);
     kill_set_rx_fifo_empty();
     inc_rx_lvl();
     `uvm_info("DEBUG", $sformatf("RX FIFO push - new level: %0d, pushed entry: %0s",
                                  reg_block.STATUS.RX_LVL.get_mirrored_value(),
-                                 item.convert2string()), UVM_NONE)
+                                 item.convert2string()), UVM_MEDIUM)
     port_out_rx.write(CFS_MD_OKAY);
+    `uvm_info("MOD", $sformatf("write called port in model with item: %0s", item.convert2string()), UVM_MEDIUM)
   endtask
   //Task for trying to synchronize a push to RX FIFO with RTL
   /* protected virtual task sync_push_to_rx_fifo();
@@ -739,7 +747,7 @@ int tx_lvl;
 
     `uvm_info("RX_FIFO", $sformatf("RX FIFO push - new level: %0d, pushed entry: %0s",
                                    reg_block.STATUS.RX_LVL.get_mirrored_value(),
-                                   item.convert2string()), UVM_LOW)
+                                   item.convert2string()), UVM_MEDIUM)
     //`uvm_info("MODEL0", $sformatf("Calling port_out_rx.write with value: %s", item.name()), UVM_MEDIUM);
     port_out_rx.write(CFS_MD_OKAY);
   endtask*/
@@ -756,7 +764,7 @@ int tx_lvl;
 
     `uvm_info("RX_FIFO", $sformatf("RX FIFO pop - new level: %0d, popped entry: %0s",
                                    reg_block.STATUS.RX_LVL.get_mirrored_value(),
-                                   item.convert2string()), UVM_LOW)
+                                   item.convert2string()), UVM_MEDIUM)
   endtask
 
   //Task to push to TX FIFO the aligned data
@@ -771,7 +779,7 @@ int tx_lvl;
 
     `uvm_info("TX_FIFO", $sformatf("TX FIFO push - new level: %0d, pushed entry: %0s",
                                    reg_block.STATUS.TX_LVL.get_mirrored_value(),
-                                   item.convert2string()), UVM_LOW)
+                                   item.convert2string()), UVM_MEDIUM)
   endtask
 
   //Task to pop from TX FIFO the aligned data
@@ -786,7 +794,7 @@ int tx_lvl;
 
     `uvm_info("TX_FIFO", $sformatf("TX FIFO pop - new level: %0d, popped entry: %0s",
                                    reg_block.STATUS.TX_LVL.get_mirrored_value(),
-                                   item.convert2string()), UVM_LOW)
+                                   item.convert2string()), UVM_MEDIUM)
   endtask
 
   //Task for building the buffer
@@ -844,7 +852,7 @@ int tx_lvl;
                 info.md_offset        = buffer_item.offset;
                 info.md_size          = buffer_item.data.size();
                 info.num_bytes_needed = 0;
-`uvm_info("DEBUG1",$sformatf("md_offset:%d, md_size:%d##########################################################",info.md_offset, info.md_size),UVM_LOW)
+`uvm_info("DEBUG1",$sformatf("md_offset:%d, md_size:%d##########################################################",info.md_offset, info.md_size),UVM_MEDIUM)
                 port_out_split_info.write(info);
             end
                 push_to_tx_fifo(tx_item);
@@ -868,7 +876,7 @@ int tx_lvl;
                 info.md_size          = buffer_item.data.size();
                 info.num_bytes_needed = num_bytes_needed;
 
-`uvm_info("DEBUG1",$sformatf("md_offset:%d, md_size:%d---------------------------------------------------------",info.md_offset, info.md_size),UVM_LOW)
+`uvm_info("DEBUG1",$sformatf("md_offset:%d, md_size:%d---------------------------------------------------------",info.md_offset, info.md_size),UVM_MEDIUM)
                 port_out_split_info.write(info);
               end
             end
@@ -962,6 +970,7 @@ int tx_lvl;
         process_push_to_rx_fifo = process::self();
 
         push_to_rx_fifo(item);
+        `uvm_info("MOD", $sformatf("write called port in model before fn call: %0s", item.convert2string()), UVM_MEDIUM)
 
         process_push_to_rx_fifo = null;
       end
@@ -1043,9 +1052,13 @@ int tx_lvl;
 
 
   virtual function void write_in_rx(cfs_md_item_mon item_mon);
+    
     cfs_md_response exp_response;
+    // `uvm_info("MOD", $sformatf("write called in model with item: %0s", item_mon.convert2string()), UVM_MEDIUM)
     if (item_mon.is_active()) begin
+      `uvm_info("MOD", $sformatf("write called port inside loop in model with item: %0s", item_mon.convert2string()), UVM_MEDIUM)
       exp_response = get_exp_response(item_mon);
+      // `uvm_info("MOD", $sformatf("write called port before case in model with item: %0s", exp_response.name()), UVM_MEDIUM)
 
       case (exp_response)
         CFS_MD_ERR: begin
@@ -1053,13 +1066,13 @@ int tx_lvl;
           //`uvm_info("MODEL1", $sformatf(
           //          "Calling port_out_rx.write with value: %s", exp_response.name()), UVM_MEDIUM);
           port_out_rx.write(exp_response);
+          `uvm_info("MOD", $sformatf("write called port in model with item: %0s", item_mon.convert2string()), UVM_MEDIUM)
         end
         CFS_MD_OKAY: begin
           push_to_rx_fifo_nb(item_mon);
         end
         default: begin
-          `uvm_fatal("ALGORITHM_ISSUE", $sformatf(
-                     "Un-supported value for exp_response: %0s", exp_response.name()))
+          `uvm_fatal("ALGORITHM_ISSUE", $sformatf("Un-supported value for exp_response: %0s", exp_response.name()))
         end
       endcase
     end

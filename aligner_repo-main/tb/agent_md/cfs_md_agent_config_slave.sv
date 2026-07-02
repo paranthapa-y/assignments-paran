@@ -7,13 +7,14 @@ class cfs_md_agent_config_slave #(
 
   //Value of "ready" signal at reset
   local bit ready_at_reset;
+  local bit disable_ready;
 
   `uvm_component_param_utils(cfs_md_agent_config_slave#(DATA_WIDTH))
 
   function new(string name = "", uvm_component parent);
     super.new(name, parent);
 
-    ready_at_reset = 1;
+    ready_at_reset = 0;
   endfunction
 
   //Setter for field ready_at_reset
@@ -24,6 +25,14 @@ class cfs_md_agent_config_slave #(
   //Getter for field ready_at_reset
   virtual function bit get_ready_at_reset();
     return ready_at_reset;
+  endfunction
+
+  function void set_disable_ready(bit value);
+    disable_ready = value;
+  endfunction
+
+  function bit get_disable_ready();
+    return disable_ready;
   endfunction
 
 endclass

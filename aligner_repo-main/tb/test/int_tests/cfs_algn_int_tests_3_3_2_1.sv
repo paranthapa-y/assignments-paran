@@ -19,7 +19,7 @@ class cfs_algn_int_tests_3_3_2_1 extends cfs_algn_test_base;
   virtual task run_phase(uvm_phase phase);
 
     cfs_algn_virtual_sequence_reg_config cfg_seq;
-    cfs_algn_virtual_sequence_rx_size1_offset0 rx_seq;
+    cfs_algn_virtual_sequence_ctrl4_off0_two_pkts rx_seq;
     cfs_md_sequence_tx_ready_block tx_block_seq;
 
     virtual cfs_algn_if vif;
@@ -47,13 +47,13 @@ class cfs_algn_int_tests_3_3_2_1 extends cfs_algn_test_base;
     cfg_seq.start(env.virtual_sequencer);
 
     // Step 2: Explicitly write CTRL.SIZE=1 and OFFSET=0
-    env.model.reg_block.CTRL.write(status, 32'h00000101, UVM_FRONTDOOR);
+    env.model.reg_block.CTRL.write(status, 32'h00000001, UVM_FRONTDOOR);
 
     // Step 3: Enable IRQEN for RX_FIFO_FULL and TX_FIFO_FULL
     env.model.reg_block.IRQEN.read(status, irqen_val, UVM_FRONTDOOR);
-    //irqen_val[1] = 1'b1;  // RX_FIFO_FULL
-   // irqen_val[3] = 1'b1;  // TX_FIFO_FULL
-   env.model.reg_block.IRQEN.write(status, 32'h00000002, UVM_FRONTDOOR);
+    irqen_val[1] = 1'b1;  // RX_FIFO_FULL
+    irqen_val[3] = 1'b1;  // TX_FIFO_FULL
+    env.model.reg_block.IRQEN.write(status, irqen_val, UVM_FRONTDOOR);
     #(50ns); 
    // env.model.reg_block.IRQEN.write(status, 32'h00000002, UVM_FRONTDOOR);
     `uvm_info("3_3_2", $sformatf("IRQEN configured: 0x%0h", irqen_val), UVM_MEDIUM)
@@ -61,18 +61,17 @@ class cfs_algn_int_tests_3_3_2_1 extends cfs_algn_test_base;
     // Step 4: Send 19 RX packets (SIZE=1, OFFSET=0)
     for (int i = 0; i < 19; i++) begin
       rx_seq =
-          cfs_algn_virtual_sequence_rx_size1_offset0::type_id::create($sformatf("rx_seq_%0d", i));
+          cfs_algn_virtual_sequence_ctrl4_off0_two_pkts::type_id::create($sformatf("rx_seq_%0d", i));
       rx_seq.set_sequencer(env.virtual_sequencer);
       void'(rx_seq.randomize());
       rx_seq.start(env.virtual_sequencer);
-       if(i==17)
-      begin
-      #(10ns);
-       env.model.reg_block.STATUS.RX_LVL.read(status, status_val, UVM_FRONTDOOR);
+      if(i==17) begin
+        #(10ns);
+        env.model.reg_block.STATUS.read(status, status_val, UVM_FRONTDOOR);
        end
     end
     
-    env.model.reg_block.STATUS.RX_LVL.read(status, status_val, UVM_FRONTDOOR);
+    env.model.reg_block.STATUS.read(status, status_val, UVM_FRONTDOOR);
     
      env.model.reg_block.IRQ.write(status, 32'h00000000, UVM_FRONTDOOR);
      

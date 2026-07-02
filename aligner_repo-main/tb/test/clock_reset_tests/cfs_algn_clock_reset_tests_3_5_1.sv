@@ -16,6 +16,7 @@ class cfs_algn_clock_reset_tests_3_5_1 extends cfs_algn_test_base;
     cfs_md_sequence_tx_ready_block tx_block_seq;
     cfs_md_sequence_slave_response_forever tx_seq;
     uvm_reg_data_t ctrl_val, status_val, irq_val, irqen_val;
+    uvm_reg_data_t mirrored_val;
 
     virtual cfs_apb_if apb_vif;
     virtual cfs_algn_if algn_vif;
@@ -29,7 +30,8 @@ class cfs_algn_clock_reset_tests_3_5_1 extends cfs_algn_test_base;
         )) begin
       `uvm_fatal("RESET_TEST", "Failed to get APB interface from config DB")
     end
-
+    mirrored_val = env.model.reg_block.IRQ.get_mirrored_value();
+    `uvm_info("RAL_DBG",$sformatf("IRQ mirrored value = 0x%0h", mirrored_val),UVM_MEDIUM)
     if (!uvm_config_db#(virtual cfs_algn_if)::get(null, "uvm_test_top.env", "vif", algn_vif)) begin
       `uvm_fatal("RESET_TEST", "Failed to get aligner VIF from config DB")
     end
@@ -50,7 +52,9 @@ class cfs_algn_clock_reset_tests_3_5_1 extends cfs_algn_test_base;
     cfg_seq.start(env.virtual_sequencer);
     env.model.reg_block.CTRL.write(status, 32'h00000001, UVM_FRONTDOOR);
     `uvm_info("3_3_9", "Configured CTRL.SIZE = 2, OFFSET = 0", UVM_MEDIUM)
-
+    
+    mirrored_val = env.model.reg_block.IRQ.get_mirrored_value();
+    `uvm_info("RAL_DBG",$sformatf("IRQ mirrored value = 0x%0h", mirrored_val),UVM_MEDIUM)
     // Step 2: Send a few legal packets
     for (int i = 0; i < 12; i++) begin
       rx_seq = cfs_algn_virtual_sequence_rx_size1_offset0::type_id::create(
@@ -95,6 +99,8 @@ class cfs_algn_clock_reset_tests_3_5_1 extends cfs_algn_test_base;
       void'(rx_seq.randomize());
       rx_seq.start(env.virtual_sequencer);
     end
+    mirrored_val = env.model.reg_block.IRQ.get_mirrored_value();
+    `uvm_info("RAL_DBG",$sformatf("IRQ mirrored value = 0x%0h", mirrored_val),UVM_MEDIUM)
 
     #(300ns);
     phase.drop_objection(this, "RESET_TEST");

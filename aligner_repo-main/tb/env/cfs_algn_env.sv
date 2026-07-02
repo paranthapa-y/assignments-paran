@@ -94,11 +94,11 @@
       end
       
       //Configure the predictor with an address map and an adapter
-      predictor.map     = null;
+      predictor.map     = model.reg_block.default_map;
       predictor.adapter = adapter;
 
       //Connect the APB monitor with the predictor
-    //  apb_agent.monitor.output_port.connect(predictor.bus_in);
+     apb_agent.monitor.output_port.connect(predictor.bus_in);
       
       //Connect the APB sequencer to the address map in order
       //to use the API of the registers to start APB transactions

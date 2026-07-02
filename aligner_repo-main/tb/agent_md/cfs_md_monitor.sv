@@ -71,7 +71,7 @@ class cfs_md_monitor #(
       item.length++;
 
       if (agent_config.get_has_checks()) begin
-        if (item.length <= agent_config.get_stuck_threshold()) begin
+        if (item.length >= agent_config.get_stuck_threshold()) begin
           `uvm_error("PROTOCOL_ERROR",
                      $sformatf("The MD transfer reached the stuck threshold value of %0d",
                                item.length))

@@ -83,10 +83,10 @@ module cfs_rx_ctrl #(
 
   always_comb begin
     if (md_rx_valid == 1) begin
-      if (md_rx_size == 0||md_rx_size==1) begin
+      if (md_rx_size == 0) begin
         md_rx_err = 1;
       end else if ((((ALGN_DATA_WIDTH / 8) + md_rx_offset) % md_rx_size) != 0) begin
-        md_rx_err = 0;
+        md_rx_err = 1;
       end else begin
         md_rx_err = 0;
       end
@@ -100,7 +100,7 @@ module cfs_rx_ctrl #(
   assign push_valid = md_rx_valid & !md_rx_err;
 
   assign push_data[SIZE_MSB : SIZE_LSB] = md_rx_size;
-  assign push_data[OFFSET_MSB:OFFSET_LSB] = md_rx_offset+1;
+  assign push_data[OFFSET_MSB:OFFSET_LSB] = md_rx_offset;
   assign push_data[DATA_MSB : DATA_LSB] = md_rx_data;
 
 endmodule

@@ -22,9 +22,12 @@ class cfs_algn_virtual_sequence_3_1_3 extends cfs_algn_virtual_sequence_base;
 
     // Fetch all registers
     p_sequencer.model.reg_block.get_registers(registers);
+    `uvm_info("Test", $sformatf("inside cfs_algn_virtual_sequence_3_1_3 %d=",registers.size()), UVM_MEDIUM)
 
     // Filter out read-only registers
     for (int reg_idx = registers.size() - 1; reg_idx >= 0; reg_idx--) begin
+      `uvm_info("Test", $sformatf("inside cfs_algn_virtual_sequence_3_1_3 %s=",registers[reg_idx].get_rights()), UVM_MEDIUM)
+      // `uvm_info("REG_DEBUG",$sformatf("reg_idx=%0d reg_name=%s rights=%s",reg_idx,registers[reg_idx].get_name(),registers[reg_idx].get_rights()),UVM_LOW);
       if (!(registers[reg_idx].get_rights() inside {"RW", "WO"})) begin
         registers.delete(reg_idx);
       end
@@ -32,24 +35,29 @@ class cfs_algn_virtual_sequence_3_1_3 extends cfs_algn_virtual_sequence_base;
 
     // Randomize order of register writes
     registers.shuffle();
+    // `uvm_info("REG_DEBUG",$sformatf("reg_idx=%0d reg_name=%s rights=%s",reg_idx,registers[reg_idx].get_name(),registers[reg_idx].get_rights()),UVM_LOW);
 
     foreach (registers[reg_idx]) begin
       uvm_reg current_reg = registers[reg_idx];
       uvm_reg_data_t read_val;
 
       if (current_reg.get_name() == "IRQEN") begin
+        
         // Set only first 5 fields to 1
         uvm_reg_field fields[$];
+        
         current_reg.get_fields(fields);
 
         foreach (fields[i]) begin
           if (i < 5) begin
             fields[i].set(1);
+            
           end
         end
 
         current_reg.update(status);
         current_reg.read(status, read_val);
+        `uvm_info("Test", "setting irqen fields ", UVM_MEDIUM)
         `uvm_info("IRQEN_CHECK", $sformatf("Read back IRQEN = 0x%0h", read_val), UVM_MEDIUM);
       end else begin
         void'(current_reg.randomize());

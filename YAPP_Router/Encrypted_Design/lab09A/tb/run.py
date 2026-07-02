@@ -24,6 +24,7 @@ run_command("vlog top_dut.sv")
 
 # Step 2: Generate a random seed (32-bit integer)
 seed = random.randint(1, 2**31 - 1)
+# seed =531936494
 print(f"Using random seed: {seed}")
 
 # Step 3: Start simulation for top module with random seed

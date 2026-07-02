@@ -86,9 +86,9 @@ class cfs_algn_int_tests_3_3_8 extends cfs_algn_test_base;
     env.model.reg_block.IRQ.read(status, irq_val, UVM_FRONTDOOR);
     `uvm_info("3_3_8", $sformatf("IRQ = 0x%0h", irq_val), UVM_MEDIUM)
 
-    if ((irq_val & 32'h10) != 0)
-      `uvm_error("3_3_8", "IRQ.MAX_DROP was incorrectly reasserted after CNT_DROP was cleared")
-    else `uvm_info("3_3_8", "PASS: IRQ.MAX_DROP not re-triggered as expected", UVM_LOW)
+    if ((irq_val & 32'h10) == 0)
+      `uvm_error("3_3_8", "IRQ.MAX_DROP was not reasserted after CNT_DROP was cleared and 255 illegal packets were sent again")
+    else `uvm_info("3_3_8", "PASS: IRQ.MAX_DROP re-triggered as expected", UVM_LOW)
 
     #(200ns);
     phase.drop_objection(this, "TEST_DONE");

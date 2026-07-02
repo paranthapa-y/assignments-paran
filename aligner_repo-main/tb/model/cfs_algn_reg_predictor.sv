@@ -84,8 +84,7 @@ class cfs_algn_reg_predictor #(
           return cfs_algn_reg_access_status_info::new_instance(
               UVM_NOT_OK,
               $sformatf(
-                  "Illegal access to CTRL -> OFFSET: %0d, SIZE: %0d, aligner data width: %0d",
-                  offset_value,
+                  "Illegal access to CTRL -> OFFSET: %0d, SIZE: %0d, aligner data width: %0d", offset_value,
                   size_value,
                   env_config.get_algn_data_width())
           );
@@ -99,8 +98,7 @@ class cfs_algn_reg_predictor #(
                   "Illegal access to CTRL -> OFFSET (%0d) + SIZE (%0d)  > aligner data width: %0d",
                   offset_value,
                   size_value,
-                  env_config.get_algn_data_width())
-          );
+                  env_config.get_algn_data_width()));
         end
       end
     end

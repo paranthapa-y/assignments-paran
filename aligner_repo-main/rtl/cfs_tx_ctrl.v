@@ -39,7 +39,7 @@ module cfs_tx_ctrl #(
   localparam int unsigned SIZE_MSB = ALGN_DATA_WIDTH + ALGN_OFFSET_WIDTH + ALGN_SIZE_WIDTH - 1;
   localparam int unsigned SIZE_LSB = ALGN_DATA_WIDTH + ALGN_OFFSET_WIDTH;
 
-  assign pop_ready    = !(pop_valid & md_tx_ready);
+  assign pop_ready    = (pop_valid & md_tx_ready);
   assign md_tx_valid  = pop_valid;
   assign md_tx_data   = pop_data[DATA_MSB:DATA_LSB];
   assign md_tx_offset = pop_data[OFFSET_MSB:OFFSET_LSB];

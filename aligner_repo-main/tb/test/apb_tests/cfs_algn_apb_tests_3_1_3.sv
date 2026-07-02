@@ -40,6 +40,10 @@ class cfs_algn_apb_tests_3_1_3 extends cfs_algn_test_base;
       end
     join_none
 
+    // env.model.reg_block.IRQEN.RX_FIFO_EMPTY.write(status, 0, UVM_FRONTDOOR);
+    // env.model.reg_block.IRQEN.TX_FIFO_EMPTY.write(status, 0, UVM_FRONTDOOR);
+    // `uvm_info("IRQ_READ", "IRQEN made 0", UVM_MEDIUM)
+
     cfg_seq = cfs_algn_virtual_sequence_3_1_3::type_id::create("cfg_seq");
     cfg_seq.set_sequencer(env.virtual_sequencer);
     cfg_seq.start(env.virtual_sequencer);
@@ -61,12 +65,12 @@ class cfs_algn_apb_tests_3_1_3 extends cfs_algn_test_base;
 
     // Step 4: Read all fields of the IRQ register
     env.model.reg_block.IRQ.read(status, irq_val, UVM_FRONTDOOR);
-    `uvm_info("IRQ_READ", $sformatf("IRQ register value = 0x%0h", irq_val), UVM_LOW)
+    `uvm_info("IRQ_READ", $sformatf("IRQ register value = 0x%0h", irq_val), UVM_MEDIUM)
 
-    env.model.reg_block.IRQ.TX_FIFO_FULL.write(status, 1, UVM_FRONTDOOR);
+    env.model.reg_block.IRQ.RX_FIFO_EMPTY.write(status, 1, UVM_FRONTDOOR);
 
     env.model.reg_block.IRQ.read(status, irq_val, UVM_FRONTDOOR);
-    `uvm_info("IRQ_READ", $sformatf("IRQ register value = 0x%0h", irq_val), UVM_LOW)
+    `uvm_info("IRQ_READ", $sformatf("IRQ register value = 0x%0h", irq_val), UVM_MEDIUM)
 
     #(500ns);
 

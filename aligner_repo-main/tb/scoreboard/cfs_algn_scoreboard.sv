@@ -158,6 +158,7 @@ class cfs_algn_scoreboard extends uvm_component implements uvm_ext_reset_handler
     fork
       begin
         process p = process::self();
+        `uvm_info("SCB", "watchdog push_back called",UVM_MEDIUM)
 
         process_exp_rx_response_watchdog.push_back(p);
 
@@ -169,7 +170,7 @@ class cfs_algn_scoreboard extends uvm_component implements uvm_ext_reset_handler
               "At the end of task exp_rx_response_watchdog the queue of processes process_exp_rx_response_watchdog is empty")
         end
 
-        void'(process_exp_rx_response_watchdog.pop_front());
+        // void'(process_exp_rx_response_watchdog.pop_front());
       end
     join_none
   endfunction
@@ -217,6 +218,7 @@ class cfs_algn_scoreboard extends uvm_component implements uvm_ext_reset_handler
   endfunction
 
   virtual function void write_in_model_rx(cfs_md_response response);
+    `uvm_info("SCB", "Write called from model",UVM_MEDIUM)
     if (exp_rx_responses.size() >= 1) begin
       `uvm_error(
           "ALGORITHM_ISSUE",
@@ -259,11 +261,21 @@ class cfs_algn_scoreboard extends uvm_component implements uvm_ext_reset_handler
   endfunction
 
   virtual function void write_in_agent_rx(cfs_md_item_mon item_mon);
+    `uvm_info("SCB", $sformatf("write called in scb: %0s", item_mon.convert2string()), UVM_MEDIUM)
     if (!item_mon.is_active()) begin
       cfs_md_response exp_response = exp_rx_responses.pop_back();
+      // if (process_exp_rx_response_watchdog.size() == 0) begin
+      //   `uvm_fatal("SCB", "watchdog queue empty before kill")
+      // end
 
+      // if (process_exp_rx_response_watchdog[0] == null) begin
+      //   `uvm_fatal("SCB", "watchdog handle is NULL")
+      // end
+      // `uvm_info("SCB", "watchdog kill called",UVM_MEDIUM)
+      
       process_exp_rx_response_watchdog[0].kill();
-
+      // void'(process_exp_rx_response_watchdog.pop_front());
+      `uvm_info("SCB", "watchdog pop called",UVM_MEDIUM)
       void'(process_exp_rx_response_watchdog.pop_front());
 
       if (env_config.get_has_checks()) begin

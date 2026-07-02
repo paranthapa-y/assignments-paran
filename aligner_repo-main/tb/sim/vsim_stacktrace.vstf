@@ -158,3 +158,2062 @@
 # End of Stack Trace
 
 
+# Current time Fri Jun 26 14:59:26 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:02:17 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:05:01 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:08:06 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:10:42 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:14:31 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe7348cce: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe734945c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe7458bcc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70ccd8c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe70183d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe701871c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7264d2f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe714513b: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:25:12 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 26 15:25:28 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73062ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe7306a6c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73f390c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe709381c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fdd562: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fdd88c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72252df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe71083f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Mon Jun 29 11:55:29 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe73086be: '../scoreboard/cfs_algn_scoreboard.sv:285'
+# 2    0x00007fefe730942c: '../scoreboard/cfs_algn_scoreboard.sv:281'
+# 3    0x00007fefe73f5acc: '../scoreboard/cfs_algn_scoreboard.sv:15'
+# 4    0x00007fefe709403c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fddd82: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fde0ac: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe722679f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe7108c13: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Mon Jun 29 12:08:32 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e87ee: '../scoreboard/cfs_algn_scoreboard.sv:285'
+# 2    0x00007fefe72e955c: '../scoreboard/cfs_algn_scoreboard.sv:281'
+# 3    0x00007fefe73d638c: '../scoreboard/cfs_algn_scoreboard.sv:15'
+# 4    0x00007fefe707413c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbded2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe1fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72068bf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e8d23: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Mon Jun 29 12:24:05 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00007fefe6ca657c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/seq/uvm_sequence_item.svh:164'
+# 1    0x00007fefe6ca67a4: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/seq/uvm_sequence_item.svh:164'
+# 2    0x00007fefe73ab79e: '../virtual_sequence/cfs_algn_virtual_sequence_rx.sv:27'
+# 3    0x00007fefe73ab8dc: '../virtual_sequence/cfs_algn_virtual_sequence_rx.sv:24'
+# 4    0x00007fefe73a4b67: '../virtual_sequence/cfs_algn_virtual_sequence_rx_crt.sv:31'
+# 5    0x00007fefe73a4e6c: '../virtual_sequence/cfs_algn_virtual_sequence_rx_crt.sv:30'
+# 6    0x0000000003507e7f: '<unknown (@0x3507e7f)>'
+# 7    0x000000000350bcb3: '<unknown (@0x350bcb3)>'
+# 8    0x000000000350e5e7: '<unknown (@0x350e5e7)>'
+# 9    0x0000000003500bb7: '<unknown (@0x3500bb7)>'
+# 10   0x0000000003505759: '<unknown (@0x3505759)>'
+# 11   0x00000000005b62e9: '<unknown (@0x5b62e9)>'
+# 12   0x00000000005b70bc: '<unknown (@0x5b70bc)>'
+# 13   0x00007fefe73f3895: '../test/apb_tests/cfs_algn_apb_tests_3_1_3.sv:55'
+# 14   0x00007fefe6c2cb9f: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:245'
+# 15   0x00007fefe6c2a0cf: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_task_phase.svh:150'
+# 16   0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 17   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 18   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 19   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 20   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 21   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 22   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 23   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 24   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 25   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 26   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 27   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 28   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 29   0x000000000399473f: '<unknown (@0x399473f)>'
+# 30   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 31   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 32   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 33   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 34   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Mon Jun 29 15:53:15 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e87ee: '../scoreboard/cfs_algn_scoreboard.sv:285'
+# 2    0x00007fefe72e955c: '../scoreboard/cfs_algn_scoreboard.sv:281'
+# 3    0x00007fefe73d639c: '../scoreboard/cfs_algn_scoreboard.sv:15'
+# 4    0x00007fefe707413c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbded2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe1fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72068bf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e8d23: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Mon Jun 29 16:02:07 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8aee: '../scoreboard/cfs_algn_scoreboard.sv:285'
+# 2    0x00007fefe72e985c: '../scoreboard/cfs_algn_scoreboard.sv:281'
+# 3    0x00007fefe73d666c: '../scoreboard/cfs_algn_scoreboard.sv:15'
+# 4    0x00007fefe707442c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe182: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe4ac: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206b9f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9023: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Mon Jun 29 16:02:59 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8cae: '../scoreboard/cfs_algn_scoreboard.sv:285'
+# 2    0x00007fefe72e9a1c: '../scoreboard/cfs_algn_scoreboard.sv:281'
+# 3    0x00007fefe73d683c: '../scoreboard/cfs_algn_scoreboard.sv:15'
+# 4    0x00007fefe707460c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe372: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe69c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206d6f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9203: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 11:28:13 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe732a2ee: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe732aa7c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe741c1bc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70ad68c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6ff8cc2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6ff900c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7245fef: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe7125a2b: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 12:02:12 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe732a57e: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe732ad0c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe741c43c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70ad8bc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6ff8ec2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6ff920c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe724628f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe7125c8b: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 12:03:16 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe732a57e: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe732ad0c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe741c43c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70ad8bc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6ff8ec2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6ff920c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe724628f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe7125c8b: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 12:40:23 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e7f96: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe72e871c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73d74dc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707454c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe2b2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe5dc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72069ef: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9143: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 12:40:44 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e7f96: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe72e871c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73d74dc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707454c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe2b2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe5dc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72069ef: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9143: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 12:41:54 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e7f96: '../scoreboard/cfs_algn_scoreboard.sv:265'
+# 2    0x00007fefe72e871c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73d74dc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707454c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe2b2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe5dc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72069ef: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9143: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 12:45:34 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e80ce: '../scoreboard/cfs_algn_scoreboard.sv:266'
+# 2    0x00007fefe72e885c: '../scoreboard/cfs_algn_scoreboard.sv:261'
+# 3    0x00007fefe73d761c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707459c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe312: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe63c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206a7f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9193: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 15:28:19 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8356: '../scoreboard/cfs_algn_scoreboard.sv:273'
+# 2    0x00007fefe72e8c4c: '../scoreboard/cfs_algn_scoreboard.sv:262'
+# 3    0x00007fefe73d79dc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70747dc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe552: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe87c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206cbf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e93d3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 15:32:52 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e862e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e8f2c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d7c8c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707495c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe6d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe9fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206e3f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9543: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 15:34:07 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e862e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e8f2c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d7c8c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707495c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe6d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe9fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206e3f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9543: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:27:13 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e862e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e8f2c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d7c8c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707495c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe6d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe9fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206e3f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9543: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:28:17 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e89de: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e92dc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d800c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074b3c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe892: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbebbc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720702f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9743: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:30:13 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e889e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e919c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d7efc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074abc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe802: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbeb2c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206f5f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9693: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:32:44 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8efe: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e981c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d856c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074d2c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbea82: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbedac: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720720f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9923: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:33:32 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8efe: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e981c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d856c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074d2c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbea82: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbedac: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720720f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9923: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:43:35 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e9c1e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ea53c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d924c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70753fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbf152: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf47c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72078ef: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70ea003: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:47:02 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ea11e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eaa3c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d973c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707561c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbf392: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf6bc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7207aff: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70ea203: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 16:51:00 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ea59e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eaebc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d9c1c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707589c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbf5e2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf90c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7207d3f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70ea473: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 17:18:56 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8b6e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e948c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d81ec: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074a1c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe762: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbea8c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206ebf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e95f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Tue Jun 30 17:19:27 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8b6e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e948c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d81ec: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074a1c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe762: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbea8c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206ebf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e95f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:32:07 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8b6e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e948c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d81ec: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074a1c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe762: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbea8c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206ebf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e95f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:32:53 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e8b6e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e948c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d81ec: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074a1c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe762: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbea8c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206ebf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e95f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:34:03 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e88fe: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e921c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d7f4c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707475c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe4d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbe7fc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7206c3f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9343: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:50:28 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e90de: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e99fc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d870c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074bdc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe952: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbec7c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72070bf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e97d3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:52:51 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e91de: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e9afc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d881c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074c7c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe9d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbecfc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720716f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9883: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:54:24 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e91de: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e9afc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d881c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074c7c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbe9d2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbecfc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720716f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9883: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:55:02 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e959e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e9ebc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d8bcc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074e8c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbebf2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbef1c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720732f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9a83: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:55:48 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e95ee: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72e9f0c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d8c1c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe7074e5c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbeba2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbeecc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72072ff: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9a33: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:57:30 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e9c0e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ea52c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d925c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707512c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbee72: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf19c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72075df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9cf3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:57:58 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72e9c0e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ea52c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d925c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707512c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbee72: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf19c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72075df: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70e9cf3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 09:59:31 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ea2ee: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eac0c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d993c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707542c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbf182: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf4ac: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720790f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70ea023: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:04:00 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ea2de: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eabfc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73d993c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707542c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fbf182: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fbf4ac: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720790f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70ea023: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:23:45 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ec14e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eca6c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73db81c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70762bc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc0052: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc037c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720877f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70eaea3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:24:52 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ec14e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eca6c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73db81c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe70762bc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc0052: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc037c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe720877f: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70eaea3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:26:52 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ec3be: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72eccdc: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73dba7c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707638c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc00f2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc041c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe72089bf: '../agent_md/cfs_md_monitor.sv:86'
+# 8    0x00007fefe70eaf83: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:28:00 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ec52e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ece4c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73dbbdc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707636c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc00b2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc03dc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7208b47: '../agent_md/cfs_md_monitor.sv:87'
+# 8    0x00007fefe70eaf33: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:30:16 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ec52e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ece4c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73dbbdc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707636c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc00b2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc03dc: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7208b47: '../agent_md/cfs_md_monitor.sv:87'
+# 8    0x00007fefe70eaf33: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:33:37 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ecc4e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ed56c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73dc2cc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707666c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc03e2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc070c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7208e77: '../agent_md/cfs_md_monitor.sv:87'
+# 8    0x00007fefe70eb263: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 10:43:13 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ecc4e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72ed56c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73dc2cc: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707666c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc03e2: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc070c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7208e77: '../agent_md/cfs_md_monitor.sv:87'
+# 8    0x00007fefe70eb263: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+
+# Current time Wed Jul  1 11:56:05 2026
+# Program = vsim
+# Id = "2021.2_1"
+# Version = "2021.05"
+# Date = "May 15 2021"
+# Platform = "linux_x86_64"
+# Signature = dfcd0de65e8129bcb66fdbdef15ad702
+# 0    0x00000000005b5e9a: '<unknown (@0x5b5e9a)>'
+# 1    0x00007fefe72ed27e: '../scoreboard/cfs_algn_scoreboard.sv:275'
+# 2    0x00007fefe72edb9c: '../scoreboard/cfs_algn_scoreboard.sv:263'
+# 3    0x00007fefe73dc93c: '../scoreboard/cfs_algn_scoreboard.sv:14'
+# 4    0x00007fefe707692c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh:213'
+# 5    0x00007fefe6fc0672: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:76'
+# 6    0x00007fefe6fc099c: '/home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh:70'
+# 7    0x00007fefe7209107: '../agent_md/cfs_md_monitor.sv:87'
+# 8    0x00007fefe70eb4f3: '../agent_uvm_ext/uvm_ext_monitor.sv:57'
+# 9    0x000000000345ecda: '<unknown (@0x345ecda)>'
+# 10   0x00000000006a863c: '<unknown (@0x6a863c)>'
+# 11   0x00000000004c6dfb: '<unknown (@0x4c6dfb)>'
+# 12   0x00000000006e8203: '<unknown (@0x6e8203)>'
+# 13   0x0000000000c03175: '<unknown (@0xc03175)>'
+# 14   0x0000000000c08033: '<unknown (@0xc08033)>'
+# 15   0x0000000000c09d8e: '<unknown (@0xc09d8e)>'
+# 16   0x0000000000ed3f8d: '<unknown (@0xed3f8d)>'
+# 17   0x00000000038ee98d: '<unknown (@0x38ee98d)>'
+# 18   0x00000000038f2de6: '<unknown (@0x38f2de6)>'
+# 19   0x00000000038f44d1: '<unknown (@0x38f44d1)>'
+# 20   0x00000000038f4836: '<unknown (@0x38f4836)>'
+# 21   0x0000000001145ab9: '<unknown (@0x1145ab9)>'
+# 22   0x000000000399473f: '<unknown (@0x399473f)>'
+# 23   0x00000000039e82b7: '<unknown (@0x39e82b7)>'
+# 24   0x00000000039ab1a7: '<unknown (@0x39ab1a7)>'
+# 25   0x00000000039ab489: '<unknown (@0x39ab489)>'
+# 26   0x0000000003790c2d: '<unknown (@0x3790c2d)>'
+# 27   0x0000000000bcf05c: '<unknown (@0xbcf05c)>'
+# End of Stack Trace
+
+

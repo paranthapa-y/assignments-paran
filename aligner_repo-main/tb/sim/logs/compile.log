@@ -1,10 +1,10 @@
-make[1]: Entering directory '/home/pranav/Documents/aligner_repo-main/tb/sim'
+make[1]: Entering directory '/home/paranthapa/Documents/aligner_repo-main/tb/sim'
 [Compiling...]
 QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
 vmap work work 
 Modifying modelsim.ini
 QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
-Start time: 00:17:27 on Jul 19,2025
+Start time: 01:23:20 on Jul 03,2026
 vlog -sv -cover bcest -work work ../../rtl/design.sv ../top/testbench.sv "+acc" "+define+QUESTA" "+incdir+../../rtl" "+incdir+../top" 
 -- Compiling module cfs_synch
 -- Compiling module cfs_synch_fifo
@@ -15,7 +15,7 @@ vlog -sv -cover bcest -work work ../../rtl/design.sv ../top/testbench.sv "+acc" 
 -- Compiling module cfs_regs
 -- Compiling module cfs_aligner_core
 -- Compiling module cfs_aligner
-** Note: (vlog-2286) ../test/cfs_algn_test_pkg.sv(10): Using implicit +incdir+/home/pranav/Documents/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Note: (vlog-2286) ../test/cfs_algn_test_pkg.sv(10): Using implicit +incdir+/home/paranthapa/Downloads/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
 -- Compiling package uvm_ext_pkg
 -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
 -- Compiling interface cfs_apb_if
@@ -36,6 +36,6 @@ vlog -sv -cover bcest -work work ../../rtl/design.sv ../top/testbench.sv "+acc" 
 
 Top level modules:
 	testbench
-End time: 00:17:29 on Jul 19,2025, Elapsed time: 0:00:02
+End time: 01:23:21 on Jul 03,2026, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
-make[1]: Leaving directory '/home/pranav/Documents/aligner_repo-main/tb/sim'
+make[1]: Leaving directory '/home/paranthapa/Documents/aligner_repo-main/tb/sim'

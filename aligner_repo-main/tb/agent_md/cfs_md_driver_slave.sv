@@ -43,7 +43,7 @@ class cfs_md_driver_slave #(
     cfs_md_vif vif = agent_config.get_vif();
 
     `uvm_info("ITEM_START", $sformatf("Driving \"%0s\": %0s", item.get_full_name(),
-                                      item.convert2string()), UVM_LOW)
+                                      item.convert2string()), UVM_NONE)
 
     if (vif.valid !== 1) begin
       `uvm_error(
@@ -59,7 +59,8 @@ class cfs_md_driver_slave #(
       @(posedge vif.clk);
     end
 
-    vif.ready <= 1;
+    if (!agent_config.get_disable_ready())
+      vif.ready <= 1;
     vif.err   <= bit'(item.response);
 
     @(posedge vif.clk);

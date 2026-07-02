@@ -16,7 +16,7 @@ module cfs_edge_detect #(
     input reset_n,
     input data,
 
-    output reg detected
+    output wire detected
 );
 
   reg dly1_data;
