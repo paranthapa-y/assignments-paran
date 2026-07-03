@@ -53,7 +53,7 @@ for (( pass=1; pass<=RUNS; pass++ )); do
   for logfile in "$LOG_DIR"/sim_*.log; do
     errors=$(awk '/UVM_ERROR/ { e=$NF } END { print e+0 }' "$logfile")
     fatals=$(awk '/UVM_FATAL/ { f=$NF } END { print f+0 }' "$logfile")
-    printf "%-85s | %-8s | %-8s\n" \
+    printf "%-75s | %-8s | %-8s\n" \
     "$(basename "$logfile")" "$errors" "$fatals" >> "$SUMMARY_FILE"
   done
 

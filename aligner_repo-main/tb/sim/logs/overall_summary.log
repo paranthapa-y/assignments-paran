@@ -1,2 +1,41 @@
 
 ========== PASS 1 of 1 ==========
+==== REGRESSION ERROR SUMMARY (Pass 1) ====
+sim_cfs_algn_apb_tests_3_1_1_21269612.log                                   | 0        | 0       
+sim_cfs_algn_apb_tests_3_1_3_131451744.log                                  | 0        | 0       
+sim_cfs_algn_apb_tests_3_1_4_90173916.log                                   | 0        | 0       
+sim_cfs_algn_apb_tests_3_1_5_158203201.log                                  | 0        | 0       
+sim_cfs_algn_apb_tests_mapped_unmapped_46463222.log                         | 0        | 0       
+sim_cfs_algn_clock_reset_during_apb_access_2296541.log                      | 0        | 0       
+sim_cfs_algn_clock_reset_tests_3_5_1_17489605.log                           | 0        | 0       
+sim_cfs_algn_clock_reset_tests_3_5_2_762211025.log                          | 0        | 0       
+sim_cfs_algn_directed_test_md_size1_offset3_260567874.log                   | 0        | 0       
+sim_cfs_algn_err_tests_3_4_1_305571072.log                                  | 0        | 0       
+sim_cfs_algn_err_tests_3_4_2_241336200.log                                  | 0        | 0       
+sim_cfs_algn_err_tests_3_4_3_44815978.log                                   | 0        | 0       
+sim_cfs_algn_err_tests_3_4_5_10421310.log                                   | 0        | 0       
+sim_cfs_algn_int_tests_3_3_1_10668900.log                                   | 0        | 0       
+sim_cfs_algn_int_tests_3_3_2_1_156326757.log                                | 0        | 0       
+sim_cfs_algn_int_tests_3_3_2_416410722.log                                  | 0        | 0       
+sim_cfs_algn_int_tests_3_3_3_9826560.log                                    | 0        | 0       
+sim_cfs_algn_int_tests_3_3_4_35478190.log                                   | 0        | 0       
+sim_cfs_algn_int_tests_3_3_5_86879088.log                                   | 0        | 0       
+sim_cfs_algn_int_tests_3_3_6_130447216.log                                  | 0        | 0       
+sim_cfs_algn_int_tests_3_3_7_41556092.log                                   | 0        | 0       
+sim_cfs_algn_int_tests_3_3_8_222451800.log                                  | 0        | 0       
+sim_cfs_algn_md_test_rx_size0_51401576.log                                  | 0        | 0       
+sim_cfs_algn_md_tests_3_2_1_280009600.log                                   | 0        | 0       
+sim_cfs_algn_md_tests_3_2_2_137265716.log                                   | 0        | 0       
+sim_cfs_algn_md_tests_3_2_3_455999488.log                                   | 0        | 0       
+sim_cfs_algn_md_tests_3_2_4_17373496.log                                    | 0        | 0       
+sim_cfs_algn_md_tests_cnt_drop_45713184.log                                 | 0        | 0       
+sim_cfs_algn_md_tests_random_traffic_51820382.log                           | 0        | 0       
+sim_cfs_algn_md_tests_target_length_834172560.log                           | 0        | 0       
+sim_cfs_algn_num_bytes_504562835.log                                        | 0        | 0       
+sim_cfs_algn_test_ctrl4_off0_two_pkts_369781492.log                         | 0        | 0       
+sim_cfs_algn_test_random_116620644.log                                      | 0        | 0       
+sim_cfs_algn_test_reg_access_13492116.log                                   | 0        | 0       
+sim_cfs_algn_test_size_offset_cross_reset_rand_359130750.log                | 0        | 0       
+sim_cfs_algn_test_split_cover_directed_375369060.log                        | 0        | 0       
+sim_cfs_algn_test_split_cross_cover_directed_305255782.log                  | 0        | 0       
+sim_cfs_algn_test_split_legal_combinations_114897520.log                    | 0        | 0       
