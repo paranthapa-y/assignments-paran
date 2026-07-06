@@ -3,8 +3,8 @@ Reading pref.tcl
 
 # 2021.2_1
 
-# vsim -coverage -c work.testbench "+UVM_TESTNAME=cfs_algn_test_size_offset_cross_reset_rand" "+sv_seed=359130750" "+UVM_MAX_QUIT_COUNT=1" "+access" "+rw" -f messages.f -do "do ../../tb/sim/toggle_exclude.do; coverage save -onexit ./ucdb/cfs_algn_test_size_offset_cross_reset_rand.ucdb; run -all; quit;" 
-# Start time: 10:34:35 on Jul 03,2026
+# vsim -coverage -voptargs="+acc" -c work.testbench "+UVM_TESTNAME=cfs_algn_test_size_offset_cross_reset_rand" "+sv_seed=154917889" "+UVM_MAX_QUIT_COUNT=1" "+access" "+rw" -f messages.f -do "do ../../tb/sim/toggle_exclude.do; coverage save -onexit ./ucdb/cfs_algn_test_size_offset_cross_reset_rand.ucdb; run -all; quit;" 
+# Start time: 14:37:41 on Jul 03,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
 # ** Warning: ../agent_md/cfs_md_sequencer_base.sv(16): (vopt-2250) Function "get_data_width" has no return value assignment.
@@ -84,32 +84,6 @@ Reading pref.tcl
 # UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
 # ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
 #    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'ignore_ctrl' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.ignore_ctrl' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'new_ignore_ctrl_invalid_pairs' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'new_ignore_ctrl_invalid_pairs' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.new_ignore_ctrl_invalid_pairs' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_num_bytes_needed_gt_ctrl_size' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.illegal_num_bytes_needed_gt_ctrl_size' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_3' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'all.illegal_ctrl_size_1_num_bytes_needed_3' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', the bin is found to be empty since no cross products are selected.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_2' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
-# ** Warning: (vsim-8556) On evaluating the expression 'binsof(ctrl_size) intersect{ value_list }' inside the select expression of Bin 'illegal_ctrl_size_1_num_bytes_needed_2' of Cross 'all' in Covergroup instance '\/cfs_algn_pkg::cfs_algn_coverage::cover_split ', no matching bins were found. The binsof expression will result in an empty set.
-#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
 # ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'length_eq_2' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The bin will be taken out of coverage calculation.
 #    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
 # ** Warning: (vsim-8547) After dropping the illegal, ignore or invalid values, the values list associated with fixed-size array sub bin 'length_le_10[1]' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The sub bin will be taken out of coverage calculation.
@@ -129,9 +103,9 @@ Reading pref.tcl
 # ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'length_gt_10' in Coverpoint 'length' of Covergroup instance '\/cfs_apb_pkg::cfs_apb_coverage::cover_item ' has converged to empty list. The bin will be taken out of coverage calculation.
 #    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
 # ** Warning: (vsim-12051) Illegal assignment in cast to class work.cfs_md_pkg::cfs_md_sequencer_base_master from class work.uvm_ext_pkg::uvm_ext_sequencer #(class work.cfs_md_pkg::cfs_md_item_drv_master)
-#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe449db0 File: ../env/cfs_algn_env.sv Line: 129
+#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe426f1d File: ../env/cfs_algn_env.sv Line: 129
 # ** Warning: (vsim-12051) Illegal assignment in cast to class work.cfs_md_pkg::cfs_md_sequencer_base_slave from class work.uvm_ext_pkg::uvm_ext_sequencer #(class work.cfs_md_pkg::cfs_md_item_drv_slave)
-#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe449db0 File: ../env/cfs_algn_env.sv Line: 130
+#    Time: 0 ns  Iteration: 32  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#1847_7fefe426f1d File: ../env/cfs_algn_env.sv Line: 130
 # UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(218) @ 105: uvm_test_top.env.predictor [REG_PREDICT] Observed WRITE transaction to register reg_block.IRQEN: value='h13 : updated value = 'h13
 # ** Error: PENABLE at "Setup Phase" is not equal to 0
 #    Time: 115 ns Started: 115 ns  Scope: testbench.apb_if.PENABLE_AT_SETUP_PHASE_A File: ../interface/cfs_apb_if.sv Line: 62
@@ -63011,5 +62985,5 @@ Reading pref.tcl
 # ** Note: $finish    : /home/paranthapa/Downloads/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 392785 ns  Iteration: 54  Instance: /testbench
 # Saving coverage database on exit...
-# End time: 10:34:49 on Jul 03,2026, Elapsed time: 0:00:14
-# Errors: 308, Warnings: 32
+# End time: 14:37:55 on Jul 03,2026, Elapsed time: 0:00:14
+# Errors: 308, Warnings: 19

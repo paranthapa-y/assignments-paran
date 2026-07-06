@@ -23,7 +23,7 @@ class cfs_algn_coverage extends uvm_component implements uvm_ext_reset_handler;
     }
 
     ctrl_size: coverpoint info.ctrl_size {
-      option.comment = "Value of CTRL.SIZE"; bins values[] = {[5 : 10]};
+      option.comment = "Value of CTRL.SIZE"; bins values[] = {1,2,4};
       ignore_bins i_size={7};
     }
 
@@ -36,25 +36,25 @@ class cfs_algn_coverage extends uvm_component implements uvm_ext_reset_handler;
     }
 
     num_bytes_needed: coverpoint info.num_bytes_needed {
-      option.comment = "Number of bytes needed during the split"; bins values[] = {[1 : 3]};
+      option.comment = "Number of bytes needed during the split"; bins values[] = {[0 : 3]};
     }
 
     //TODO: other combinations should be ignored from this cross
 all : cross ctrl_offset, ctrl_size, md_offset, md_size, num_bytes_needed {
   ignore_bins ignore_ctrl = 
 
-    (binsof(ctrl_offset) intersect {0} && binsof(ctrl_size) intersect {3}) ||
-    (binsof(ctrl_offset) intersect {1} && binsof(ctrl_size) intersect {2,3,4}) ||
-    (binsof(ctrl_offset) intersect {2} && binsof(ctrl_size) intersect {3,4}) ||
-    (binsof(ctrl_offset) intersect {3} && binsof(ctrl_size) intersect {2,3,4});
+    (binsof(ctrl_offset) intersect {0} && binsof(ctrl_size) intersect {0,3}) ||
+    (binsof(ctrl_offset) intersect {1} && binsof(ctrl_size) intersect {0,2,3,4}) ||
+    (binsof(ctrl_offset) intersect {2} && binsof(ctrl_size) intersect {0,3,4}) ||
+    (binsof(ctrl_offset) intersect {3} && binsof(ctrl_size) intersect {0,2,3,4});
 
   // Now apply same logic to md_offset/md_size
   ignore_bins ignore_md = 
 
-    (binsof(md_offset) intersect {0} && binsof(md_size) intersect {3}) ||
-    (binsof(md_offset) intersect {1} && binsof(md_size) intersect {2,3,4}) ||
-    (binsof(md_offset) intersect {2} && binsof(md_size) intersect {3,4}) ||
-    (binsof(md_offset) intersect {3} && binsof(md_size) intersect {2,3,4});
+    (binsof(md_offset) intersect {0} && binsof(md_size) intersect {0,3}) ||
+    (binsof(md_offset) intersect {1} && binsof(md_size) intersect {0,2,3,4}) ||
+    (binsof(md_offset) intersect {2} && binsof(md_size) intersect {0,3,4}) ||
+    (binsof(md_offset) intersect {3} && binsof(md_size) intersect {0,2,3,4});
     
     ignore_bins new_ignore_ctrl_invalid_pairs =
     (binsof(ctrl_size) intersect {2} && binsof(ctrl_offset) intersect {1,3}) ||
@@ -64,24 +64,26 @@ all : cross ctrl_offset, ctrl_size, md_offset, md_size, num_bytes_needed {
   ignore_bins new_ignore_md_invalid_pairs =
     (binsof(md_size) intersect {2} && binsof(md_offset) intersect {1,3}) ||
     (binsof(md_size) intersect {4} && binsof(md_offset) intersect {1,2,3});
+
+
 ignore_bins illegal_num_bytes_needed_gt_ctrl_size = 
   binsof(ctrl_size) intersect {2} &&
   binsof(num_bytes_needed) intersect {3};
 
 ignore_bins illegal_ctrl_size_1_num_bytes_needed_3 = 
   binsof(ctrl_size) intersect {1} &&
-  binsof(num_bytes_needed) intersect {3};
+  binsof(num_bytes_needed) intersect {0,3};
+
+// ignore_bins illegal_ctrl_size_4_num_bytes_needed_0 = 
+//   binsof(ctrl_size) intersect {4} && binsof(md_size) intersect {2} &&
+//   binsof(num_bytes_needed) intersect {0};
+
 
 ignore_bins illegal_ctrl_size_1_num_bytes_needed_2 = 
-  binsof(ctrl_size) intersect {1} &&
-  binsof(num_bytes_needed) intersect {2} ||
+  binsof(ctrl_size) intersect {1} && binsof(num_bytes_needed) intersect {2} ||
   binsof(ctrl_size) intersect {4} && binsof(md_size) intersect {2} && binsof(md_offset) intersect {0}||
-  binsof(num_bytes_needed) intersect {2,3} &&
-  binsof(md_size) intersect {2} ||
-  binsof(num_bytes_needed) intersect {2,3} &&
-  binsof(md_offset) intersect {2} ||
-
-
+  binsof(num_bytes_needed) intersect {2,3} && binsof(md_size) intersect {2} ||
+  binsof(num_bytes_needed) intersect {2,3} && binsof(md_offset) intersect {2} ||
   binsof(md_size) intersect {1,3} ||
   binsof(md_offset) intersect {1,3};
   
@@ -198,5 +200,4 @@ endgroup*/
 endclass
 
 `endif
-
 
