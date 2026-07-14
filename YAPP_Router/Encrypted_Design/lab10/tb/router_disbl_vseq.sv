@@ -51,7 +51,7 @@ class router_disbl_vseq extends uvm_sequence;
 
         hbus_wrt = hbus_write_seq::type_id::create("hbus_wrt");
         hbus_wrt.address = 1;
-        hbus_wrt.data = 1;
+        hbus_wrt.data = 0;
         hbus_wrt.start(p_sequencer.hbus_mst_seqr);
 
         //------------------------------------------------------------------
@@ -84,7 +84,7 @@ class router_disbl_vseq extends uvm_sequence;
         end
 
         hbus_wrt.address = 1;
-        hbus_wrt.data = 1;
+        hbus_wrt.data = 0;
         hbus_wrt.start(p_sequencer.hbus_mst_seqr);
 
         repeat(5)

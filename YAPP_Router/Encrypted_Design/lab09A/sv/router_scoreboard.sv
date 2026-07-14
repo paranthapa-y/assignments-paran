@@ -110,7 +110,7 @@ class router_scoreboard extends uvm_scoreboard;
 
     function void report_phase(uvm_phase phase);
         super.report_phase(phase);
-        // `uvm_info(get_full_name(), "matched packet: %d, unmatched packets : %d",matched_packets, wrong_packets, UVM_LOW);
+        `uvm_info(get_full_name(), $sformatf("matched packet: %d, unmatched packets : %d", matched_packets, wrong_packets), UVM_LOW);
     endfunction
 
 endclass

@@ -156,6 +156,19 @@ task channel_monitor::run_phase(uvm_phase phase);
       //Monitor looks at the bus on posedge (Driver uses negedge)
       //@(posedge vif.data_vld);
       @(posedge vif.clock iff (vif.data_vld && !vif.suspend));
+      `uvm_info("MONITOR",
+$sformatf(
+"clock=%0b reset=%0b data_vld=%0b suspend=%0b data=%0h has_checks=%0b has_coverage=%0b",
+vif.clock,
+vif.reset,
+vif.data_vld,
+vif.suspend,
+vif.data,
+vif.has_checks,
+vif.has_coverage
+),
+UVM_LOW)
+
 
       // Wait for suspend deasserted
       //@(posedge vif.clock iff (!vif.suspend))

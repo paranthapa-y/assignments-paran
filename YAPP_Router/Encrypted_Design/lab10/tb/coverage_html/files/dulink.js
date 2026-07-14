@@ -1,2 +1,2 @@
-var g_data = {"1":["work.channel_if",100.00,1],"5":["work.channel_pkg",33.66,1],"6":["work.hbus_if",66.20,1],"7":["work.hbus_pkg",26.43,1],"10":["work.top_dut",100.00,1],"8":["work.top_dut_sv_unit",44.51,1],"2":["work.yapp_if",100.00,1],"4":["work.yapp_pkg",46.64,1],"11":["work.yapp_router",92.62,1]};
+var g_data = {"1":["work.channel_if",100.00,1],"5":["work.channel_pkg",33.72,1],"6":["work.hbus_if",66.20,1],"7":["work.hbus_pkg",26.43,1],"10":["work.top_dut",100.00,1],"8":["work.top_dut_sv_unit",44.51,1],"2":["work.yapp_if",91.66,1],"4":["work.yapp_pkg",47.58,1],"11":["work.yapp_router",90.98,1]};
 processDuLinks(g_data);
